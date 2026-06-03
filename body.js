@@ -86,7 +86,7 @@ window.pageBodyContent = `<script
                       margin: 0;
                     "
                   >
-                    Omnera©
+                    Slay The Strategy
                   </p>
                 </div>
                 <!--/$-->
@@ -361,7 +361,7 @@ window.pageBodyContent = `<script
                       margin: 0;
                     "
                   >
-                    Omnera©
+                    Slay The Strategy
                   </p>
                 </div>
                 <!--/$-->
@@ -573,7 +573,7 @@ window.pageBodyContent = `<script
                       margin: 0;
                     "
                   >
-                    Omnera©
+                    Slay The Strategy
                   </p>
                 </div>
                 <!--/$-->
@@ -802,103 +802,7 @@ window.pageBodyContent = `<script
                               opacity: 1;
                               transform: translateY(300px);
                             "
-                            >O</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: translateY(300px);
-                            "
-                            >m</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: translateY(300px);
-                            "
-                            >n</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: translateY(300px);
-                            "
-                            >e</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: translateY(300px);
-                            "
-                            >r</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: translateY(300px);
-                            "
-                            >a</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: translateY(300px);
-                            "
-                            >©</span
+                            >Slay The Strategy
                           ></span
                         ></span
                       ></span
@@ -948,103 +852,7 @@ window.pageBodyContent = `<script
                               opacity: 1;
                               transform: none;
                             "
-                            >O</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: none;
-                            "
-                            >m</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: none;
-                            "
-                            >n</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: none;
-                            "
-                            >e</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: none;
-                            "
-                            >r</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: none;
-                            "
-                            >a</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: none;
-                            "
-                            >©</span
+                            >Slay The Strategy
                           ></span
                         ></span
                       ></span
@@ -1094,103 +902,7 @@ window.pageBodyContent = `<script
                               opacity: 1;
                               transform: none;
                             "
-                            >O</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: none;
-                            "
-                            >m</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: none;
-                            "
-                            >n</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: none;
-                            "
-                            >e</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: none;
-                            "
-                            >r</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: none;
-                            "
-                            >a</span
-                          ></span
-                        ><span
-                          style="
-                            display: inline-block;
-                            overflow: clip;
-                            padding: 0px;
-                          "
-                          ><span
-                            style="
-                              display: inline-block;
-                              position: relative;
-                              will-change: opacity, transform;
-                              opacity: 1;
-                              transform: none;
-                            "
-                            >©</span
+                            >Slay The Strategy
                           ></span
                         ></span
                       ></span
@@ -8494,7 +8206,7 @@ window.pageBodyContent = `<script
                       data-styles-preset="kxEAksfkx"
                       dir="auto"
                     >
-                      Meet Omnera©
+                      Meet Slay The Strategy
                     </p>
                   </div>
                   <div class="framer-1u3tvov-container">
@@ -8520,13 +8232,7 @@ window.pageBodyContent = `<script
                       "
                     >
                       <span
-                        ><span style="color: rgba(26, 26, 26, 0.23)">O</span
-                        ><span style="color: rgba(26, 26, 26, 0.23)">m</span
-                        ><span style="color: rgba(26, 26, 26, 0.23)">n</span
-                        ><span style="color: rgba(26, 26, 26, 0.23)">e</span
-                        ><span style="color: rgba(26, 26, 26, 0.23)">r</span
-                        ><span style="color: rgba(26, 26, 26, 0.23)">a</span
-                        ><span style="color: rgba(26, 26, 26, 0.23)">©</span
+                        ><span style="color: rgba(26, 26, 26, 0.23)">Slay The Strategy
                         >&nbsp;</span
                       ><span
                         ><span style="color: rgba(26, 26, 26, 0.23)">c</span
@@ -10118,7 +9824,7 @@ window.pageBodyContent = `<script
                       data-styles-preset="kxEAksfkx"
                       dir="auto"
                     >
-                      “Omnera© strengthened our brand and delivered a scalable
+                      “Slay The Strategy strengthened our brand and delivered a scalable
                       digital foundation.”
                     </p>
                   </div>
@@ -10166,7 +9872,7 @@ window.pageBodyContent = `<script
                       data-styles-preset="kxEAksfkx"
                       dir="auto"
                     >
-                      Meet Omnera©
+                      Meet Slay The Strategy
                     </p>
                   </div>
                   <div class="framer-1u3tvov-container">
@@ -10199,55 +9905,7 @@ window.pageBodyContent = `<script
                               rgb(26, 26, 26)
                             );
                           "
-                          >O</span
-                        ><span
-                          style="
-                            color: var(
-                              --token-909ff4e1-018a-427b-9c6d-8cc84e3991f6,
-                              rgb(26, 26, 26)
-                            );
-                          "
-                          >m</span
-                        ><span
-                          style="
-                            color: var(
-                              --token-909ff4e1-018a-427b-9c6d-8cc84e3991f6,
-                              rgb(26, 26, 26)
-                            );
-                          "
-                          >n</span
-                        ><span
-                          style="
-                            color: var(
-                              --token-909ff4e1-018a-427b-9c6d-8cc84e3991f6,
-                              rgb(26, 26, 26)
-                            );
-                          "
-                          >e</span
-                        ><span
-                          style="
-                            color: var(
-                              --token-909ff4e1-018a-427b-9c6d-8cc84e3991f6,
-                              rgb(26, 26, 26)
-                            );
-                          "
-                          >r</span
-                        ><span
-                          style="
-                            color: var(
-                              --token-909ff4e1-018a-427b-9c6d-8cc84e3991f6,
-                              rgb(26, 26, 26)
-                            );
-                          "
-                          >a</span
-                        ><span
-                          style="
-                            color: var(
-                              --token-909ff4e1-018a-427b-9c6d-8cc84e3991f6,
-                              rgb(26, 26, 26)
-                            );
-                          "
-                          >©</span
+                          >Slay The Strategy
                         >&nbsp;</span
                       ><span
                         ><span
@@ -12413,7 +12071,7 @@ window.pageBodyContent = `<script
                       data-styles-preset="kxEAksfkx"
                       dir="auto"
                     >
-                      “Omnera© strengthened our brand and delivered a scalable
+                      “Slay The Strategy strengthened our brand and delivered a scalable
                       digital foundation.”
                     </p>
                   </div>
@@ -12461,7 +12119,7 @@ window.pageBodyContent = `<script
                       data-styles-preset="kxEAksfkx"
                       dir="auto"
                     >
-                      Meet Omnera©
+                      Meet Slay The Strategy
                     </p>
                   </div>
                   <div class="framer-1u3tvov-container">
@@ -12492,55 +12150,7 @@ window.pageBodyContent = `<script
                               rgb(26, 26, 26)
                             );
                           "
-                          >O</span
-                        ><span
-                          style="
-                            color: var(
-                              --token-909ff4e1-018a-427b-9c6d-8cc84e3991f6,
-                              rgb(26, 26, 26)
-                            );
-                          "
-                          >m</span
-                        ><span
-                          style="
-                            color: var(
-                              --token-909ff4e1-018a-427b-9c6d-8cc84e3991f6,
-                              rgb(26, 26, 26)
-                            );
-                          "
-                          >n</span
-                        ><span
-                          style="
-                            color: var(
-                              --token-909ff4e1-018a-427b-9c6d-8cc84e3991f6,
-                              rgb(26, 26, 26)
-                            );
-                          "
-                          >e</span
-                        ><span
-                          style="
-                            color: var(
-                              --token-909ff4e1-018a-427b-9c6d-8cc84e3991f6,
-                              rgb(26, 26, 26)
-                            );
-                          "
-                          >r</span
-                        ><span
-                          style="
-                            color: var(
-                              --token-909ff4e1-018a-427b-9c6d-8cc84e3991f6,
-                              rgb(26, 26, 26)
-                            );
-                          "
-                          >a</span
-                        ><span
-                          style="
-                            color: var(
-                              --token-909ff4e1-018a-427b-9c6d-8cc84e3991f6,
-                              rgb(26, 26, 26)
-                            );
-                          "
-                          >©</span
+                          >Slay The Strategy
                         >&nbsp;</span
                       ><span
                         ><span
@@ -14706,7 +14316,7 @@ window.pageBodyContent = `<script
                       data-styles-preset="kxEAksfkx"
                       dir="auto"
                     >
-                      “Omnera© strengthened our brand and delivered a scalable
+                      “Slay The Strategy strengthened our brand and delivered a scalable
                       digital foundation.”
                     </p>
                   </div>
@@ -19258,7 +18868,7 @@ window.pageBodyContent = `<script
                             margin: 0;
                           "
                         >
-                          Inside Omnera©
+                          Inside Slay The Strategy
                         </p>
                       </div>
                       <!--/$-->
@@ -19280,7 +18890,7 @@ window.pageBodyContent = `<script
                           );
                         "
                       >
-                        Inside Omnera©
+                        Inside Slay The Strategy
                       </h5>
                     </div></a
                   ><!--/$-->
@@ -19842,7 +19452,7 @@ window.pageBodyContent = `<script
                             margin: 0;
                           "
                         >
-                          Inside Omnera©
+                          Inside Slay The Strategy
                         </p>
                       </div>
                       <!--/$-->
@@ -19864,7 +19474,7 @@ window.pageBodyContent = `<script
                           );
                         "
                       >
-                        Inside Omnera©
+                        Inside Slay The Strategy
                       </h5>
                     </div></a
                   ><!--/$-->
@@ -20424,7 +20034,7 @@ window.pageBodyContent = `<script
                             margin: 0;
                           "
                         >
-                          Inside Omnera©
+                          Inside Slay The Strategy
                         </p>
                       </div>
                       <!--/$-->
@@ -20446,7 +20056,7 @@ window.pageBodyContent = `<script
                           );
                         "
                       >
-                        Inside Omnera©
+                        Inside Slay The Strategy
                       </h5>
                     </div></a
                   ><!--/$-->
@@ -25830,7 +25440,7 @@ window.pageBodyContent = `<script
                             padding: 0px;
                           "
                         >
-                          Omnera©
+                          Slay The Strategy
                         </div>
                         <p
                           style="
@@ -25875,73 +25485,7 @@ window.pageBodyContent = `<script
                                     opacity: 0;
                                     transform: translateY(100%);
                                   "
-                                  >O</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >m</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >n</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >e</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >r</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >a</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >©</span
+                                  >Slay The Strategy
                                 ></span
                               >&nbsp;</span
                             ></span
@@ -26491,7 +26035,7 @@ window.pageBodyContent = `<script
                           );
                         "
                       >
-                        Omnera©
+                        Slay The Strategy
                       </p>
                     </div>
                     <div
@@ -29048,7 +28592,7 @@ window.pageBodyContent = `<script
                               padding: 0px;
                             "
                           >
-                            Omnera© partners with ambitious teams to build
+                            Slay The Strategy partners with ambitious teams to build
                             experiences that move industries forward.
                           </div>
                           <p
@@ -29092,73 +28636,7 @@ window.pageBodyContent = `<script
                                       opacity: 0;
                                       transform: translateY(100%);
                                     "
-                                    >O</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >m</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >n</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >e</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >r</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >a</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >©</span
+                                    >Slay The Strategy
                                   ></span
                                 >&nbsp;</span
                               ></span
@@ -30082,7 +29560,7 @@ window.pageBodyContent = `<script
                             );
                           "
                         >
-                          Omnera© partners with ambitious teams to build
+                          Slay The Strategy partners with ambitious teams to build
                           experiences that move industries forward.
                         </p>
                       </div>
@@ -30308,7 +29786,7 @@ window.pageBodyContent = `<script
                             padding: 0px;
                           "
                         >
-                          Omnera©
+                          Slay The Strategy
                         </div>
                         <p
                           style="
@@ -30353,73 +29831,7 @@ window.pageBodyContent = `<script
                                     opacity: 0;
                                     transform: translateY(100%);
                                   "
-                                  >O</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >m</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >n</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >e</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >r</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >a</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >©</span
+                                  >Slay The Strategy
                                 ></span
                               >&nbsp;</span
                             ></span
@@ -30969,7 +30381,7 @@ window.pageBodyContent = `<script
                           );
                         "
                       >
-                        Omnera©
+                        Slay The Strategy
                       </p>
                     </div>
                     <div
@@ -33526,7 +32938,7 @@ window.pageBodyContent = `<script
                               padding: 0px;
                             "
                           >
-                            Omnera© partners with ambitious teams to build
+                            Slay The Strategy partners with ambitious teams to build
                             experiences that move industries forward.
                           </div>
                           <p
@@ -33570,73 +32982,7 @@ window.pageBodyContent = `<script
                                       opacity: 0;
                                       transform: translateY(100%);
                                     "
-                                    >O</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >m</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >n</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >e</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >r</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >a</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >©</span
+                                    >Slay The Strategy
                                   ></span
                                 >&nbsp;</span
                               ></span
@@ -34560,7 +33906,7 @@ window.pageBodyContent = `<script
                             );
                           "
                         >
-                          Omnera© partners with ambitious teams to build
+                          Slay The Strategy partners with ambitious teams to build
                           experiences that move industries forward.
                         </p>
                       </div>
@@ -34768,7 +34114,7 @@ window.pageBodyContent = `<script
                             padding: 0px;
                           "
                         >
-                          Omnera©
+                          Slay The Strategy
                         </div>
                         <p
                           style="
@@ -34813,73 +34159,7 @@ window.pageBodyContent = `<script
                                     opacity: 0;
                                     transform: translateY(100%);
                                   "
-                                  >O</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >m</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >n</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >e</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >r</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >a</span
-                                ></span
-                              ><span
-                                style="display: inline-block; overflow: clip"
-                                ><span
-                                  style="
-                                    display: inline-block;
-                                    line-height: inherit;
-                                    opacity: 0;
-                                    transform: translateY(100%);
-                                  "
-                                  >©</span
+                                  >Slay The Strategy
                                 ></span
                               >&nbsp;</span
                             ></span
@@ -35429,7 +34709,7 @@ window.pageBodyContent = `<script
                           );
                         "
                       >
-                        Omnera©
+                        Slay The Strategy
                       </p>
                     </div>
                     <div
@@ -37986,7 +37266,7 @@ window.pageBodyContent = `<script
                               padding: 0px;
                             "
                           >
-                            Omnera© partners with ambitious teams to build
+                            Slay The Strategy partners with ambitious teams to build
                             experiences that move industries forward.
                           </div>
                           <p
@@ -38030,73 +37310,7 @@ window.pageBodyContent = `<script
                                       opacity: 0;
                                       transform: translateY(100%);
                                     "
-                                    >O</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >m</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >n</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >e</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >r</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >a</span
-                                  ></span
-                                ><span
-                                  style="display: inline-block; overflow: clip"
-                                  ><span
-                                    style="
-                                      display: inline-block;
-                                      line-height: inherit;
-                                      opacity: 0;
-                                      transform: translateY(100%);
-                                    "
-                                    >©</span
+                                    >Slay The Strategy
                                   ></span
                                 >&nbsp;</span
                               ></span
@@ -39020,7 +38234,7 @@ window.pageBodyContent = `<script
                             );
                           "
                         >
-                          Omnera© partners with ambitious teams to build
+                          Slay The Strategy partners with ambitious teams to build
                           experiences that move industries forward.
                         </p>
                       </div>
@@ -39290,7 +38504,7 @@ window.pageBodyContent = `<script
                               data-styles-preset="kxEAksfkx"
                               dir="auto"
                             >
-                              “Omnera© didn’t just redesign our website , they
+                              “Slay The Strategy didn’t just redesign our website , they
                               completely redefined how we present ourselves as a
                               brand. From structure to messaging, everything
                               feels intentional, cohesive, and built for
@@ -40434,7 +39648,7 @@ window.pageBodyContent = `<script
                               dir="auto"
                               style="--framer-text-alignment: center"
                             >
-                              “Omnera© didn’t just redesign our website , they
+                              “Slay The Strategy didn’t just redesign our website , they
                               completely redefined how we present ourselves as a
                               brand. From structure to messaging, everything
                               feels intentional, cohesive, and built for
@@ -41576,7 +40790,7 @@ window.pageBodyContent = `<script
                               data-styles-preset="kxEAksfkx"
                               dir="auto"
                             >
-                              “Omnera© didn’t just redesign our website , they
+                              “Slay The Strategy didn’t just redesign our website , they
                               completely redefined how we present ourselves as a
                               brand. From structure to messaging, everything
                               feels intentional, cohesive, and built for
@@ -52080,113 +51294,9 @@ window.pageBodyContent = `<script
         </footer>
       </div>
     </div>
-    <div
-      class="framer-129rlqa-container"
-      data-framer-appear-id="129rlqa"
-      style="opacity: 0.001; transform: none"
-    >
-      <!--$--><a
-        class="framer-hLVqf framer-llbco9 framer-v-llbco9 framer-e0elvx"
-        data-framer-name="Desktop"
-        href="https://flowmance.lemonsqueezy.com/buy/5802bef6-5fef-4d22-824a-b4e673814037"
-        target="_blank"
-        rel="noopener"
-        style="width: 100%"
-        ><div class="framer-11bwftl-container">
-          <!--$-->
-          <div
-            class="framer-MA2ZH framer-ga5g4n framer-v-ga5g4n"
-            data-border="true"
-            data-framer-name="Button"
-            style="
-              --border-bottom-width: 1px;
-              --border-color: rgb(225, 225, 225);
-              --border-left-width: 1px;
-              --border-right-width: 1px;
-              --border-style: solid;
-              --border-top-width: 1px;
-              backdrop-filter: blur(4px);
-              background-color: rgba(255, 255, 255, 0.97);
-              -webkit-backdrop-filter: blur(4px);
-              width: 100%;
-              border-bottom-left-radius: 12px;
-              border-bottom-right-radius: 12px;
-              border-top-left-radius: 12px;
-              border-top-right-radius: 12px;
-            "
-          >
-            <div class="framer-deljjp" data-framer-name="Content">
-              <div class="framer-1mmeyfb" data-framer-name="Icon Wrapper">
-                <div
-                  class="framer-1t0gtjv"
-                  style="filter: invert(0); -webkit-filter: invert(0)"
-                >
-                  <div
-                    style="
-                      position: absolute;
-                      border-radius: inherit;
-                      corner-shape: inherit;
-                      top: 0;
-                      right: 0;
-                      bottom: 0;
-                      left: 0;
-                    "
-                    data-framer-background-image-wrapper="true"
-                  >
-                    <img
-                      decoding="async"
-                      width="512"
-                      height="512"
-                      src="https://framerusercontent.com/images/0Nqap2Dy8FZD0jJJYLvc1deKscY.png?width=512&amp;height=512"
-                      alt
-                      style="
-                        display: block;
-                        width: 100%;
-                        height: 100%;
-                        border-radius: inherit;
-                        corner-shape: inherit;
-                        object-position: center;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                </div>
+    <!-- Removed Unlock 42+ -->
               </div>
-              <div class="framer-1mj00lo">
-                <div class="framer-t8jucc">
-                  <div
-                    class="framer-2q1my2"
-                    data-framer-component-type="RichTextContainer"
-                    style="
-                      --extracted-tcooor: var(
-                        --token-a592bfa6-cdc4-448c-bee2-c12ecc07ba0c,
-                        rgb(0, 0, 0)
-                      );
-                      --framer-link-text-color: rgb(0, 153, 255);
-                      --framer-link-text-decoration: underline;
-                      transform: none;
-                    "
-                  >
-                    <div
-                      class="framer-text"
-                      style="
-                        --font-selector: SW50ZXItQm9sZA==;
-                        --framer-font-size: 13px;
-                        --framer-font-weight: 700;
-                        --framer-letter-spacing: -0.02em;
-                        --framer-line-height: 1.5em;
-                        --framer-text-color: var(
-                          --extracted-tcooor,
-                          var(
-                            --token-a592bfa6-cdc4-448c-bee2-c12ecc07ba0c,
-                            rgb(0, 0, 0)
-                          )
-                        );
-                      "
-                    >
-                      Unlock 42+ Templates
-                    </div>
-                  </div>
+              <!-- Removed Unlock Badge Group -->
                 </div>
                 <div class="framer-7a6l5v">
                   <div
@@ -52218,7 +51328,7 @@ window.pageBodyContent = `<script
                         );
                       "
                     >
-                      Unlock for $199
+                      
                     </div>
                   </div>
                 </div>
@@ -52371,7 +51481,7 @@ window.pageBodyContent = `<script
                     );
                   "
                 >
-                  Unlock for $199
+                  
                 </div>
               </div>
             </div>
@@ -52490,53 +51600,7 @@ window.pageBodyContent = `<script
   })();
 </script>
 
-<div id="__framer-badge-container">
-  <!--$--><!--$--><!--$--><a
-    class="framer-6jWyo framer-n0ccwk framer-v-n0ccwk framer-bmpgw8 __framer-badge"
-    data-framer-appear-id="n0ccwk"
-    data-framer-name="Light"
-    data-nosnippet="true"
-    style="
-      will-change: transform;
-      pointer-events: auto;
-      opacity: 0.001;
-      transform: translateY(10px);
-    "
-    href="https://www.framer.com"
-    rel="noopener"
-    title="Create a free website with Framer, the website builder loved by startups, designers and agencies."
-    ><div
-      class="framer-13yxzio"
-      data-framer-name="Backdrop"
-      style="
-        background-color: rgb(255, 255, 255);
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        box-shadow:
-          0px 0.6021873017743928px 1.5656869846134214px -1.5px
-            rgba(0, 0, 0, 0.17),
-          0px 2.288533303243457px 5.950186588432988px -3px rgba(0, 0, 0, 0.14),
-          0px 10px 26px -4.5px rgba(0, 0, 0, 0.02);
-      "
-    ></div>
-    <div
-      class="framer-19yaanm"
-      data-framer-name="Content"
-      style="transform: translate(-50%, -50%)"
-    >
-      <div class="framer-1kflzx5">
-        <div
-          data-framer-name="Logo"
-          class="framer-hcsc7 framer-e50co"
-          style="
-            --1bd4d3i: rgb(0, 0, 0);
-            --otdjsv: rgb(0, 0, 0);
-            transform: translateX(-50%);
-          "
-        ></div>
-      </div>
+<!-- Removed Badge -->
       <!--$-->
       <p style="position: absolute; transform: scale(0.001)">
         Create a free website with Framer, the website builder loved by
