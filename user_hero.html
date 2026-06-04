@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Konpo Landing Page Reveal Animation | Codegrid</title>
+  <style>
+    @import url("https://fonts.cdnfonts.com/css/pp-neue-montreal");
+
+    :root {
+      --bg: #f1efe7;
+      --fg: #1f1f1f;
+      --loader-bg: #e0e0d8;
+      --stroke: rgba(0, 0, 0, 0.2);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "PP Neue Montreal";
+      color: var(--fg);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 6rem;
+      font-weight: 500;
+      letter-spacing: -0.1rem;
+      line-height: 1.1;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      font-weight: 500;
+      letter-spacing: -0.02rem;
+      line-height: 1.1;
+    }
+
+    a,
+    p {
+      color: var(--fg);
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      overflow: hidden;
+      line-height: 1;
+    }
+
+    .hero {
+      position: relative;
+      width: 100vw;
+      height: 100svh;
+      background-color: var(--bg);
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--loader-bg);
+      transform-origin: bottom;
+      transform: scaleY(0%);
+    }
+
+    .counter {
+      position: fixed;
+      right: 3rem;
+      bottom: 2rem;
+      display: flex;
+      height: 120px;
+      font-size: 120px;
+      line-height: 150px;
+      -webkit-text-stroke: 2px var(--fg);
+      clip-path: polygon(0 0, 100% 0, 100% 120px, 0 120px);
+    }
+
+    .counter-1,
+    .counter-2,
+    .counter-3 {
+      position: relative;
+      top: -15px;
+    }
+
+    .num1offset1 {
+      position: relative;
+      right: -30px;
+    }
+
+    .num1offset2 {
+      position: relative;
+      right: -15px;
+    }
+
+    .images-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .images-container .img {
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+      width: 20%;
+      aspect-ratio: 5/3;
+      border-radius: 0.75rem;
+      overflow: hidden;
+    }
+
+    .images-container .img.animate-out {
+      top: unset;
+      left: unset;
+      bottom: 1.5rem;
+      right: 1.5rem;
+    }
+
+    .divider {
+      background-color: var(--stroke);
+    }
+
+
+
+    .logo-name a {
+      font-size: 1.5rem;
+    }
+
+
+
+
+
+    .links {
+      gap: 0.5rem;
+    }
+
+
+    .sidebar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5rem;
+      height: 100svh;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .sidebar .logo {
+      width: 2rem;
+      aspect-ratio: 1;
+      transform: scale(0);
+    }
+
+    .sidebar .divider {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 1px;
+      height: 100svh;
+      transform-origin: top;
+      transform: scaleY(0%);
+    }
+
+    .header {
+      position: absolute;
+      top: 35%;
+      left: 7.5rem;
+      transform: translateY(-50%);
+      width: 60%;
+    }
+
+    .site-info {
+      position: absolute;
+      right: 1.5rem;
+      top: 60%;
+      transform: translateY(-50%);
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .site-info .divider {
+      width: 100%;
+      height: 1px;
+      transform-origin: left;
+      transform: scaleX(0%);
+    }
+
+    .site-info-copy {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .hero-footer {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 7.5rem;
+    }
+
+    .line {
+      overflow: hidden;
+    }
+
+    .line span {
+      position: relative;
+      display: block;
+      transform: translateY(125%);
+      will-change: transform;
+    }
+
+    @media (max-width: 1000px) {
+      h1 {
+        font-size: 2.5rem;
+        letter-spacing: -0.05rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+
+      .images-container .img {
+        width: 30%;
+      }
+
+      .header {
+        top: 25%;
+        width: calc(100% - 12.5rem);
+      }
+
+      .site-info {
+        width: calc(100% - 12.5rem);
+        right: unset;
+        left: 7.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-bg"></div>
+
+    <div class="counter">
+      <div class="counter-1 digit"></div>
+      <div class="counter-2 digit"></div>
+      <div class="counter-3 digit"></div>
+    </div>
+
+    <div class="images-container">
+      <div class="img"><img src="./img1.jpg" alt="" /></div>
+      <div class="img"><img src="./img2.jpg" alt="" /></div>
+      <div class="img"><img src="./img3.jpg" alt="" /></div>
+      <div class="img"><img src="./img4.jpg" alt="" /></div>
+      <div class="img"><img src="./img5.jpg" alt="" /></div>
+      <div class="img"><img src="./img6.jpg" alt="" /></div>
+      <div class="img"><img src="./img7.jpg" alt="" /></div>
+      <div class="img"><img src="./img8.jpg" alt="" /></div>
+      <div class="img"><img src="./img9.jpg" alt="" /></div>
+      <div class="img"><img src="./img10.jpg" alt="" /></div>
+      <div class="img"><img src="./img11.jpg" alt="" /></div>
+      <div class="img"><img src="./img12.jpg" alt="" /></div>
+      <div class="img"><img src="./img13.jpg" alt="" /></div>
+      <div class="img"><img src="./img14.jpg" alt="" /></div>
+      <div class="img"><img src="./img15.jpg" alt="" /></div>
+    </div>
+
+
+
+
+    <div class="header">
+      <h1>Visual engineering for modern brands</h1>
+    </div>
+
+    <div class="site-info">
+      <h2>A design team focused on brands websites, apps and products</h2>
+
+      <div class="divider"></div>
+
+      <div class="site-info-copy">
+        <p>Award-winning creative studio</p>
+        <p>Operating since 2019</p>
+      </div>
+    </div>
+
+    <div class="hero-footer">
+      <h2>Watch showreel</h2>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap-trial@3.12.5/dist/SplitText.min.js"></script>
+  <script>
+
+    gsap.registerPlugin(Flip, SplitText);
+
+    const setupTextSplitting = () => {
+      const textElements = document.querySelectorAll("h1, h2, p, a");
+      textElements.forEach((element) => {
+        SplitText.create(element, {
+          type: "lines",
+          linesClass: "line",
+        });
+
+        const lines = element.querySelectorAll(".line");
+        lines.forEach((line) => {
+          const textContent = line.textContent;
+          line.innerHTML = `<span>${textContent}</span>`;
+        });
+      });
+    };
+
+    const createCounterDigits = () => {
+      const counter1 = document.querySelector(".counter-1");
+      const num0 = document.createElement("div");
+      num0.className = "num";
+      num0.textContent = "0";
+      counter1.appendChild(num0);
+
+      const num1 = document.createElement("div");
+      num1.className = "num num1offset1";
+      num1.textContent = "1";
+      counter1.appendChild(num1);
+
+      const counter2 = document.querySelector(".counter-2");
+      for (let i = 0; i <= 10; i++) {
+        const numDiv = document.createElement("div");
+        numDiv.className = i === 1 ? "num num1offset2" : "num";
+        numDiv.textContent = i === 10 ? "0" : i;
+        counter2.appendChild(numDiv);
+      }
+
+      const counter3 = document.querySelector(".counter-3");
+      for (let i = 0; i < 30; i++) {
+        const numDiv = document.createElement("div");
+        numDiv.className = "num";
+        numDiv.textContent = i % 10;
+        counter3.appendChild(numDiv);
+      }
+      const finalNum = document.createElement("div");
+      finalNum.className = "num";
+      finalNum.textContent = "0";
+      counter3.appendChild(finalNum);
+    };
+
+    const animateCounter = (counter, duration, delay = 0) => {
+      const numHeight = counter.querySelector(".num").clientHeight;
+      const totalDistance =
+        (counter.querySelectorAll(".num").length - 1) * numHeight;
+      gsap.to(counter, {
+        y: -totalDistance,
+        duration: duration,
+        delay: delay,
+        ease: "power2.inOut",
+      });
+    };
+
+    function animateImages() {
+      const images = document.querySelectorAll(".img");
+
+      images.forEach((img) => {
+        img.classList.remove("animate-out");
+      });
+
+      const state = Flip.getState(images);
+
+      images.forEach((img) => img.classList.add("animate-out"));
+
+      const mainTimeline = gsap.timeline();
+
+      mainTimeline.add(
+        Flip.from(state, {
+          duration: 1,
+          stagger: 0.1,
+          ease: "power3.inOut",
+        })
+      );
+
+      images.forEach((img, index) => {
+        const scaleTimeline = gsap.timeline();
+
+        scaleTimeline
+          .to(
+            img,
+            {
+              scale: 2.5,
+              duration: 0.45,
+              ease: "power3.in",
+            },
+            0.025
+          )
+          .to(
+            img,
+            {
+              scale: 1,
+              duration: 0.45,
+              ease: "power3.out",
+            },
+            0.5
+          );
+
+        mainTimeline.add(scaleTimeline, index * 0.1);
+      });
+
+      return mainTimeline;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      setupTextSplitting();
+      createCounterDigits();
+
+      animateCounter(document.querySelector(".counter-3"), 2.5);
+      animateCounter(document.querySelector(".counter-2"), 3);
+      animateCounter(document.querySelector(".counter-1"), 2, 1.5);
+
+      const tl = gsap.timeline();
+      gsap.set(".img", { scale: 0 });
+
+      tl.to(".hero-bg", {
+        scaleY: "100%",
+        duration: 3,
+        ease: "power2.inOut",
+        delay: 0.25,
+      });
+
+      tl.to(
+        ".img",
+        {
+          scale: 1,
+          duration: 1,
+          stagger: 0.125,
+          ease: "power3.out",
+        },
+        "<"
+      );
+
+      tl.to(".counter", {
+        opacity: 0,
+        duration: 0.3,
+        ease: "power3.out",
+        delay: 0.3,
+        onStart: () => {
+          animateImages();
+        },
+      });
+
+      tl.to(".sidebar .divider", {
+        scaleY: "100%",
+        duration: 1,
+        ease: "power3.inOut",
+        delay: 1.25,
+      });
+
+      tl.to(
+        ".logo",
+        {
+          scale: 1,
+          duration: 1,
+          ease: "power4.inOut",
+        },
+        "<"
+      );
+
+      tl.to(
+        [".logo-name a span", ".links a span, .links p span", ".cta a span"],
+        {
+          y: "0%",
+          duration: 1,
+          stagger: 0.1,
+          ease: "power4.out",
+          delay: 0.5,
+        },
+        "<"
+      );
+
+      tl.to(
+        [".header span", ".site-info span", ".hero-footer span"],
+        {
+          y: "0%",
+          duration: 1,
+          stagger: 0.1,
+          ease: "power4.out",
+        },
+        "<"
+      );
+    });
+
+  </script>
+</body>
+
+</html>
