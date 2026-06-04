@@ -677,16 +677,26 @@
   <!-- Preload GSAP so it starts fetching at the earliest possible moment -->
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" as="script">
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js" as="script">
+  <!-- Shared navbar styles (used on all custom pages) -->
+  <link rel="stylesheet" href="./assets/css/navbar.css">
 </head>
 
 <body>
+  <!-- Disable scrolling until animation finishes -->
+  <style>
+    body.no-scroll {
+      overflow: hidden !important;
+      height: 100vh !important;
+    }
+  </style>
+  <script>document.body.classList.add("no-scroll");</script>
     
     <section class="hero" data-framer-cursor="1cfk11o">
     <div class="hero-bg"></div>
 
     <!-- Brand logo: centered during load, flies to navbar after flip -->
     <div id="brandLogo">
-      <img src="./Resources/logo.webp" alt="Slay The Strategy" />
+      <img src="./assets/images/logo.webp" alt="Slay The Strategy" />
     </div>
 
     <div class="counter">
@@ -697,50 +707,50 @@
 
     <!-- Scattered images that flip into marquee -->
     <div class="images-container">
-      <div class="img"><img src="./img1.jpg" alt="" /></div>
-      <div class="img"><img src="./img2.jpg" alt="" /></div>
-      <div class="img"><img src="./img3.jpg" alt="" /></div>
-      <div class="img"><img src="./img4.jpg" alt="" /></div>
-      <div class="img"><img src="./img5.jpg" alt="" /></div>
-      <div class="img"><img src="./img6.jpg" alt="" /></div>
-      <div class="img"><img src="./img7.jpg" alt="" /></div>
-      <div class="img"><img src="./img8.jpg" alt="" /></div>
-      <div class="img"><img src="./img9.jpg" alt="" /></div>
-      <div class="img"><img src="./img10.jpg" alt="" /></div>
-      <div class="img"><img src="./img11.jpg" alt="" /></div>
-      <div class="img"><img src="./img12.jpg" alt="" /></div>
-      <div class="img"><img src="./img13.jpg" alt="" /></div>
-      <div class="img"><img src="./img14.jpg" alt="" /></div>
-      <div class="img"><img src="./img15.jpg" alt="" /></div>
+      <div class="img"><img src="./assets/images/img1.jpg" alt="" /></div>
+      <div class="img"><img src="./assets/images/img2.jpg" alt="" /></div>
+      <div class="img"><img src="./assets/images/img3.jpg" alt="" /></div>
+      <div class="img"><img src="./assets/images/img4.jpg" alt="" /></div>
+      <div class="img"><img src="./assets/images/img5.jpg" alt="" /></div>
+      <div class="img"><img src="./assets/images/img6.jpg" alt="" /></div>
+      <div class="img"><img src="./assets/images/img7.jpg" alt="" /></div>
+      <div class="img"><img src="./assets/images/img8.jpg" alt="" /></div>
+      <div class="img"><img src="./assets/images/img9.jpg" alt="" /></div>
+      <div class="img"><img src="./assets/images/img10.jpg" alt="" /></div>
+      <div class="img"><img src="./assets/images/img11.jpg" alt="" /></div>
+      <div class="img"><img src="./assets/images/img12.jpg" alt="" /></div>
+      <div class="img"><img src="./assets/images/img13.jpg" alt="" /></div>
+      <div class="img"><img src="./assets/images/img14.jpg" alt="" /></div>
+      <div class="img"><img src="./assets/images/img15.jpg" alt="" /></div>
     </div>
 
     <!-- Marquee strip (hidden initially, shown after flip settles) -->
     <div class="marquee-strip">
       <div class="marquee-track" id="marqueeTrack">
-        <div class="marquee-item"><img src="./img1.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img2.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img3.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img4.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img5.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img6.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img7.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img8.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img9.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img10.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img11.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img12.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img13.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img14.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img15.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img1.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img2.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img3.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img4.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img5.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img6.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img7.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img8.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img9.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img10.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img11.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img12.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img13.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img14.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img15.jpg" alt="" /></div>
         <!-- duplicated for seamless loop -->
-        <div class="marquee-item"><img src="./img1.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img2.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img3.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img4.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img5.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img6.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img7.jpg" alt="" /></div>
-        <div class="marquee-item"><img src="./img8.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img1.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img2.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img3.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img4.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img5.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img6.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img7.jpg" alt="" /></div>
+        <div class="marquee-item"><img src="./assets/images/img8.jpg" alt="" /></div>
       </div>
     </div>
     <!-- Big headline — top section of hero -->
@@ -933,6 +943,9 @@
 
                 const dealTl = gsap.timeline({
                   onComplete: () => {
+                    // Enable scroll now that marquee is ready
+                    document.body.classList.remove("no-scroll");
+                    
                     const speed = 1.4;
                     function loop() {
                       for (let i = 0; i < imgsRev.length; i++) {
@@ -989,8 +1002,8 @@
 
 
   </script>
-    <script src="head.js"></script>
-    <script src="body.js"></script>
+    <script src="assets/js/head.js"></script>
+    <script src="assets/js/body.js"></script>
     <script>
         (function() {
             // Inject head content
@@ -1166,5 +1179,61 @@
     <script crossorigin="anonymous" integrity="sha384-yYiFABTm125rQj76PRXHtaj+bUxdrPTq+1UvlD4g3GnxPj1ipgCHX8VPtLdtYUEi" src="https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/js/webflow.schunk.25099a4fefa544e6.js" type="text/javascript"></script>
     <script crossorigin="anonymous" integrity="sha384-6/R+C9Ue+Qc5OY004ldJc9mD0GFbs04Ut0kV6t86NG4D5+LeFuXnoq8dK1FY2imF" src="https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/js/webflow.6e875794.53d57b6d7b6754cb.js" type="text/javascript"></script>
 
+<!-- Hide our custom hero when Framer routes away from home -->
+<script>
+  (function() {
+    var hero  = document.querySelector('section.hero');
+    var logo  = document.getElementById('brandLogo');
+
+    function isHome() {
+      var p = window.location.pathname;
+      // home = ends in / or /index.html or is just the file root
+      return p === '/' || p.endsWith('/') || p.endsWith('/index.html') || p === '';
+    }
+
+    function applyVisibility() {
+      var home = isHome();
+      if (hero) hero.style.display = home ? '' : 'none';
+      if (logo) logo.style.display = home ? '' : 'none';
+    }
+
+    // Patch pushState / replaceState so we catch Framer's router
+    var _push = history.pushState;
+    history.pushState = function() { _push.apply(this, arguments); applyVisibility(); };
+    var _replace = history.replaceState;
+    history.replaceState = function() { _replace.apply(this, arguments); applyVisibility(); };
+    window.addEventListener('popstate', applyVisibility);
+
+    // Run once on load in case we land on a non-home route
+    applyVisibility();
+  })();
+</script>
+<!-- Page transition curtain (brand green wipe covers exit, slides off on enter) -->
+<div id="page-curtain"></div>
+
+<!-- Intercept Framer's ./about SPA link → hard-navigate with transition -->
+<script>
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('a');
+    if (!link) return;
+    var href = link.getAttribute('href') || '';
+    if (href === './about' || href === '/about' || href.endsWith('/about')) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      // Trigger curtain cover, then navigate
+      var curtain = document.getElementById('page-curtain');
+      if (curtain) {
+        curtain.classList.add('curtain-cover');
+        setTimeout(function() { window.location.href = './about.html'; }, 600);
+      } else {
+        window.location.href = './about.html';
+      }
+    }
+  }, true);
+</script>
+
+<!-- Shared page transition script (handles all other internal links) -->
+<script src="./assets/js/transitions.js"></script>
 </body>
+
 </html>
