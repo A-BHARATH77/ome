@@ -558,6 +558,23 @@
       h1 { font-size: 3.5rem; }
       .marquee-item { width: 55vw; height: 30vh; }
       .images-container .img { width: 38%; }
+
+      /* mobile: paragraph + tag adjustments */
+      .hero-big-text h2 { font-size: 2.2rem; }
+      .hero-para {
+        right: 1rem;
+        left: 1rem;
+        top: auto;
+        bottom: 4rem;
+        max-width: 100%;
+        text-align: left;
+      }
+      .hero-para p { font-size: 1.2rem; line-height: 1.5; }
+      .hero-tag {
+        top: auto;
+        bottom: 1.2rem;
+      }
+      .hero-tag span { font-size: 0.85rem; }
     }
 
     /* ===== HERO BIG TEXT + PARA ===== */
@@ -602,7 +619,7 @@
     .hero-para {
       position: absolute;
       right: 2.5rem;
-      top: calc(50% + 12vw);
+      top: calc(50% + 15vw);
       z-index: 8;
       opacity: 0;
       max-width: 30rem;
@@ -692,7 +709,7 @@
 
     <!-- Paragraph — bottom right -->
     <div class="hero-para">
-      <p>Slay The Strategy.<br>A creative studio crafting<br>visual narratives for brands<br>that demand attention.</p>
+      <p><span style="font-weight:600">Slay The Strategy.</span><br>A creative studio crafting<br>visual narratives for brands<br>that demand attention.</p>
     </div>
 
   </section>
@@ -710,7 +727,7 @@
     
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap-trial@3.12.5/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/SplitText.min.js"></script>
 <script>
 
     gsap.registerPlugin(Flip, SplitText);
@@ -908,6 +925,42 @@
         },
       });
 
+    })();
+
+    // ---- Mouse parallax on hero text layers ----
+    (function() {
+      const hero = document.querySelector('.hero');
+      if (!hero || window.matchMedia('(max-width:768px)').matches) return;
+
+      // quickTo for silky-smooth lerp on each axis per element
+      const layers = [
+        { el: '.hero-big-text', xAmt: 22,  yAmt: 14  },
+        { el: '.hero-para',     xAmt: -16, yAmt: 18  },
+        { el: '.hero-tag',      xAmt: 14,  yAmt: 10  },
+        { el: '.counter',       xAmt: 8,   yAmt: 6   },
+      ];
+
+      const setters = layers.map(({ el, xAmt, yAmt }) => {
+        const node = document.querySelector(el);
+        if (!node) return null;
+        return {
+          x: gsap.quickTo(node, 'x', { duration: 0.9, ease: 'power3.out' }),
+          y: gsap.quickTo(node, 'y', { duration: 0.9, ease: 'power3.out' }),
+          xAmt, yAmt,
+        };
+      }).filter(Boolean);
+
+      hero.addEventListener('mousemove', (e) => {
+        // Normalise to -1 … +1
+        const nx = (e.clientX / window.innerWidth  - 0.5) * 2;
+        const ny = (e.clientY / window.innerHeight - 0.5) * 2;
+        setters.forEach(s => { s.x(nx * s.xAmt); s.y(ny * s.yAmt); });
+      });
+
+      // Reset gently on mouse leave
+      hero.addEventListener('mouseleave', () => {
+        setters.forEach(s => { s.x(0); s.y(0); });
+      });
     })();
 
   </script>
