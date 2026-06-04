@@ -675,6 +675,14 @@
 </head>
 
 <body>
+  <!-- Disable scrolling until animation finishes -->
+  <style>
+    body.no-scroll {
+      overflow: hidden !important;
+      height: 100vh !important;
+    }
+  </style>
+  <script>document.body.classList.add("no-scroll");</script>
     
     <section class="hero" data-framer-cursor="1cfk11o">
     <div class="hero-bg"></div>
@@ -927,6 +935,9 @@
 
                 const dealTl = gsap.timeline({
                   onComplete: () => {
+                    // Enable scroll now that marquee is ready
+                    document.body.classList.remove("no-scroll");
+                    
                     const speed = 1.4;
                     function loop() {
                       for (let i = 0; i < imgsRev.length; i++) {
@@ -1116,5 +1127,46 @@
     <script crossorigin="anonymous" integrity="sha384-yYiFABTm125rQj76PRXHtaj+bUxdrPTq+1UvlD4g3GnxPj1ipgCHX8VPtLdtYUEi" src="https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/js/webflow.schunk.25099a4fefa544e6.js" type="text/javascript"></script>
     <script crossorigin="anonymous" integrity="sha384-6/R+C9Ue+Qc5OY004ldJc9mD0GFbs04Ut0kV6t86NG4D5+LeFuXnoq8dK1FY2imF" src="https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/js/webflow.6e875794.53d57b6d7b6754cb.js" type="text/javascript"></script>
 
+<!-- Hide our custom hero when Framer routes away from home -->
+<script>
+  (function() {
+    var hero  = document.querySelector('section.hero');
+    var logo  = document.getElementById('brandLogo');
+
+    function isHome() {
+      var p = window.location.pathname;
+      // home = ends in / or /index.html or is just the file root
+      return p === '/' || p.endsWith('/') || p.endsWith('/index.html') || p === '';
+    }
+
+    function applyVisibility() {
+      var home = isHome();
+      if (hero) hero.style.display = home ? '' : 'none';
+      if (logo) logo.style.display = home ? '' : 'none';
+    }
+
+    // Patch pushState / replaceState so we catch Framer's router
+    var _push = history.pushState;
+    history.pushState = function() { _push.apply(this, arguments); applyVisibility(); };
+    var _replace = history.replaceState;
+    history.replaceState = function() { _replace.apply(this, arguments); applyVisibility(); };
+    window.addEventListener('popstate', applyVisibility);
+
+    // Run once on load in case we land on a non-home route
+    applyVisibility();
+  })();
+</script>
+<!-- Force About nav link to hard-navigate to about.html (bypass Framer SPA router) -->
+<script>
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('a');
+    if (!link) return;
+    var href = link.getAttribute('href') || '';
+    if (href === './about' || href === '/about' || href.endsWith('/about')) {
+      e.preventDefault();
+      window.location.href = './about.html';
+    }
+  }, true); // capture phase so we fire before React, but no stopImmediatePropagation
+</script>
 </body>
 </html>

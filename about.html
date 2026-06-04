@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - Slay The Strategy</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,900&display=swap");
+        @import url("https://fonts.cdnfonts.com/css/pp-neue-montreal");
+
+        :root {
+            --bg: #f1efe7;
+            --fg: #576E47;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: "PP Neue Montreal", sans-serif; 
+            color: var(--fg); 
+            background-color: var(--bg);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Our custom about container */
+        #custom-about {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        #custom-about h1 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-style: italic;
+            font-size: clamp(3rem, 8vw, 6rem);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        #custom-about p {
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+        
+        /* Ensure navbar sits on top */
+        nav { position: relative; z-index: 999; }
+    </style>
+    
+    <!-- Load Framer Styles for Navbar -->
+    <script src="head.js"></script>
+    <script>
+        (function() {
+            if (window.pageHeadContent) {
+                const headTemp = document.createElement('div');
+                headTemp.innerHTML = window.pageHeadContent;
+                Array.from(headTemp.childNodes).forEach(node => {
+                    if (node.nodeName === 'STYLE' || node.nodeName === 'LINK' || node.nodeName === 'META') {
+                        document.head.appendChild(node);
+                    }
+                });
+            }
+        })();
+    </script>
+</head>
+<body>
+    <nav
+          class="framer-yP8J4 framer-w5skh2 framer-v-1xg1zh"
+          data-framer-name="Light - Desktop (Home only)"
+          style="width: 100%"
+        >
+          <div
+            class="framer-52wxqa"
+            data-framer-name="Container"
+            style="background-color: rgba(0, 0, 0, 0)"
+          >
+            <!--\$--><a
+              class="framer-igw7l1 framer-2ezvwy"
+              data-framer-name="Logo"
+              href="./"
+              data-framer-page-link-current="true"
+              ><div
+                class="framer-14z4ion-container"
+                data-code-component-plugin-id="84d4c1"
+                data-framer-appear-id="14z4ion"
+                style="
+                  will-change: transform;
+                  opacity: 1;
+                  transform: translateY(25px);
+                "
+              >
+                <!--\$-->
+                <div style="position: relative; padding: 0px">
+                  <p
+                    style="
+                      font-family:
+                        &quot;Switzer&quot;, &quot;Switzer Placeholder&quot;,
+                        sans-serif;
+                      font-size: calc(var(--framer-root-font-size, 1rem) * 1.1);
+                      font-style: normal;
+                      font-weight: 500;
+                      letter-spacing: -0.5px;
+                      line-height: 1.15em;
+                      text-align: center;
+                      color: var(
+                        --token-909ff4e1-018a-427b-9c6d-8cc84e3991f6,
+                        rgb(26, 26, 26)
+                      );
+                      white-space: pre;
+                      font-variant-numeric: tabular-nums;
+                      user-select: none;
+                      margin: 0;
+                    "
+                  >
+                    Slay The Strategy
+                  </p>
+                </div>
+                <!--/\$-->
+              </div></a
+            ><!--/\$-->
+            <div class="framer-1mca7nk" data-framer-name="Nav Menu">
+              <!--\$--><a
+                class="framer-1yn02js framer-2ezvwy"
+                data-framer-name="Nav Item 1"
+                href="./"
+                data-framer-page-link-current="true"
+                ><div
+                  class="framer-10u37fx-container"
+                  data-code-component-plugin-id="84d4c1"
+                  data-framer-appear-id="10u37fx"
+                  style="
+                    will-change: transform;
+                    opacity: 1;
+                    transform: translateY(25px);
+                  "
+                >
+                  <!--\$-->
+                  <div style="position: relative; padding: 0px">
+                    <p
+                      style="
+                        font-family:
+                          &quot;Switzer&quot;, &quot;Switzer Placeholder&quot;,
+                          sans-serif;
+                        font-size: calc(
+                          var(--framer-root-font-size, 1rem) * 1.1
+                        );
+                        font-style: normal;
+                        font-weight: 500;
+                        letter-spacing: -0.5px;
+                        line-height: 1.15em;
+                        text-align: center;
+                        color: var(
+                          --token-909ff4e1-018a-427b-9c6d-8cc84e3991f6,
+                          rgb(26, 26, 26)
+                        );
+                        white-space: pre;
+                        font-variant-numeric: tabular-nums;
+                        user-select: none;
+                        margin: 0;
+                      "
+                    >
+                      Home
+                    </p>
+                  </div>
+                  <!--/\$-->
+                </div></a
+              ><!--/\$--><!--\$--><a
+                class="framer-16q2uzy framer-2ezvwy"
+                data-framer-name="Nav Item 2"
+                href="./about"
+                ><div
+                  class="framer-le8c6g-container"
+                  data-code-component-plugin-id="84d4c1"
+                  data-framer-appear-id="le8c6g"
+                  style="
+                    will-change: transform;
+                    opacity: 1;
+                    transform: translateY(25px);
+                  "
+                >
+                  <!--\$-->
+                  <div style="position: relative; padding: 0px">
+                    <p
+                      style="
+                        font-family:
+                          &quot;Switzer&quot;, &quot;Switzer Placeholder&quot;,
+                          sans-serif;
+                        font-size: calc(
+                          var(--framer-root-font-size, 1rem) * 1.1
+                        );
+                        font-style: normal;
+                        font-weight: 500;
+                        letter-spacing: -0.5px;
+                        line-height: 1.15em;
+                        text-align: center;
+                        color: var(
+                          --token-909ff4e1-018a-427b-9c6d-8cc84e3991f6,
+                          rgb(26, 26, 26)
+                        );
+                        white-space: pre;
+                        font-variant-numeric: tabular-nums;
+                        user-select: none;
+                        margin: 0;
+                      "
+                    >
+                      About
+                    </p>
+                  </div>
+                  <!--/\$-->
+                </div></a
+              ><!--/\$--><!--\$--><a
+                class="framer-1x3ee9a framer-2ezvwy"
+                data-framer-name="Nav Item 3"
+                href="./work"
+                ><div
+                  class="framer-1jhjy7s-container"
+                  data-code-component-plugin-id="84d4c1"
+                  data-framer-appear-id="1jhjy7s"
+                  style="
+                    will-change: transform;
+                    opacity: 1;
+                    transform: translateY(25px);
+                  "
+                >
+                  <!--\$-->
+                  <div style="position: relative; padding: 0px">
+                    <p
+                      style="
+                        font-family:
+                          &quot;Switzer&quot;, &quot;Switzer Placeholder&quot;,
+                          sans-serif;
+                        font-size: calc(
+                          var(--framer-root-font-size, 1rem) * 1.1
+                        );
+                        font-style: normal;
+                        font-weight: 500;
+                        letter-spacing: -0.5px;
+                        line-height: 1.15em;
+                        text-align: center;
+                        color: var(
+                          --token-909ff4e1-018a-427b-9c6d-8cc84e3991f6,
+                          rgb(26, 26, 26)
+                        );
+                        white-space: pre;
+                        font-variant-numeric: tabular-nums;
+                        user-select: none;
+                        margin: 0;
+                      "
+                    >
+                      Work
+                    </p>
+                  </div>
+                  <!--/\$-->
+                </div></a
+              ><!--/\$--><!--\$-->
+              <div
+                class="framer-lnpz0y-container"
+                data-framer-appear-id="lnpz0y"
+                style="
+                  will-change: transform;
+                  opacity: 1;
+                  transform: translateY(48px);
+                "
+              >
+                <!--\$--><a
+                  class="framer-dpV2b framer-SQg1w framer-mhg6v8 framer-v-mhg6v8 framer-1yum8ak"
+                  data-framer-name="Light - Desktop"
+                  href="./contact"
+                  ><div
+                    class="framer-bnwve6-container"
+                    data-code-component-plugin-id="84d4c1"
+                  >
+                    <!--\$-->
+                    <div
+                      style="
+                        width: 100%;
+                        position: relative;
+                        padding: 15px 0px 15px 0px;
+                      "
+                    >
+                      <p
+                        style="
+                          font-family:
+                            &quot;Switzer&quot;,
+                            &quot;Switzer Placeholder&quot;, sans-serif;
+                          font-size: calc(
+                            var(--framer-root-font-size, 1rem) * 1
+                          );
+                          font-style: normal;
+                          font-weight: 500;
+                          letter-spacing: -0.5px;
+                          line-height: 1.15em;
+                          text-align: center;
+                          color: var(
+                            --token-f399a2c7-7680-492c-ae74-0629dd54dc76,
+                            rgba(26, 26, 26, 0.8)
+                          );
+                          white-space: pre;
+                          font-variant-numeric: tabular-nums;
+                          user-select: none;
+                          margin: 0;
+                        "
+                      >
+                        Let's Talk
+                      </p>
+                    </div>
+                    <!--/\$-->
+                  </div>
+                  <div
+                    class="framer-1pzq8pd"
+                    data-framer-name="Button Bg"
+                    style="
+                      background-color: var(
+                        --token-0a052c3e-ec73-44c8-a0ea-0b47e575aa67,
+                        rgb(245, 245, 245)
+                      );
+                      border-bottom-left-radius: 10px;
+                      border-bottom-right-radius: 10px;
+                      border-top-left-radius: 10px;
+                      border-top-right-radius: 10px;
+                      transform: none;
+                    "
+                  >
+                    <div
+                      class="framer-1hpfbw2"
+                      data-framer-name="Overlay"
+                      style="
+                        background-color: var(
+                          --token-909ff4e1-018a-427b-9c6d-8cc84e3991f6,
+                          rgb(26, 26, 26)
+                        );
+                        border-bottom-left-radius: 200%;
+                        border-bottom-right-radius: 200%;
+                        border-top-left-radius: 200%;
+                        border-top-right-radius: 200%;
+                      "
+                    ></div></div></a
+                ><!--/\$-->
+              </div>
+              <!--/\$-->
+            </div>
+          </div>
+        </nav>
+
+    <main id="custom-about">
+        <h1>About Us</h1>
+        <p>This is a completely clean HTML page! The navbar above is the exact Framer navbar HTML.</p>
+    </main>
+    
+    <script>
+        // Apply branding color to logo text in case inline styles missed it
+        document.querySelectorAll('.framer-10u37fx-container p, .framer-52wxqa p').forEach(el => {
+            el.style.color = '#576E47';
+        });
+    </script>
+</body>
+</html>
