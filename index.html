@@ -22,7 +22,7 @@
                 // Enforce branding in the logo and navbar
                 document.querySelectorAll('.framer-52wxqa p, .framer-10u37fx-container p, .framer-le8c6g-container p, .framer-1jhjy7s-container p, .framer-bnwve6-container p, .framer-hvzfaw-container p, .framer-6eqb8n-container p, .framer-uv41zi-container p').forEach(el => {
                     if (el.innerText.includes('Omnera')) el.innerText = b;
-                    el.style.color = '#6c936c';
+                    el.style.color = '#576E47';
                 });
 
                 // Enforce branding in the Intro section (framer-pray0m)
@@ -34,6 +34,8 @@
 
                 // Enforce branding in the letter-by-letter h2 section
                 document.querySelectorAll('.framer-1u3tvov-container h2').forEach(el => {
+                    el.style.color = '#576E47';
+                    el.querySelectorAll('span').forEach(span => span.style.color = '#576E47');
                     if (el.innerText.includes('Omnera')) {
                         const firstSpan = el.querySelector('span');
                         if (firstSpan && firstSpan.innerText.includes('Omnera')) {
@@ -70,6 +72,18 @@
                 // Enforce favicon
                 document.querySelectorAll('link[rel*="icon"]').forEach(el => {
                     el.href = 'Resources/logo.webp';
+                });
+
+                // Enforce color for specific preset
+                document.querySelectorAll('.framer-styles-preset-15yoo9j').forEach(el => {
+                    el.style.color = '#576E47';
+                    el.style.setProperty('--framer-text-color', '#576E47', 'important');
+                });
+
+                // Enforce color for specific section
+                document.querySelectorAll('.framer-12jl4kx, .framer-12jl4kx *').forEach(el => {
+                    el.style.color = '#576E47';
+                    el.style.setProperty('--framer-text-color', '#576E47', 'important');
                 });
 
                 // Remove the badges and their containers
