@@ -13,11 +13,12 @@
     <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet">
 
-    <!-- Shared navbar styles -->
+    <!-- Shared styles -->
     <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/transitions.css">
 
     <style>
-        /* ── Reset & Page Tokens ──────────────────────────────────────── */
+        /* ── Reset & Page Tokens ───────────────────────────────────── */
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
@@ -39,7 +40,7 @@
             flex-direction: column;
         }
 
-        /* ── Page Content ─────────────────────────────────────────────── */
+        /* ── Page Content ──────────────────────────────────────────── */
         main {
             flex: 1;
             display: flex;
@@ -70,17 +71,32 @@
 </head>
 <body>
 
-    <!-- Shared navbar — loaded from navbar.html via navbar.js -->
-    <div id="navbar-root"></div>
+    <!-- ── Page transition curtain ──────────────────────────────── -->
+    <div id="page-curtain"></div>
 
-    <!-- About page content -->
+    <!-- ── Navbar (inlined — edit navbar.html as the source of truth) ── -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a class="nav-logo" href="./index.html" aria-label="Slay The Strategy — Home">
+                Slay The Strategy
+            </a>
+            <div class="nav-menu" role="list">
+                <a class="nav-link"        href="./index.html" role="listitem">Home</a>
+                <a class="nav-link active" href="./about.html" role="listitem" aria-current="page">About</a>
+                <a class="nav-link"        href="./work.html"  role="listitem">Work</a>
+                <a class="nav-cta"         href="./contact.html"><span>Let's Talk</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ── About content ────────────────────────────────────────── -->
     <main id="about-content">
         <h1>About Us</h1>
         <p>Ready for your content — just drop it in!</p>
     </main>
 
-    <!-- Shared navbar loader -->
-    <script src="./assets/js/navbar.js"></script>
+    <!-- Page transition script -->
+    <script src="./assets/js/transitions.js"></script>
 
 </body>
 </html>

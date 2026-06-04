@@ -1,0 +1,31 @@
+/* ── Page Transition Curtain ─────────────────────────────────────────────────
+ * A full-screen panel that slides up to cover the current page (exit),
+ * then the new page loads with the curtain already covering it and slides
+ * down to reveal the content beneath (enter).
+ *
+ * Color matches the site background so the transition feels seamless.
+ * ─────────────────────────────────────────────────────────────────────────── */
+
+#page-curtain {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background-color: #576E47; /* brand green — feels intentional, not a flash */
+    
+    /* Resting state: hidden below the viewport */
+    transform: translateY(100%);
+    transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+    pointer-events: none;
+}
+
+/* EXIT: curtain slides UP to cover the page */
+#page-curtain.curtain-cover {
+    transform: translateY(0%);
+    pointer-events: all;
+}
+
+/* ENTER: curtain is at 0% (covering), then slides UP off the top to reveal */
+#page-curtain.curtain-reveal {
+    transform: translateY(-100%);
+    transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+}

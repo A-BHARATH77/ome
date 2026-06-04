@@ -1158,7 +1158,10 @@
     applyVisibility();
   })();
 </script>
-<!-- Force About nav link to hard-navigate to about.html (bypass Framer SPA router) -->
+<!-- Page transition curtain (brand green wipe covers exit, slides off on enter) -->
+<div id="page-curtain"></div>
+
+<!-- Intercept Framer's ./about SPA link → hard-navigate with transition -->
 <script>
   document.addEventListener('click', function(e) {
     var link = e.target.closest('a');
@@ -1166,9 +1169,21 @@
     var href = link.getAttribute('href') || '';
     if (href === './about' || href === '/about' || href.endsWith('/about')) {
       e.preventDefault();
-      window.location.href = './about.html';
+      e.stopImmediatePropagation();
+      // Trigger curtain cover, then navigate
+      var curtain = document.getElementById('page-curtain');
+      if (curtain) {
+        curtain.classList.add('curtain-cover');
+        setTimeout(function() { window.location.href = './about.html'; }, 600);
+      } else {
+        window.location.href = './about.html';
+      }
     }
-  }, true); // capture phase so we fire before React, but no stopImmediatePropagation
+  }, true);
 </script>
+
+<!-- Shared page transition script (handles all other internal links) -->
+<script src="./assets/js/transitions.js"></script>
 </body>
+
 </html>
