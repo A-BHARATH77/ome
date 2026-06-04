@@ -15,7 +15,7 @@ window.pageBodyContent = `<script
   data-framer-page-optimized-at="2026-06-02T10:43:21.180Z"
   data-framer-generated-page
 >
-  <!--$--><!--$--><style data-framer-html-style>
+  <!--\$--><!--\$--><style data-framer-html-style>
     :root body {
       background: rgb(255, 255, 255);
     }
@@ -30,10 +30,10 @@ window.pageBodyContent = `<script
       class="framer-18ivzif-container"
       data-framer-layout-hint-center-x="true"
     >
-      <!--$--><link
+      <!--\$--><link
         href="https://unpkg.com/lenis@1.3.23/dist/lenis.css"
         rel="stylesheet"
-      /><!--/$-->
+      /><!--/\$-->
     </div>
     <div class="framer-1y7zn9i" data-framer-name="Blur"></div>
     <div class="framer-qa4kqy-container">
@@ -48,7 +48,7 @@ window.pageBodyContent = `<script
             data-framer-name="Container"
             style="background-color: rgba(0, 0, 0, 0)"
           >
-            <!--$--><a
+            <!--\$--><a
               class="framer-igw7l1 framer-2ezvwy"
               data-framer-name="Logo"
               href="./"
@@ -63,7 +63,7 @@ window.pageBodyContent = `<script
                   transform: translateY(25px);
                 "
               >
-                <!--$-->
+                <!--\$-->
                 <div style="position: relative; padding: 0px">
                   <p
                     style="
@@ -89,11 +89,11 @@ window.pageBodyContent = `<script
                     Slay The Strategy
                   </p>
                 </div>
-                <!--/$-->
+                <!--/\$-->
               </div></a
-            ><!--/$-->
+            ><!--/\$-->
             <div class="framer-1mca7nk" data-framer-name="Nav Menu">
-              <!--$--><a
+              <!--\$--><a
                 class="framer-1yn02js framer-2ezvwy"
                 data-framer-name="Nav Item 1"
                 href="./"
@@ -108,7 +108,7 @@ window.pageBodyContent = `<script
                     transform: translateY(25px);
                   "
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div style="position: relative; padding: 0px">
                     <p
                       style="
@@ -136,9 +136,9 @@ window.pageBodyContent = `<script
                       Home
                     </p>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div></a
-              ><!--/$--><!--$--><a
+              ><!--/\$--><!--\$--><a
                 class="framer-16q2uzy framer-2ezvwy"
                 data-framer-name="Nav Item 2"
                 href="./about"
@@ -152,7 +152,7 @@ window.pageBodyContent = `<script
                     transform: translateY(25px);
                   "
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div style="position: relative; padding: 0px">
                     <p
                       style="
@@ -180,9 +180,9 @@ window.pageBodyContent = `<script
                       About
                     </p>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div></a
-              ><!--/$--><!--$--><a
+              ><!--/\$--><!--\$--><a
                 class="framer-1x3ee9a framer-2ezvwy"
                 data-framer-name="Nav Item 3"
                 href="./work"
@@ -196,7 +196,7 @@ window.pageBodyContent = `<script
                     transform: translateY(25px);
                   "
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div style="position: relative; padding: 0px">
                     <p
                       style="
@@ -224,9 +224,9 @@ window.pageBodyContent = `<script
                       Work
                     </p>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div></a
-              ><!--/$--><!--$-->
+              ><!--/\$--><!--\$-->
               <div
                 class="framer-lnpz0y-container"
                 data-framer-appear-id="lnpz0y"
@@ -236,7 +236,7 @@ window.pageBodyContent = `<script
                   transform: translateY(48px);
                 "
               >
-                <!--$--><a
+                <!--\$--><a
                   class="framer-dpV2b framer-SQg1w framer-mhg6v8 framer-v-mhg6v8 framer-1yum8ak"
                   data-framer-name="Light - Desktop"
                   href="./contact"
@@ -244,7 +244,7 @@ window.pageBodyContent = `<script
                     class="framer-bnwve6-container"
                     data-code-component-plugin-id="84d4c1"
                   >
-                    <!--$-->
+                    <!--\$-->
                     <div
                       style="
                         width: 100%;
@@ -278,7 +278,7 @@ window.pageBodyContent = `<script
                         Let's Talk
                       </p>
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                   <div
                     class="framer-1pzq8pd"
@@ -309,9 +309,9 @@ window.pageBodyContent = `<script
                         border-top-right-radius: 200%;
                       "
                     ></div></div></a
-                ><!--/$-->
+                ><!--/\$-->
               </div>
-              <!--/$-->
+              <!--/\$-->
             </div>
           </div>
         </nav>
@@ -327,7 +327,7 @@ window.pageBodyContent = `<script
             data-framer-name="Container"
             style="background-color: rgba(0, 0, 0, 0)"
           >
-            <!--$--><a
+            <!--\$--><a
               class="framer-igw7l1 framer-2ezvwy"
               data-framer-name="Logo"
               href="./"
@@ -338,7 +338,7 @@ window.pageBodyContent = `<script
                 data-framer-appear-id="14z4ion"
                 style="opacity: 1; transform: none"
               >
-                <!--$-->
+                <!--\$-->
                 <div style="position: relative; padding: 0px">
                   <p
                     style="
@@ -364,9 +364,9 @@ window.pageBodyContent = `<script
                     Slay The Strategy
                   </p>
                 </div>
-                <!--/$-->
+                <!--/\$-->
               </div></a
-            ><!--/$-->
+            ><!--/\$-->
             <div class="framer-1mca7nk" data-framer-name="Nav Menu">
               <div
                 class="framer-1xie2zy-container"
@@ -385,9 +385,9 @@ window.pageBodyContent = `<script
                     style="transform: translateY(-50%)"
                   >
                     <div class="framer-ndd43o-container">
-                      <!--$-->
+                      <!--\$-->
                       <div style="height: 100%; width: 100%"></div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                   </div>
                 </div>
@@ -408,7 +408,7 @@ window.pageBodyContent = `<script
             "
           >
             <nav class="framer-18y87kj" data-framer-name="Menu">
-              <!--$--><a
+              <!--\$--><a
                 class="framer-1yffd7o framer-2ezvwy"
                 data-framer-name="Nav Item 1"
                 href="./"
@@ -417,7 +417,7 @@ window.pageBodyContent = `<script
                   class="framer-hvzfaw-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div style="position: relative; padding: 0px">
                     <p
                       style="
@@ -445,9 +445,9 @@ window.pageBodyContent = `<script
                       Home
                     </p>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div></a
-              ><!--/$--><!--$--><a
+              ><!--/\$--><!--\$--><a
                 class="framer-l6rhbo framer-2ezvwy"
                 data-framer-name="Nav Item 2"
                 href="./about"
@@ -455,7 +455,7 @@ window.pageBodyContent = `<script
                   class="framer-6eqb8n-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div style="position: relative; padding: 0px">
                     <p
                       style="
@@ -483,9 +483,9 @@ window.pageBodyContent = `<script
                       About
                     </p>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div></a
-              ><!--/$--><!--$--><a
+              ><!--/\$--><!--\$--><a
                 class="framer-1weyl1t framer-2ezvwy"
                 data-framer-name="Nav Item 3"
                 href="./work"
@@ -493,7 +493,7 @@ window.pageBodyContent = `<script
                   class="framer-uv41zi-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div style="position: relative; padding: 0px">
                     <p
                       style="
@@ -521,9 +521,9 @@ window.pageBodyContent = `<script
                       Work
                     </p>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div></a
-              ><!--/$-->
+              ><!--/\$-->
             </nav>
           </div>
         </nav>
@@ -539,7 +539,7 @@ window.pageBodyContent = `<script
             data-framer-name="Container"
             style="background-color: rgba(0, 0, 0, 0)"
           >
-            <!--$--><a
+            <!--\$--><a
               class="framer-igw7l1 framer-2ezvwy"
               data-framer-name="Logo"
               href="./"
@@ -550,7 +550,7 @@ window.pageBodyContent = `<script
                 data-framer-appear-id="14z4ion"
                 style="opacity: 1; transform: none"
               >
-                <!--$-->
+                <!--\$-->
                 <div style="position: relative; padding: 0px">
                   <p
                     style="
@@ -576,9 +576,9 @@ window.pageBodyContent = `<script
                     Slay The Strategy
                   </p>
                 </div>
-                <!--/$-->
+                <!--/\$-->
               </div></a
-            ><!--/$-->
+            ><!--/\$-->
             <div class="framer-1mca7nk" data-framer-name="Nav Menu">
               <div
                 class="framer-1xie2zy-container"
@@ -597,9 +597,9 @@ window.pageBodyContent = `<script
                     style="transform: translateY(-50%)"
                   >
                     <div class="framer-ndd43o-container">
-                      <!--$-->
+                      <!--\$-->
                       <div style="height: 100%; width: 100%"></div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                   </div>
                 </div>
@@ -620,7 +620,7 @@ window.pageBodyContent = `<script
             "
           >
             <nav class="framer-18y87kj" data-framer-name="Menu">
-              <!--$--><a
+              <!--\$--><a
                 class="framer-1yffd7o framer-2ezvwy"
                 data-framer-name="Nav Item 1"
                 href="./"
@@ -629,7 +629,7 @@ window.pageBodyContent = `<script
                   class="framer-hvzfaw-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div style="position: relative; padding: 0px">
                     <p
                       style="
@@ -657,9 +657,9 @@ window.pageBodyContent = `<script
                       Home
                     </p>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div></a
-              ><!--/$--><!--$--><a
+              ><!--/\$--><!--\$--><a
                 class="framer-l6rhbo framer-2ezvwy"
                 data-framer-name="Nav Item 2"
                 href="./about"
@@ -667,7 +667,7 @@ window.pageBodyContent = `<script
                   class="framer-6eqb8n-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div style="position: relative; padding: 0px">
                     <p
                       style="
@@ -695,9 +695,9 @@ window.pageBodyContent = `<script
                       About
                     </p>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div></a
-              ><!--/$--><!--$--><a
+              ><!--/\$--><!--\$--><a
                 class="framer-1weyl1t framer-2ezvwy"
                 data-framer-name="Nav Item 3"
                 href="./work"
@@ -705,7 +705,7 @@ window.pageBodyContent = `<script
                   class="framer-uv41zi-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div style="position: relative; padding: 0px">
                     <p
                       style="
@@ -733,9 +733,9 @@ window.pageBodyContent = `<script
                       Work
                     </p>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div></a
-              ><!--/$-->
+              ><!--/\$-->
             </nav>
           </div>
         </nav>
@@ -754,12 +754,12 @@ window.pageBodyContent = `<script
       class="framer-4HuBq framer-IK7pp framer-TtmDT framer-wrKOQ framer-f3amS framer-EjJQy framer-ebYre framer-6iZ85 framer-GJooF framer-72rtr7"
       style="min-height: 100vh; width: auto; display: contents"
     >
-      <div class="framer-cqqghi-container"><!--$--><!--/$--></div>
+      <div class="framer-cqqghi-container"><!--\$--><!--/\$--></div>
       <main class="framer-aicaif" data-framer-name="Main">
         <section class="framer-i2anp5" data-framer-name="Hero" id="hero">
           <div class="framer-exk04c" data-framer-name="Container">
             <div class="framer-13tdywl-container">
-              <!--$-->
+              <!--\$-->
               <div class="ssr-variant hidden-ivbfoe hidden-7idiw1">
                 <h1
                   style="
@@ -910,13 +910,13 @@ window.pageBodyContent = `<script
                   >
                 </h1>
               </div>
-              <!--/$-->
+              <!--/\$-->
             </div>
           </div>
           <div class="framer-1m3za1z" data-framer-name="Text Wrapper">
             <div class="framer-11vah4q" data-framer-name="Title Wrapper">
               <div class="framer-1dvmtm8-container">
-                <!--$-->
+                <!--\$-->
                 <div class="ssr-variant hidden-ivbfoe hidden-7idiw1">
                   <p
                     style="
@@ -2283,7 +2283,7 @@ window.pageBodyContent = `<script
                     >
                   </p>
                 </div>
-                <!--/$-->
+                <!--/\$-->
               </div>
               <div
                 class="framer-1ldw2xb hidden-ivbfoe"
@@ -2331,7 +2331,7 @@ window.pageBodyContent = `<script
             </div>
             <div class="framer-180rogh" data-framer-name="Content Wrapper">
               <div class="framer-1gwwxm8-container">
-                <!--$-->
+                <!--\$-->
                 <div class="ssr-variant hidden-ivbfoe hidden-7idiw1">
                   <p
                     style="
@@ -5354,10 +5354,10 @@ window.pageBodyContent = `<script
                     >
                   </p>
                 </div>
-                <!--/$-->
+                <!--/\$-->
               </div>
               <div class="framer-sf1z6r-container">
-                <!--$-->
+                <!--\$-->
                 <div class="ssr-variant hidden-ivbfoe hidden-7idiw1">
                   <p
                     style="
@@ -8158,12 +8158,12 @@ window.pageBodyContent = `<script
                     >
                   </p>
                 </div>
-                <!--/$-->
+                <!--/\$-->
               </div>
             </div>
           </div>
           <div class="framer-16mrl65-container">
-            <!--$-->
+            <!--\$-->
             <div style="width: 100%; height: 100%; position: relative">
               <div
                 data-us-dpi="1.5"
@@ -8175,7 +8175,7 @@ window.pageBodyContent = `<script
                 style="width: 100%; height: 100%"
               ></div>
             </div>
-            <!--/$-->
+            <!--/\$-->
           </div>
         </section>
         <div class="ssr-variant hidden-ivbfoe hidden-7idiw1">
@@ -8210,7 +8210,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-1u3tvov-container">
-                    <!--$-->
+                    <!--\$-->
                     <h2
                       style="
                         font-family:
@@ -8344,7 +8344,7 @@ window.pageBodyContent = `<script
                         >&nbsp;</span
                       >
                     </h2>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
               </div>
@@ -8353,7 +8353,7 @@ window.pageBodyContent = `<script
                   class="framer-1njuji6-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -8517,13 +8517,13 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-r49xn5-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -8687,13 +8687,13 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-1ux8jq2-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -8857,13 +8857,13 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-199zmxs-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -9027,13 +9027,13 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-68l5mn-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -9197,13 +9197,13 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-1jgt4pw-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -9367,7 +9367,7 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-m0sqdw hidden-ivbfoe"
@@ -9391,7 +9391,7 @@ window.pageBodyContent = `<script
                   class="framer-7uln1-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -9555,7 +9555,7 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-6rpjiw hidden-ivbfoe"
@@ -9579,7 +9579,7 @@ window.pageBodyContent = `<script
                   class="framer-3a91ww-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -9743,7 +9743,7 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-chm7m8 hidden-ivbfoe"
@@ -9876,7 +9876,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-1u3tvov-container">
-                    <!--$-->
+                    <!--\$-->
                     <h2
                       style="
                         font-family:
@@ -10591,7 +10591,7 @@ window.pageBodyContent = `<script
                         >&nbsp;</span
                       >
                     </h2>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
               </div>
@@ -10600,7 +10600,7 @@ window.pageBodyContent = `<script
                   class="framer-1njuji6-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -10764,13 +10764,13 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-r49xn5-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -10934,13 +10934,13 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-1ux8jq2-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -11104,13 +11104,13 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-199zmxs-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -11274,13 +11274,13 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-68l5mn-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -11444,13 +11444,13 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-1jgt4pw-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -11614,7 +11614,7 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-m0sqdw hidden-ivbfoe"
@@ -11638,7 +11638,7 @@ window.pageBodyContent = `<script
                   class="framer-7uln1-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -11802,7 +11802,7 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-6rpjiw hidden-ivbfoe"
@@ -11826,7 +11826,7 @@ window.pageBodyContent = `<script
                   class="framer-3a91ww-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -11990,7 +11990,7 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-chm7m8 hidden-ivbfoe"
@@ -12123,7 +12123,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-1u3tvov-container">
-                    <!--$-->
+                    <!--\$-->
                     <h2
                       style="
                         font-family:
@@ -12836,7 +12836,7 @@ window.pageBodyContent = `<script
                         >&nbsp;</span
                       >
                     </h2>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
               </div>
@@ -12845,7 +12845,7 @@ window.pageBodyContent = `<script
                   class="framer-1njuji6-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -13009,13 +13009,13 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-r49xn5-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -13179,13 +13179,13 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-1ux8jq2-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -13349,13 +13349,13 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-199zmxs-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -13519,13 +13519,13 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-68l5mn-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -13689,13 +13689,13 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-1jgt4pw-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -13859,7 +13859,7 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-m0sqdw hidden-ivbfoe"
@@ -13883,7 +13883,7 @@ window.pageBodyContent = `<script
                   class="framer-7uln1-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -14047,7 +14047,7 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-6rpjiw hidden-ivbfoe"
@@ -14071,7 +14071,7 @@ window.pageBodyContent = `<script
                   class="framer-3a91ww-container"
                   data-code-component-plugin-id="84d4c1"
                 >
-                  <!--$-->
+                  <!--\$-->
                   <div
                     style="
                       height: 100%;
@@ -14235,7 +14235,7 @@ window.pageBodyContent = `<script
                       </div>
                     </div>
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-chm7m8 hidden-ivbfoe"
@@ -14353,7 +14353,7 @@ window.pageBodyContent = `<script
           >
             <div class="framer-1wof6rk" data-framer-name="Container">
               <div class="framer-1juymhg-container">
-                <!--$-->
+                <!--\$-->
                 <h2
                   style="
                     font-family:
@@ -14392,7 +14392,7 @@ window.pageBodyContent = `<script
                     >&nbsp;</span
                   >
                 </h2>
-                <!--/$-->
+                <!--/\$-->
               </div>
               <div class="framer-15qn2bx" data-framer-name="Works Wrapper">
                 <div
@@ -14400,11 +14400,11 @@ window.pageBodyContent = `<script
                   data-framer-name="Empty"
                 ></div>
                 <div class="framer-1xev7rv">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-18boopn">
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-151sg5m-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-z7YbQ framer-6TODW framer-wrKOQ framer-l7hy5n framer-v-l7hy5n framer-1gh6uyc"
                         data-framer-name="Default"
                         data-highlight="true"
@@ -14681,11 +14681,11 @@ window.pageBodyContent = `<script
                               />
                             </div>
                           </div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-1jov148 hidden-7idiw1 hidden-ivbfoe"
@@ -14696,11 +14696,11 @@ window.pageBodyContent = `<script
                   data-framer-name="Empty"
                 ></div>
                 <div class="framer-k0amzw">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-xxfqyp">
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-1xves5b-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-z7YbQ framer-6TODW framer-wrKOQ framer-l7hy5n framer-v-l7hy5n framer-1gh6uyc"
                         data-framer-name="Default"
                         data-highlight="true"
@@ -14977,11 +14977,11 @@ window.pageBodyContent = `<script
                               />
                             </div>
                           </div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-fz051e hidden-7idiw1 hidden-ivbfoe"
@@ -14992,11 +14992,11 @@ window.pageBodyContent = `<script
                   data-framer-name="Empty"
                 ></div>
                 <div class="framer-1cr29rt">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-agqoxm">
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-hixvmi-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-z7YbQ framer-6TODW framer-wrKOQ framer-l7hy5n framer-v-l7hy5n framer-1gh6uyc"
                         data-framer-name="Default"
                         data-highlight="true"
@@ -15273,22 +15273,22 @@ window.pageBodyContent = `<script
                               />
                             </div>
                           </div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-nbhptk hidden-7idiw1 hidden-ivbfoe"
                   data-framer-name="Empty"
                 ></div>
                 <div class="framer-y0b54r">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-vpy2p3">
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-1tho4mb-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-z7YbQ framer-6TODW framer-wrKOQ framer-l7hy5n framer-v-l7hy5n framer-1gh6uyc"
                         data-framer-name="Default"
                         data-highlight="true"
@@ -15565,11 +15565,11 @@ window.pageBodyContent = `<script
                               />
                             </div>
                           </div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-1f512xp hidden-7idiw1 hidden-ivbfoe"
@@ -15580,11 +15580,11 @@ window.pageBodyContent = `<script
                   data-framer-name="Empty"
                 ></div>
                 <div class="framer-1nplvp4">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-s8v8uu">
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-16b8yf2-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-z7YbQ framer-6TODW framer-wrKOQ framer-l7hy5n framer-v-l7hy5n framer-1gh6uyc"
                         data-framer-name="Default"
                         data-highlight="true"
@@ -15861,11 +15861,11 @@ window.pageBodyContent = `<script
                               />
                             </div>
                           </div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
               </div>
             </div>
@@ -15880,7 +15880,7 @@ window.pageBodyContent = `<script
           >
             <div class="framer-1wof6rk" data-framer-name="Container">
               <div class="framer-1juymhg-container">
-                <!--$-->
+                <!--\$-->
                 <h2
                   style="
                     font-family:
@@ -15919,7 +15919,7 @@ window.pageBodyContent = `<script
                     >&nbsp;</span
                   >
                 </h2>
-                <!--/$-->
+                <!--/\$-->
               </div>
               <div class="framer-15qn2bx" data-framer-name="Works Wrapper">
                 <div
@@ -15927,11 +15927,11 @@ window.pageBodyContent = `<script
                   data-framer-name="Empty"
                 ></div>
                 <div class="framer-1xev7rv">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-18boopn">
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-151sg5m-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-z7YbQ framer-6TODW framer-wrKOQ framer-l7hy5n framer-v-ftnf64 framer-1gh6uyc"
                         data-framer-name="Phone"
                         href="./work/vertex"
@@ -16108,11 +16108,11 @@ window.pageBodyContent = `<script
                               />
                             </div>
                           </div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-1jov148 hidden-7idiw1 hidden-ivbfoe"
@@ -16123,11 +16123,11 @@ window.pageBodyContent = `<script
                   data-framer-name="Empty"
                 ></div>
                 <div class="framer-k0amzw">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-xxfqyp">
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-1xves5b-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-z7YbQ framer-6TODW framer-wrKOQ framer-l7hy5n framer-v-ftnf64 framer-1gh6uyc"
                         data-framer-name="Phone"
                         href="./work/aether"
@@ -16304,11 +16304,11 @@ window.pageBodyContent = `<script
                               />
                             </div>
                           </div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-fz051e hidden-7idiw1 hidden-ivbfoe"
@@ -16319,11 +16319,11 @@ window.pageBodyContent = `<script
                   data-framer-name="Empty"
                 ></div>
                 <div class="framer-1cr29rt">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-agqoxm">
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-hixvmi-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-z7YbQ framer-6TODW framer-wrKOQ framer-l7hy5n framer-v-ftnf64 framer-1gh6uyc"
                         data-framer-name="Phone"
                         href="./work/atlas"
@@ -16500,22 +16500,22 @@ window.pageBodyContent = `<script
                               />
                             </div>
                           </div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-nbhptk hidden-7idiw1 hidden-ivbfoe"
                   data-framer-name="Empty"
                 ></div>
                 <div class="framer-y0b54r">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-vpy2p3">
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-1tho4mb-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-z7YbQ framer-6TODW framer-wrKOQ framer-l7hy5n framer-v-ftnf64 framer-1gh6uyc"
                         data-framer-name="Phone"
                         href="./work/nova"
@@ -16692,11 +16692,11 @@ window.pageBodyContent = `<script
                               />
                             </div>
                           </div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-1f512xp hidden-7idiw1 hidden-ivbfoe"
@@ -16707,11 +16707,11 @@ window.pageBodyContent = `<script
                   data-framer-name="Empty"
                 ></div>
                 <div class="framer-1nplvp4">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-s8v8uu">
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-16b8yf2-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-z7YbQ framer-6TODW framer-wrKOQ framer-l7hy5n framer-v-ftnf64 framer-1gh6uyc"
                         data-framer-name="Phone"
                         href="./work/pulse"
@@ -16888,11 +16888,11 @@ window.pageBodyContent = `<script
                               />
                             </div>
                           </div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
               </div>
             </div>
@@ -16907,7 +16907,7 @@ window.pageBodyContent = `<script
           >
             <div class="framer-1wof6rk" data-framer-name="Container">
               <div class="framer-1juymhg-container">
-                <!--$-->
+                <!--\$-->
                 <h2
                   style="
                     font-family:
@@ -16946,7 +16946,7 @@ window.pageBodyContent = `<script
                     >&nbsp;</span
                   >
                 </h2>
-                <!--/$-->
+                <!--/\$-->
               </div>
               <div class="framer-15qn2bx" data-framer-name="Works Wrapper">
                 <div
@@ -16954,11 +16954,11 @@ window.pageBodyContent = `<script
                   data-framer-name="Empty"
                 ></div>
                 <div class="framer-1xev7rv">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-18boopn">
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-151sg5m-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-z7YbQ framer-6TODW framer-wrKOQ framer-l7hy5n framer-v-l7hy5n framer-1gh6uyc"
                         data-framer-name="Default"
                         data-highlight="true"
@@ -17235,11 +17235,11 @@ window.pageBodyContent = `<script
                               />
                             </div>
                           </div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-1jov148 hidden-7idiw1 hidden-ivbfoe"
@@ -17250,11 +17250,11 @@ window.pageBodyContent = `<script
                   data-framer-name="Empty"
                 ></div>
                 <div class="framer-k0amzw">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-xxfqyp">
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-1xves5b-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-z7YbQ framer-6TODW framer-wrKOQ framer-l7hy5n framer-v-l7hy5n framer-1gh6uyc"
                         data-framer-name="Default"
                         data-highlight="true"
@@ -17531,11 +17531,11 @@ window.pageBodyContent = `<script
                               />
                             </div>
                           </div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-fz051e hidden-7idiw1 hidden-ivbfoe"
@@ -17546,11 +17546,11 @@ window.pageBodyContent = `<script
                   data-framer-name="Empty"
                 ></div>
                 <div class="framer-1cr29rt">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-agqoxm">
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-hixvmi-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-z7YbQ framer-6TODW framer-wrKOQ framer-l7hy5n framer-v-l7hy5n framer-1gh6uyc"
                         data-framer-name="Default"
                         data-highlight="true"
@@ -17827,22 +17827,22 @@ window.pageBodyContent = `<script
                               />
                             </div>
                           </div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-nbhptk hidden-7idiw1 hidden-ivbfoe"
                   data-framer-name="Empty"
                 ></div>
                 <div class="framer-y0b54r">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-vpy2p3">
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-1tho4mb-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-z7YbQ framer-6TODW framer-wrKOQ framer-l7hy5n framer-v-l7hy5n framer-1gh6uyc"
                         data-framer-name="Default"
                         data-highlight="true"
@@ -18119,11 +18119,11 @@ window.pageBodyContent = `<script
                               />
                             </div>
                           </div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div
                   class="framer-1f512xp hidden-7idiw1 hidden-ivbfoe"
@@ -18134,11 +18134,11 @@ window.pageBodyContent = `<script
                   data-framer-name="Empty"
                 ></div>
                 <div class="framer-1nplvp4">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-s8v8uu">
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-16b8yf2-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-z7YbQ framer-6TODW framer-wrKOQ framer-l7hy5n framer-v-l7hy5n framer-1gh6uyc"
                         data-framer-name="Default"
                         data-highlight="true"
@@ -18415,11 +18415,11 @@ window.pageBodyContent = `<script
                               />
                             </div>
                           </div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
               </div>
             </div>
@@ -18453,7 +18453,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-1enug1h-container">
-                    <!--$-->
+                    <!--\$-->
                     <h2
                       style="
                         font-family:
@@ -18524,7 +18524,7 @@ window.pageBodyContent = `<script
                         >&nbsp;</span
                       >
                     </h2>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
               </div>
@@ -18828,7 +18828,7 @@ window.pageBodyContent = `<script
                       />
                     </div>
                   </div>
-                  <!--$--><a
+                  <!--\$--><a
                     class="framer-icduyd framer-lux5qc"
                     data-framer-name="Button"
                     href="./about"
@@ -18837,7 +18837,7 @@ window.pageBodyContent = `<script
                       class="framer-qocpwq-container hidden-ivbfoe"
                       data-code-component-plugin-id="84d4c1"
                     >
-                      <!--$-->
+                      <!--\$-->
                       <div
                         style="
                           width: 100%;
@@ -18871,7 +18871,7 @@ window.pageBodyContent = `<script
                           Inside Slay The Strategy
                         </p>
                       </div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                     <div
                       class="framer-1vh4rat hidden-72rtr7 hidden-7idiw1"
@@ -18893,7 +18893,7 @@ window.pageBodyContent = `<script
                         Inside Slay The Strategy
                       </h5>
                     </div></a
-                  ><!--/$-->
+                  ><!--/\$-->
                 </div>
                 <div class="framer-h0eeur" data-framer-name="Card">
                   <div
@@ -18942,7 +18942,7 @@ window.pageBodyContent = `<script
                       />
                     </div>
                   </div>
-                  <!--$--><a
+                  <!--\$--><a
                     class="framer-1svty61 framer-lux5qc"
                     data-framer-name="Button"
                     href="./contact"
@@ -18951,7 +18951,7 @@ window.pageBodyContent = `<script
                       class="framer-1e3dzuw-container hidden-ivbfoe"
                       data-code-component-plugin-id="84d4c1"
                     >
-                      <!--$-->
+                      <!--\$-->
                       <div
                         style="
                           width: 100%;
@@ -18985,7 +18985,7 @@ window.pageBodyContent = `<script
                           Get in touch
                         </p>
                       </div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                     <div
                       class="framer-1ym61ls hidden-72rtr7 hidden-7idiw1"
@@ -19007,7 +19007,7 @@ window.pageBodyContent = `<script
                         Get in touch
                       </h5>
                     </div></a
-                  ><!--/$-->
+                  ><!--/\$-->
                 </div>
               </div>
             </div>
@@ -19037,7 +19037,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-1enug1h-container">
-                    <!--$-->
+                    <!--\$-->
                     <h2
                       style="
                         font-family:
@@ -19108,7 +19108,7 @@ window.pageBodyContent = `<script
                         >&nbsp;</span
                       >
                     </h2>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
               </div>
@@ -19412,7 +19412,7 @@ window.pageBodyContent = `<script
                       />
                     </div>
                   </div>
-                  <!--$--><a
+                  <!--\$--><a
                     class="framer-icduyd framer-lux5qc"
                     data-framer-name="Button"
                     href="./about"
@@ -19421,7 +19421,7 @@ window.pageBodyContent = `<script
                       class="framer-qocpwq-container hidden-ivbfoe"
                       data-code-component-plugin-id="84d4c1"
                     >
-                      <!--$-->
+                      <!--\$-->
                       <div
                         style="
                           width: 100%;
@@ -19455,7 +19455,7 @@ window.pageBodyContent = `<script
                           Inside Slay The Strategy
                         </p>
                       </div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                     <div
                       class="framer-1vh4rat hidden-72rtr7 hidden-7idiw1"
@@ -19477,7 +19477,7 @@ window.pageBodyContent = `<script
                         Inside Slay The Strategy
                       </h5>
                     </div></a
-                  ><!--/$-->
+                  ><!--/\$-->
                 </div>
                 <div class="framer-h0eeur" data-framer-name="Card">
                   <div
@@ -19526,7 +19526,7 @@ window.pageBodyContent = `<script
                       />
                     </div>
                   </div>
-                  <!--$--><a
+                  <!--\$--><a
                     class="framer-1svty61 framer-lux5qc"
                     data-framer-name="Button"
                     href="./contact"
@@ -19535,7 +19535,7 @@ window.pageBodyContent = `<script
                       class="framer-1e3dzuw-container hidden-ivbfoe"
                       data-code-component-plugin-id="84d4c1"
                     >
-                      <!--$-->
+                      <!--\$-->
                       <div
                         style="
                           width: 100%;
@@ -19569,7 +19569,7 @@ window.pageBodyContent = `<script
                           Get in touch
                         </p>
                       </div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                     <div
                       class="framer-1ym61ls hidden-72rtr7 hidden-7idiw1"
@@ -19591,7 +19591,7 @@ window.pageBodyContent = `<script
                         Get in touch
                       </h5>
                     </div></a
-                  ><!--/$-->
+                  ><!--/\$-->
                 </div>
               </div>
             </div>
@@ -19621,7 +19621,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-1enug1h-container">
-                    <!--$-->
+                    <!--\$-->
                     <h2
                       style="
                         font-family:
@@ -19690,7 +19690,7 @@ window.pageBodyContent = `<script
                         >&nbsp;</span
                       >
                     </h2>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
               </div>
@@ -19994,7 +19994,7 @@ window.pageBodyContent = `<script
                       />
                     </div>
                   </div>
-                  <!--$--><a
+                  <!--\$--><a
                     class="framer-icduyd framer-lux5qc"
                     data-framer-name="Button"
                     href="./about"
@@ -20003,7 +20003,7 @@ window.pageBodyContent = `<script
                       class="framer-qocpwq-container hidden-ivbfoe"
                       data-code-component-plugin-id="84d4c1"
                     >
-                      <!--$-->
+                      <!--\$-->
                       <div
                         style="
                           width: 100%;
@@ -20037,7 +20037,7 @@ window.pageBodyContent = `<script
                           Inside Slay The Strategy
                         </p>
                       </div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                     <div
                       class="framer-1vh4rat hidden-72rtr7 hidden-7idiw1"
@@ -20059,7 +20059,7 @@ window.pageBodyContent = `<script
                         Inside Slay The Strategy
                       </h5>
                     </div></a
-                  ><!--/$-->
+                  ><!--/\$-->
                 </div>
                 <div class="framer-h0eeur" data-framer-name="Card">
                   <div
@@ -20108,7 +20108,7 @@ window.pageBodyContent = `<script
                       />
                     </div>
                   </div>
-                  <!--$--><a
+                  <!--\$--><a
                     class="framer-1svty61 framer-lux5qc"
                     data-framer-name="Button"
                     href="./contact"
@@ -20117,7 +20117,7 @@ window.pageBodyContent = `<script
                       class="framer-1e3dzuw-container hidden-ivbfoe"
                       data-code-component-plugin-id="84d4c1"
                     >
-                      <!--$-->
+                      <!--\$-->
                       <div
                         style="
                           width: 100%;
@@ -20151,7 +20151,7 @@ window.pageBodyContent = `<script
                           Get in touch
                         </p>
                       </div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                     <div
                       class="framer-1ym61ls hidden-72rtr7 hidden-7idiw1"
@@ -20173,7 +20173,7 @@ window.pageBodyContent = `<script
                         Get in touch
                       </h5>
                     </div></a
-                  ><!--/$-->
+                  ><!--/\$-->
                 </div>
               </div>
             </div>
@@ -20192,7 +20192,7 @@ window.pageBodyContent = `<script
           >
             <div class="framer-5zhtoi" data-framer-name="Container">
               <div class="framer-w8t72p-container">
-                <!--$-->
+                <!--\$-->
                 <h2
                   style="
                     font-family:
@@ -20259,7 +20259,7 @@ window.pageBodyContent = `<script
                     >&nbsp;</span
                   >
                 </h2>
-                <!--/$-->
+                <!--/\$-->
               </div>
               <div class="framer-1kvqvhn" data-framer-name="Wrapper">
                 <div
@@ -21926,7 +21926,7 @@ window.pageBodyContent = `<script
           >
             <div class="framer-5zhtoi" data-framer-name="Container">
               <div class="framer-w8t72p-container">
-                <!--$-->
+                <!--\$-->
                 <h2
                   style="
                     font-family:
@@ -21993,7 +21993,7 @@ window.pageBodyContent = `<script
                     >&nbsp;</span
                   >
                 </h2>
-                <!--/$-->
+                <!--/\$-->
               </div>
               <div class="framer-1kvqvhn" data-framer-name="Wrapper">
                 <div
@@ -23660,7 +23660,7 @@ window.pageBodyContent = `<script
           >
             <div class="framer-5zhtoi" data-framer-name="Container">
               <div class="framer-w8t72p-container">
-                <!--$-->
+                <!--\$-->
                 <h2
                   style="
                     font-family:
@@ -23727,7 +23727,7 @@ window.pageBodyContent = `<script
                     >&nbsp;</span
                   >
                 </h2>
-                <!--/$-->
+                <!--/\$-->
               </div>
               <div class="framer-1kvqvhn" data-framer-name="Wrapper">
                 <div
@@ -25404,7 +25404,7 @@ window.pageBodyContent = `<script
                       class="framer-tdq0a5-container hidden-7idiw1 hidden-ivbfoe"
                       style="opacity: 1; transform: none"
                     >
-                      <!--$-->
+                      <!--\$-->
                       <div
                         style="
                           display: inline-flex;
@@ -25496,13 +25496,13 @@ window.pageBodyContent = `<script
                           ></span>
                         </p>
                       </div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                     <div
                       class="framer-19d24tk-container hidden-ivbfoe"
                       style="opacity: 1; transform: none"
                     >
-                      <!--$-->
+                      <!--\$-->
                       <div
                         style="
                           display: inline-flex;
@@ -26017,7 +26017,7 @@ window.pageBodyContent = `<script
                           >
                         </h2>
                       </div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                     <div
                       class="framer-102sr7h hidden-72rtr7"
@@ -26064,7 +26064,7 @@ window.pageBodyContent = `<script
                         class="framer-yaw28t-container hidden-7idiw1 hidden-ivbfoe"
                         style="opacity: 1; transform: none"
                       >
-                        <!--$-->
+                        <!--\$-->
                         <div
                           style="
                             display: inline-flex;
@@ -26501,13 +26501,13 @@ window.pageBodyContent = `<script
                             >
                           </p>
                         </div>
-                        <!--/$-->
+                        <!--/\$-->
                       </div>
                       <div
                         class="framer-6ls2kx-container hidden-7idiw1 hidden-ivbfoe"
                         style="opacity: 1; transform: none"
                       >
-                        <!--$-->
+                        <!--\$-->
                         <div
                           style="
                             display: inline-flex;
@@ -28550,13 +28550,13 @@ window.pageBodyContent = `<script
                             >
                           </p>
                         </div>
-                        <!--/$-->
+                        <!--/\$-->
                       </div>
                       <div
                         class="framer-126vp0a-container hidden-7idiw1 hidden-ivbfoe"
                         style="opacity: 1; transform: none"
                       >
-                        <!--$-->
+                        <!--\$-->
                         <div
                           style="
                             display: inline-flex;
@@ -29501,7 +29501,7 @@ window.pageBodyContent = `<script
                             >
                           </p>
                         </div>
-                        <!--/$-->
+                        <!--/\$-->
                       </div>
                       <div
                         class="framer-749z4 hidden-72rtr7"
@@ -29565,7 +29565,7 @@ window.pageBodyContent = `<script
                         </p>
                       </div>
                     </div>
-                    <!--$-->
+                    <!--\$-->
                     <div
                       class="framer-1hepyw5-container"
                       style="
@@ -29574,7 +29574,7 @@ window.pageBodyContent = `<script
                         transform: translateY(10px);
                       "
                     >
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-dpV2b framer-SQg1w framer-mhg6v8 framer-v-mhg6v8 framer-1yum8ak"
                         data-framer-name="Light - Desktop"
                         href="./contact"
@@ -29583,7 +29583,7 @@ window.pageBodyContent = `<script
                           class="framer-bnwve6-container"
                           data-code-component-plugin-id="84d4c1"
                         >
-                          <!--$-->
+                          <!--\$-->
                           <div
                             style="
                               width: 100%;
@@ -29617,7 +29617,7 @@ window.pageBodyContent = `<script
                               Contact us
                             </p>
                           </div>
-                          <!--/$-->
+                          <!--/\$-->
                         </div>
                         <div
                           class="framer-1pzq8pd"
@@ -29648,9 +29648,9 @@ window.pageBodyContent = `<script
                               border-top-right-radius: 200%;
                             "
                           ></div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
               </div>
@@ -29750,7 +29750,7 @@ window.pageBodyContent = `<script
                       class="framer-tdq0a5-container hidden-7idiw1 hidden-ivbfoe"
                       style="opacity: 1; transform: none"
                     >
-                      <!--$-->
+                      <!--\$-->
                       <div
                         style="
                           display: inline-flex;
@@ -29842,13 +29842,13 @@ window.pageBodyContent = `<script
                           ></span>
                         </p>
                       </div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                     <div
                       class="framer-19d24tk-container hidden-ivbfoe"
                       style="opacity: 1; transform: none"
                     >
-                      <!--$-->
+                      <!--\$-->
                       <div
                         style="
                           display: inline-flex;
@@ -30363,7 +30363,7 @@ window.pageBodyContent = `<script
                           >
                         </h2>
                       </div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                     <div
                       class="framer-102sr7h hidden-72rtr7"
@@ -30410,7 +30410,7 @@ window.pageBodyContent = `<script
                         class="framer-yaw28t-container hidden-7idiw1 hidden-ivbfoe"
                         style="opacity: 1; transform: none"
                       >
-                        <!--$-->
+                        <!--\$-->
                         <div
                           style="
                             display: inline-flex;
@@ -30847,13 +30847,13 @@ window.pageBodyContent = `<script
                             >
                           </p>
                         </div>
-                        <!--/$-->
+                        <!--/\$-->
                       </div>
                       <div
                         class="framer-6ls2kx-container hidden-7idiw1 hidden-ivbfoe"
                         style="opacity: 1; transform: none"
                       >
-                        <!--$-->
+                        <!--\$-->
                         <div
                           style="
                             display: inline-flex;
@@ -32896,13 +32896,13 @@ window.pageBodyContent = `<script
                             >
                           </p>
                         </div>
-                        <!--/$-->
+                        <!--/\$-->
                       </div>
                       <div
                         class="framer-126vp0a-container hidden-7idiw1 hidden-ivbfoe"
                         style="opacity: 1; transform: none"
                       >
-                        <!--$-->
+                        <!--\$-->
                         <div
                           style="
                             display: inline-flex;
@@ -33847,7 +33847,7 @@ window.pageBodyContent = `<script
                             >
                           </p>
                         </div>
-                        <!--/$-->
+                        <!--/\$-->
                       </div>
                       <div
                         class="framer-749z4 hidden-72rtr7"
@@ -33911,7 +33911,7 @@ window.pageBodyContent = `<script
                         </p>
                       </div>
                     </div>
-                    <!--$-->
+                    <!--\$-->
                     <div
                       class="framer-1hepyw5-container"
                       style="
@@ -33920,7 +33920,7 @@ window.pageBodyContent = `<script
                         transform: translateY(10px);
                       "
                     >
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-dpV2b framer-SQg1w framer-mhg6v8 framer-v-ja7wy8 framer-1yum8ak"
                         data-framer-name="Light - Phone"
                         href="./contact"
@@ -33976,9 +33976,9 @@ window.pageBodyContent = `<script
                               border-top-right-radius: 200%;
                             "
                           ></div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
               </div>
@@ -34078,7 +34078,7 @@ window.pageBodyContent = `<script
                       class="framer-tdq0a5-container hidden-7idiw1 hidden-ivbfoe"
                       style="opacity: 1; transform: none"
                     >
-                      <!--$-->
+                      <!--\$-->
                       <div
                         style="
                           display: inline-flex;
@@ -34170,13 +34170,13 @@ window.pageBodyContent = `<script
                           ></span>
                         </p>
                       </div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                     <div
                       class="framer-19d24tk-container hidden-ivbfoe"
                       style="opacity: 1; transform: none"
                     >
-                      <!--$-->
+                      <!--\$-->
                       <div
                         style="
                           display: inline-flex;
@@ -34691,7 +34691,7 @@ window.pageBodyContent = `<script
                           >
                         </h2>
                       </div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                     <div
                       class="framer-102sr7h hidden-72rtr7"
@@ -34738,7 +34738,7 @@ window.pageBodyContent = `<script
                         class="framer-yaw28t-container hidden-7idiw1 hidden-ivbfoe"
                         style="opacity: 1; transform: none"
                       >
-                        <!--$-->
+                        <!--\$-->
                         <div
                           style="
                             display: inline-flex;
@@ -35175,13 +35175,13 @@ window.pageBodyContent = `<script
                             >
                           </p>
                         </div>
-                        <!--/$-->
+                        <!--/\$-->
                       </div>
                       <div
                         class="framer-6ls2kx-container hidden-7idiw1 hidden-ivbfoe"
                         style="opacity: 1; transform: none"
                       >
-                        <!--$-->
+                        <!--\$-->
                         <div
                           style="
                             display: inline-flex;
@@ -37224,13 +37224,13 @@ window.pageBodyContent = `<script
                             >
                           </p>
                         </div>
-                        <!--/$-->
+                        <!--/\$-->
                       </div>
                       <div
                         class="framer-126vp0a-container hidden-7idiw1 hidden-ivbfoe"
                         style="opacity: 1; transform: none"
                       >
-                        <!--$-->
+                        <!--\$-->
                         <div
                           style="
                             display: inline-flex;
@@ -38175,7 +38175,7 @@ window.pageBodyContent = `<script
                             >
                           </p>
                         </div>
-                        <!--/$-->
+                        <!--/\$-->
                       </div>
                       <div
                         class="framer-749z4 hidden-72rtr7"
@@ -38239,7 +38239,7 @@ window.pageBodyContent = `<script
                         </p>
                       </div>
                     </div>
-                    <!--$-->
+                    <!--\$-->
                     <div
                       class="framer-1hepyw5-container"
                       style="
@@ -38248,7 +38248,7 @@ window.pageBodyContent = `<script
                         transform: translateY(10px);
                       "
                     >
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-dpV2b framer-SQg1w framer-mhg6v8 framer-v-mhg6v8 framer-1yum8ak"
                         data-framer-name="Light - Desktop"
                         href="./contact"
@@ -38257,7 +38257,7 @@ window.pageBodyContent = `<script
                           class="framer-bnwve6-container"
                           data-code-component-plugin-id="84d4c1"
                         >
-                          <!--$-->
+                          <!--\$-->
                           <div
                             style="
                               width: 100%;
@@ -38291,7 +38291,7 @@ window.pageBodyContent = `<script
                               Contact us
                             </p>
                           </div>
-                          <!--/$-->
+                          <!--/\$-->
                         </div>
                         <div
                           class="framer-1pzq8pd"
@@ -38322,9 +38322,9 @@ window.pageBodyContent = `<script
                               border-top-right-radius: 200%;
                             "
                           ></div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
               </div>
@@ -38427,7 +38427,7 @@ window.pageBodyContent = `<script
               <div class="framer-zzijlk" data-framer-name="Container">
                 <div class="framer-18kf5r5" data-framer-name="Heading Wrapper">
                   <div class="framer-mh591z-container">
-                    <!--$-->
+                    <!--\$-->
                     <h2
                       style="
                         font-family:
@@ -38465,7 +38465,7 @@ window.pageBodyContent = `<script
                         >&nbsp;</span
                       >
                     </h2>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
                 <div class="framer-pa1mqj" data-framer-name="Wrapper">
@@ -38590,7 +38590,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -38616,7 +38616,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -38739,7 +38739,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -38765,7 +38765,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -38888,7 +38888,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -38914,7 +38914,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -39037,7 +39037,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -39063,7 +39063,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -39185,7 +39185,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -39211,7 +39211,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -39334,7 +39334,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -39360,7 +39360,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -39483,7 +39483,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -39509,7 +39509,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                 </div>
@@ -39571,7 +39571,7 @@ window.pageBodyContent = `<script
               <div class="framer-zzijlk" data-framer-name="Container">
                 <div class="framer-18kf5r5" data-framer-name="Heading Wrapper">
                   <div class="framer-mh591z-container">
-                    <!--$-->
+                    <!--\$-->
                     <h2
                       style="
                         font-family:
@@ -39609,7 +39609,7 @@ window.pageBodyContent = `<script
                         >&nbsp;</span
                       >
                     </h2>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
                 <div class="framer-pa1mqj" data-framer-name="Wrapper">
@@ -39734,7 +39734,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -39760,7 +39760,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -39883,7 +39883,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -39909,7 +39909,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -40032,7 +40032,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -40058,7 +40058,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -40181,7 +40181,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -40207,7 +40207,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -40329,7 +40329,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -40355,7 +40355,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -40478,7 +40478,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -40504,7 +40504,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -40627,7 +40627,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -40653,7 +40653,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                 </div>
@@ -40715,7 +40715,7 @@ window.pageBodyContent = `<script
               <div class="framer-zzijlk" data-framer-name="Container">
                 <div class="framer-18kf5r5" data-framer-name="Heading Wrapper">
                   <div class="framer-mh591z-container">
-                    <!--$-->
+                    <!--\$-->
                     <h2
                       style="
                         font-family:
@@ -40751,7 +40751,7 @@ window.pageBodyContent = `<script
                         >&nbsp;</span
                       >
                     </h2>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
                 <div class="framer-pa1mqj" data-framer-name="Wrapper">
@@ -40876,7 +40876,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -40902,7 +40902,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -41025,7 +41025,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -41051,7 +41051,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -41174,7 +41174,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -41200,7 +41200,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -41323,7 +41323,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -41349,7 +41349,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -41471,7 +41471,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -41497,7 +41497,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -41620,7 +41620,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -41646,7 +41646,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                   <div
@@ -41769,7 +41769,7 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-4fnm48 framer-e900r4"
                         data-framer-name="Icon Wrapper"
                         href="https://x.com"
@@ -41795,7 +41795,7 @@ window.pageBodyContent = `<script
                             transform: translate(-50%, -50%);
                           "
                         ></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
                   </div>
                 </div>
@@ -41871,7 +41871,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-1rffvqf-container">
-                    <!--$-->
+                    <!--\$-->
                     <h2
                       style="
                         font-family:
@@ -41907,7 +41907,7 @@ window.pageBodyContent = `<script
                         >&nbsp;</span
                       >
                     </h2>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
                 <div class="framer-ew08aa" data-framer-name="Text Wrapper">
@@ -41915,7 +41915,7 @@ window.pageBodyContent = `<script
                     class="framer-z79yrm-container"
                     data-code-component-plugin-id="84d4c1"
                   >
-                    <!--$-->
+                    <!--\$-->
                     <p
                       style="
                         width: 100%;
@@ -41951,7 +41951,7 @@ window.pageBodyContent = `<script
                         grow.</span
                       >
                     </p>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
               </div>
@@ -42551,7 +42551,7 @@ window.pageBodyContent = `<script
                                   );
                                 "
                               >
-                                $4,250 – $6,800
+                                \$4,250 – \$6,800
                               </p>
                             </div>
                             <div
@@ -42623,7 +42623,7 @@ window.pageBodyContent = `<script
                                   );
                                 "
                               >
-                                $3,150 – $4,800
+                                \$3,150 – \$4,800
                               </p>
                             </div>
                             <div
@@ -42666,9 +42666,9 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$-->
+                      <!--\$-->
                       <div class="framer-wgxzf4-container">
-                        <!--$--><a
+                        <!--\$--><a
                           class="framer-dpV2b framer-SQg1w framer-mhg6v8 framer-v-mhg6v8 framer-1yum8ak"
                           data-framer-name="Light - Desktop"
                           href="./contact"
@@ -42677,7 +42677,7 @@ window.pageBodyContent = `<script
                             class="framer-bnwve6-container"
                             data-code-component-plugin-id="84d4c1"
                           >
-                            <!--$-->
+                            <!--\$-->
                             <div
                               style="
                                 width: 100%;
@@ -42711,7 +42711,7 @@ window.pageBodyContent = `<script
                                 Get Started
                               </p>
                             </div>
-                            <!--/$-->
+                            <!--/\$-->
                           </div>
                           <div
                             class="framer-1pzq8pd"
@@ -42742,9 +42742,9 @@ window.pageBodyContent = `<script
                                 border-top-right-radius: 200%;
                               "
                             ></div></div></a
-                        ><!--/$-->
+                        ><!--/\$-->
                       </div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                   </div>
                   <div class="framer-30bjch" data-framer-name="Pricing Card">
@@ -43083,14 +43083,14 @@ window.pageBodyContent = `<script
                             data-styles-preset="w5Mp3X4nG"
                             dir="auto"
                           >
-                            $7,500
+                            \$7,500
                           </p>
                         </div>
                       </div>
                     </div>
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-cvflg-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-dpV2b framer-SQg1w framer-mhg6v8 framer-v-mhg6v8 framer-1yum8ak"
                         data-framer-name="Light - Desktop"
                         href="./contact"
@@ -43099,7 +43099,7 @@ window.pageBodyContent = `<script
                           class="framer-bnwve6-container"
                           data-code-component-plugin-id="84d4c1"
                         >
-                          <!--$-->
+                          <!--\$-->
                           <div
                             style="
                               width: 100%;
@@ -43133,7 +43133,7 @@ window.pageBodyContent = `<script
                               Get Started
                             </p>
                           </div>
-                          <!--/$-->
+                          <!--/\$-->
                         </div>
                         <div
                           class="framer-1pzq8pd"
@@ -43164,9 +43164,9 @@ window.pageBodyContent = `<script
                               border-top-right-radius: 200%;
                             "
                           ></div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
                 <div class="framer-4rzex" data-framer-name="Trusted by">
@@ -43418,7 +43418,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-1rffvqf-container">
-                    <!--$-->
+                    <!--\$-->
                     <h2
                       style="
                         font-family:
@@ -43456,7 +43456,7 @@ window.pageBodyContent = `<script
                         >&nbsp;</span
                       >
                     </h2>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
                 <div class="framer-ew08aa" data-framer-name="Text Wrapper">
@@ -43464,7 +43464,7 @@ window.pageBodyContent = `<script
                     class="framer-z79yrm-container"
                     data-code-component-plugin-id="84d4c1"
                   >
-                    <!--$-->
+                    <!--\$-->
                     <p
                       style="
                         width: 100%;
@@ -43500,7 +43500,7 @@ window.pageBodyContent = `<script
                         grow.</span
                       >
                     </p>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
               </div>
@@ -44100,7 +44100,7 @@ window.pageBodyContent = `<script
                                   );
                                 "
                               >
-                                $4,250 – $6,800
+                                \$4,250 – \$6,800
                               </p>
                             </div>
                             <div
@@ -44172,7 +44172,7 @@ window.pageBodyContent = `<script
                                   );
                                 "
                               >
-                                $3,150 – $4,800
+                                \$3,150 – \$4,800
                               </p>
                             </div>
                             <div
@@ -44215,9 +44215,9 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$-->
+                      <!--\$-->
                       <div class="framer-wgxzf4-container">
-                        <!--$--><a
+                        <!--\$--><a
                           class="framer-dpV2b framer-SQg1w framer-mhg6v8 framer-v-ja7wy8 framer-1yum8ak"
                           data-framer-name="Light - Phone"
                           href="./contact"
@@ -44273,9 +44273,9 @@ window.pageBodyContent = `<script
                                 border-top-right-radius: 200%;
                               "
                             ></div></div></a
-                        ><!--/$-->
+                        ><!--/\$-->
                       </div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                   </div>
                   <div class="framer-30bjch" data-framer-name="Pricing Card">
@@ -44614,14 +44614,14 @@ window.pageBodyContent = `<script
                             data-styles-preset="w5Mp3X4nG"
                             dir="auto"
                           >
-                            $7,500
+                            \$7,500
                           </p>
                         </div>
                       </div>
                     </div>
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-cvflg-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-dpV2b framer-SQg1w framer-mhg6v8 framer-v-ja7wy8 framer-1yum8ak"
                         data-framer-name="Light - Phone"
                         href="./contact"
@@ -44677,9 +44677,9 @@ window.pageBodyContent = `<script
                               border-top-right-radius: 200%;
                             "
                           ></div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
                 <div class="framer-4rzex" data-framer-name="Trusted by">
@@ -44931,7 +44931,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-1rffvqf-container">
-                    <!--$-->
+                    <!--\$-->
                     <h2
                       style="
                         font-family:
@@ -44967,7 +44967,7 @@ window.pageBodyContent = `<script
                         >&nbsp;</span
                       >
                     </h2>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
                 <div class="framer-ew08aa" data-framer-name="Text Wrapper">
@@ -44975,7 +44975,7 @@ window.pageBodyContent = `<script
                     class="framer-z79yrm-container"
                     data-code-component-plugin-id="84d4c1"
                   >
-                    <!--$-->
+                    <!--\$-->
                     <p
                       style="
                         width: 100%;
@@ -45011,7 +45011,7 @@ window.pageBodyContent = `<script
                         grow.</span
                       >
                     </p>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
               </div>
@@ -45611,7 +45611,7 @@ window.pageBodyContent = `<script
                                   );
                                 "
                               >
-                                $4,250 – $6,800
+                                \$4,250 – \$6,800
                               </p>
                             </div>
                             <div
@@ -45683,7 +45683,7 @@ window.pageBodyContent = `<script
                                   );
                                 "
                               >
-                                $3,150 – $4,800
+                                \$3,150 – \$4,800
                               </p>
                             </div>
                             <div
@@ -45726,9 +45726,9 @@ window.pageBodyContent = `<script
                           </div>
                         </div>
                       </div>
-                      <!--$-->
+                      <!--\$-->
                       <div class="framer-wgxzf4-container">
-                        <!--$--><a
+                        <!--\$--><a
                           class="framer-dpV2b framer-SQg1w framer-mhg6v8 framer-v-mhg6v8 framer-1yum8ak"
                           data-framer-name="Light - Desktop"
                           href="./contact"
@@ -45737,7 +45737,7 @@ window.pageBodyContent = `<script
                             class="framer-bnwve6-container"
                             data-code-component-plugin-id="84d4c1"
                           >
-                            <!--$-->
+                            <!--\$-->
                             <div
                               style="
                                 width: 100%;
@@ -45771,7 +45771,7 @@ window.pageBodyContent = `<script
                                 Get Started
                               </p>
                             </div>
-                            <!--/$-->
+                            <!--/\$-->
                           </div>
                           <div
                             class="framer-1pzq8pd"
@@ -45802,9 +45802,9 @@ window.pageBodyContent = `<script
                                 border-top-right-radius: 200%;
                               "
                             ></div></div></a
-                        ><!--/$-->
+                        ><!--/\$-->
                       </div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                   </div>
                   <div class="framer-30bjch" data-framer-name="Pricing Card">
@@ -46143,14 +46143,14 @@ window.pageBodyContent = `<script
                             data-styles-preset="w5Mp3X4nG"
                             dir="auto"
                           >
-                            $7,500
+                            \$7,500
                           </p>
                         </div>
                       </div>
                     </div>
-                    <!--$-->
+                    <!--\$-->
                     <div class="framer-cvflg-container">
-                      <!--$--><a
+                      <!--\$--><a
                         class="framer-dpV2b framer-SQg1w framer-mhg6v8 framer-v-mhg6v8 framer-1yum8ak"
                         data-framer-name="Light - Desktop"
                         href="./contact"
@@ -46159,7 +46159,7 @@ window.pageBodyContent = `<script
                           class="framer-bnwve6-container"
                           data-code-component-plugin-id="84d4c1"
                         >
-                          <!--$-->
+                          <!--\$-->
                           <div
                             style="
                               width: 100%;
@@ -46193,7 +46193,7 @@ window.pageBodyContent = `<script
                               Get Started
                             </p>
                           </div>
-                          <!--/$-->
+                          <!--/\$-->
                         </div>
                         <div
                           class="framer-1pzq8pd"
@@ -46224,9 +46224,9 @@ window.pageBodyContent = `<script
                               border-top-right-radius: 200%;
                             "
                           ></div></div></a
-                      ><!--/$-->
+                      ><!--/\$-->
                     </div>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
                 <div class="framer-4rzex" data-framer-name="Trusted by">
@@ -46481,7 +46481,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-tvwclo-container">
-                    <!--$-->
+                    <!--\$-->
                     <h2
                       style="
                         font-family:
@@ -46519,7 +46519,7 @@ window.pageBodyContent = `<script
                         >&nbsp;</span
                       >
                     </h2>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
                 <div
@@ -46530,9 +46530,9 @@ window.pageBodyContent = `<script
                   class="framer-ixnb6n hidden-7idiw1 hidden-ivbfoe"
                   data-framer-name="Empty"
                 ></div>
-                <!--$-->
+                <!--\$-->
                 <div class="framer-1k18zqr-container">
-                  <!--$--><a
+                  <!--\$--><a
                     class="framer-dpV2b framer-SQg1w framer-mhg6v8 framer-v-mhg6v8 framer-1yum8ak"
                     data-framer-name="Light - Desktop"
                     href="./news"
@@ -46540,7 +46540,7 @@ window.pageBodyContent = `<script
                       class="framer-bnwve6-container"
                       data-code-component-plugin-id="84d4c1"
                     >
-                      <!--$-->
+                      <!--\$-->
                       <div
                         style="
                           width: 100%;
@@ -46574,7 +46574,7 @@ window.pageBodyContent = `<script
                           View all
                         </p>
                       </div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                     <div
                       class="framer-1pzq8pd"
@@ -46605,16 +46605,16 @@ window.pageBodyContent = `<script
                           border-top-right-radius: 200%;
                         "
                       ></div></div></a
-                  ><!--/$-->
+                  ><!--/\$-->
                 </div>
-                <!--/$-->
+                <!--/\$-->
               </div>
               <div class="framer-1oxeebj">
-                <!--$-->
+                <!--\$-->
                 <div class="framer-10wgriq">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-yqhw22-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-cx42l framer-TtmDT framer-pnvwdl framer-v-pnvwdl framer-159k2q6"
                       data-framer-name="Desktop"
                       href="./news/how-great-design-drives-perception-and-growth"
@@ -46736,14 +46736,14 @@ window.pageBodyContent = `<script
                           </h5>
                         </div>
                       </div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div class="framer-10wgriq">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-yqhw22-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-cx42l framer-TtmDT framer-pnvwdl framer-v-pnvwdl framer-159k2q6"
                       data-framer-name="Desktop"
                       href="./news/why-clarity-is-the-foundation-of-modern-brands"
@@ -46865,14 +46865,14 @@ window.pageBodyContent = `<script
                           </h5>
                         </div>
                       </div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div class="framer-10wgriq">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-yqhw22-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-cx42l framer-TtmDT framer-pnvwdl framer-v-pnvwdl framer-159k2q6"
                       data-framer-name="Desktop"
                       href="./news/designing-digital-systems-that-scale-with-intention"
@@ -46994,11 +46994,11 @@ window.pageBodyContent = `<script
                           </h5>
                         </div>
                       </div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
-                <!--/$-->
+                <!--/\$-->
               </div>
             </div>
           </section>
@@ -47026,7 +47026,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-tvwclo-container">
-                    <!--$-->
+                    <!--\$-->
                     <h2
                       style="
                         font-family:
@@ -47064,7 +47064,7 @@ window.pageBodyContent = `<script
                         >&nbsp;</span
                       >
                     </h2>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
                 <div
@@ -47075,9 +47075,9 @@ window.pageBodyContent = `<script
                   class="framer-ixnb6n hidden-7idiw1 hidden-ivbfoe"
                   data-framer-name="Empty"
                 ></div>
-                <!--$-->
+                <!--\$-->
                 <div class="framer-1k18zqr-container">
-                  <!--$--><a
+                  <!--\$--><a
                     class="framer-dpV2b framer-SQg1w framer-mhg6v8 framer-v-ja7wy8 framer-1yum8ak"
                     data-framer-name="Light - Phone"
                     href="./news"
@@ -47129,16 +47129,16 @@ window.pageBodyContent = `<script
                           border-top-right-radius: 200%;
                         "
                       ></div></div></a
-                  ><!--/$-->
+                  ><!--/\$-->
                 </div>
-                <!--/$-->
+                <!--/\$-->
               </div>
               <div class="framer-1oxeebj">
-                <!--$-->
+                <!--\$-->
                 <div class="framer-10wgriq">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-yqhw22-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-cx42l framer-TtmDT framer-pnvwdl framer-v-1385y7o framer-159k2q6"
                       data-framer-name="Phone"
                       href="./news/how-great-design-drives-perception-and-growth"
@@ -47260,14 +47260,14 @@ window.pageBodyContent = `<script
                           </h5>
                         </div>
                       </div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div class="framer-10wgriq">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-yqhw22-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-cx42l framer-TtmDT framer-pnvwdl framer-v-1385y7o framer-159k2q6"
                       data-framer-name="Phone"
                       href="./news/why-clarity-is-the-foundation-of-modern-brands"
@@ -47389,14 +47389,14 @@ window.pageBodyContent = `<script
                           </h5>
                         </div>
                       </div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div class="framer-10wgriq">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-yqhw22-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-cx42l framer-TtmDT framer-pnvwdl framer-v-1385y7o framer-159k2q6"
                       data-framer-name="Phone"
                       href="./news/designing-digital-systems-that-scale-with-intention"
@@ -47518,11 +47518,11 @@ window.pageBodyContent = `<script
                           </h5>
                         </div>
                       </div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
-                <!--/$-->
+                <!--/\$-->
               </div>
             </div>
           </section>
@@ -47550,7 +47550,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-tvwclo-container">
-                    <!--$-->
+                    <!--\$-->
                     <h2
                       style="
                         font-family:
@@ -47586,7 +47586,7 @@ window.pageBodyContent = `<script
                         >&nbsp;</span
                       >
                     </h2>
-                    <!--/$-->
+                    <!--/\$-->
                   </div>
                 </div>
                 <div
@@ -47597,9 +47597,9 @@ window.pageBodyContent = `<script
                   class="framer-ixnb6n hidden-7idiw1 hidden-ivbfoe"
                   data-framer-name="Empty"
                 ></div>
-                <!--$-->
+                <!--\$-->
                 <div class="framer-1k18zqr-container">
-                  <!--$--><a
+                  <!--\$--><a
                     class="framer-dpV2b framer-SQg1w framer-mhg6v8 framer-v-mhg6v8 framer-1yum8ak"
                     data-framer-name="Light - Desktop"
                     href="./news"
@@ -47607,7 +47607,7 @@ window.pageBodyContent = `<script
                       class="framer-bnwve6-container"
                       data-code-component-plugin-id="84d4c1"
                     >
-                      <!--$-->
+                      <!--\$-->
                       <div
                         style="
                           width: 100%;
@@ -47641,7 +47641,7 @@ window.pageBodyContent = `<script
                           View all
                         </p>
                       </div>
-                      <!--/$-->
+                      <!--/\$-->
                     </div>
                     <div
                       class="framer-1pzq8pd"
@@ -47672,16 +47672,16 @@ window.pageBodyContent = `<script
                           border-top-right-radius: 200%;
                         "
                       ></div></div></a
-                  ><!--/$-->
+                  ><!--/\$-->
                 </div>
-                <!--/$-->
+                <!--/\$-->
               </div>
               <div class="framer-1oxeebj">
-                <!--$-->
+                <!--\$-->
                 <div class="framer-10wgriq">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-yqhw22-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-cx42l framer-TtmDT framer-pnvwdl framer-v-pnvwdl framer-159k2q6"
                       data-framer-name="Desktop"
                       href="./news/how-great-design-drives-perception-and-growth"
@@ -47803,14 +47803,14 @@ window.pageBodyContent = `<script
                           </h5>
                         </div>
                       </div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div class="framer-10wgriq">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-yqhw22-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-cx42l framer-TtmDT framer-pnvwdl framer-v-pnvwdl framer-159k2q6"
                       data-framer-name="Desktop"
                       href="./news/why-clarity-is-the-foundation-of-modern-brands"
@@ -47932,14 +47932,14 @@ window.pageBodyContent = `<script
                           </h5>
                         </div>
                       </div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div class="framer-10wgriq">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-yqhw22-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-cx42l framer-TtmDT framer-pnvwdl framer-v-pnvwdl framer-159k2q6"
                       data-framer-name="Desktop"
                       href="./news/designing-digital-systems-that-scale-with-intention"
@@ -48061,11 +48061,11 @@ window.pageBodyContent = `<script
                           </h5>
                         </div>
                       </div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
-                <!--/$-->
+                <!--/\$-->
               </div>
             </div>
           </section>
@@ -48194,7 +48194,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-1cx0h33-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-9daau2 framer-z33bh2"
                       data-framer-name="Desktop"
                       href="mailto:hello@omnera.com"
@@ -48247,7 +48247,7 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
                 </div>
                 <div class="framer-d9hokq" data-framer-name="Newsletter">
@@ -48544,22 +48544,22 @@ window.pageBodyContent = `<script
                     "
                   >
                     © Copyright
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-text framer-styles-preset-1kj9m9v"
                       data-styles-preset="LevgjJxmB"
                       href="https://www.flowmance.com/"
                       target="_blank"
                       rel="noopener"
                       >Flowmance</a
-                    ><!--/$-->&nbsp;powered by Framer
+                    ><!--/\$-->&nbsp;powered by Framer
                   </p>
                 </div>
               </div>
               <div class="framer-1xoa7p9" data-framer-name="Right Content">
                 <div class="framer-1btu5lk" data-framer-name="Links">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-1b50662-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-9daau2 framer-z33bh2"
                       data-framer-name="Desktop"
                       href="./"
@@ -48612,11 +48612,11 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$--><!--$-->
+                  <!--/\$--><!--\$-->
                   <div class="framer-1an51y6-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-9daau2 framer-z33bh2"
                       data-framer-name="Desktop"
                       href="./about"
@@ -48668,11 +48668,11 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$--><!--$-->
+                  <!--/\$--><!--\$-->
                   <div class="framer-1qsjqtj-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-9daau2 framer-z33bh2"
                       data-framer-name="Desktop"
                       href="./work"
@@ -48724,11 +48724,11 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$--><!--$-->
+                  <!--/\$--><!--\$-->
                   <div class="framer-1nq7vgu-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-9daau2 framer-z33bh2"
                       data-framer-name="Desktop"
                       href="./news"
@@ -48780,11 +48780,11 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$--><!--$-->
+                  <!--/\$--><!--\$-->
                   <div class="framer-18judq9-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-9daau2 framer-z33bh2"
                       data-framer-name="Desktop"
                       href="./contact"
@@ -48836,13 +48836,13 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div class="framer-ux0qok" data-framer-name="Socials">
                   <div class="framer-ilqezk-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-OvScZ framer-1lzgxyh framer-v-1lzgxyh framer-7uuncv"
                       data-framer-name="Desktop"
                       href="https://x.com"
@@ -48871,10 +48871,10 @@ window.pageBodyContent = `<script
                           transform: translate(-50%, -50%);
                         "
                       ></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
                   <div class="framer-1syfhev-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-OvScZ framer-1lzgxyh framer-v-1lzgxyh framer-7uuncv"
                       data-framer-name="Desktop"
                       href="https://instagram.com"
@@ -48903,10 +48903,10 @@ window.pageBodyContent = `<script
                           transform: translate(-50%, -50%);
                         "
                       ></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
                   <div class="framer-1wkuptz-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-OvScZ framer-1lzgxyh framer-v-1lzgxyh framer-7uuncv"
                       data-framer-name="Desktop"
                       href="https://linkedin.com"
@@ -48935,7 +48935,7 @@ window.pageBodyContent = `<script
                           transform: translate(-50%, -50%);
                         "
                       ></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
                 </div>
                 <div class="framer-oesbze" data-framer-name="Email">
@@ -49047,7 +49047,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-f5et7m-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-9daau2 framer-z33bh2"
                       data-framer-name="Desktop"
                       href="tel:(+1) 930 046 720"
@@ -49100,7 +49100,7 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
                 </div>
               </div>
@@ -49265,7 +49265,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-1cx0h33-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-3bns8x framer-z33bh2"
                       data-framer-name="Phone"
                       href="mailto:hello@omnera.com"
@@ -49318,7 +49318,7 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
                 </div>
                 <div class="framer-d9hokq" data-framer-name="Newsletter">
@@ -49615,22 +49615,22 @@ window.pageBodyContent = `<script
                     "
                   >
                     © Copyright
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-text framer-styles-preset-1kj9m9v"
                       data-styles-preset="LevgjJxmB"
                       href="https://www.flowmance.com/"
                       target="_blank"
                       rel="noopener"
                       >Flowmance</a
-                    ><!--/$-->&nbsp;powered by Framer
+                    ><!--/\$-->&nbsp;powered by Framer
                   </p>
                 </div>
               </div>
               <div class="framer-1xoa7p9" data-framer-name="Right Content">
                 <div class="framer-1btu5lk" data-framer-name="Links">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-1b50662-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-3bns8x framer-z33bh2"
                       data-framer-name="Phone"
                       href="./"
@@ -49683,11 +49683,11 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$--><!--$-->
+                  <!--/\$--><!--\$-->
                   <div class="framer-1an51y6-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-3bns8x framer-z33bh2"
                       data-framer-name="Phone"
                       href="./about"
@@ -49739,11 +49739,11 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$--><!--$-->
+                  <!--/\$--><!--\$-->
                   <div class="framer-1qsjqtj-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-3bns8x framer-z33bh2"
                       data-framer-name="Phone"
                       href="./work"
@@ -49795,11 +49795,11 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$--><!--$-->
+                  <!--/\$--><!--\$-->
                   <div class="framer-1nq7vgu-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-3bns8x framer-z33bh2"
                       data-framer-name="Phone"
                       href="./news"
@@ -49851,11 +49851,11 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$--><!--$-->
+                  <!--/\$--><!--\$-->
                   <div class="framer-18judq9-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-3bns8x framer-z33bh2"
                       data-framer-name="Phone"
                       href="./contact"
@@ -49907,13 +49907,13 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div class="framer-ux0qok" data-framer-name="Socials">
                   <div class="framer-ilqezk-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-OvScZ framer-1lzgxyh framer-v-1i2x0en framer-7uuncv"
                       data-framer-name="Phone"
                       href="https://x.com"
@@ -49942,10 +49942,10 @@ window.pageBodyContent = `<script
                           transform: translate(-50%, -50%);
                         "
                       ></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
                   <div class="framer-1syfhev-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-OvScZ framer-1lzgxyh framer-v-1i2x0en framer-7uuncv"
                       data-framer-name="Phone"
                       href="https://instagram.com"
@@ -49974,10 +49974,10 @@ window.pageBodyContent = `<script
                           transform: translate(-50%, -50%);
                         "
                       ></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
                   <div class="framer-1wkuptz-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-OvScZ framer-1lzgxyh framer-v-1i2x0en framer-7uuncv"
                       data-framer-name="Phone"
                       href="https://linkedin.com"
@@ -50006,7 +50006,7 @@ window.pageBodyContent = `<script
                           transform: translate(-50%, -50%);
                         "
                       ></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
                 </div>
                 <div class="framer-oesbze" data-framer-name="Email">
@@ -50118,7 +50118,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-f5et7m-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-3bns8x framer-z33bh2"
                       data-framer-name="Phone"
                       href="tel:(+1) 930 046 720"
@@ -50171,7 +50171,7 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
                 </div>
               </div>
@@ -50336,7 +50336,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-1cx0h33-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-9daau2 framer-z33bh2"
                       data-framer-name="Desktop"
                       href="mailto:hello@omnera.com"
@@ -50389,7 +50389,7 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
                 </div>
                 <div class="framer-d9hokq" data-framer-name="Newsletter">
@@ -50686,22 +50686,22 @@ window.pageBodyContent = `<script
                     "
                   >
                     © Copyright
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-text framer-styles-preset-1kj9m9v"
                       data-styles-preset="LevgjJxmB"
                       href="https://www.flowmance.com/"
                       target="_blank"
                       rel="noopener"
                       >Flowmance</a
-                    ><!--/$-->&nbsp;powered by Framer
+                    ><!--/\$-->&nbsp;powered by Framer
                   </p>
                 </div>
               </div>
               <div class="framer-1xoa7p9" data-framer-name="Right Content">
                 <div class="framer-1btu5lk" data-framer-name="Links">
-                  <!--$-->
+                  <!--\$-->
                   <div class="framer-1b50662-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-9daau2 framer-z33bh2"
                       data-framer-name="Desktop"
                       href="./"
@@ -50754,11 +50754,11 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$--><!--$-->
+                  <!--/\$--><!--\$-->
                   <div class="framer-1an51y6-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-9daau2 framer-z33bh2"
                       data-framer-name="Desktop"
                       href="./about"
@@ -50810,11 +50810,11 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$--><!--$-->
+                  <!--/\$--><!--\$-->
                   <div class="framer-1qsjqtj-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-9daau2 framer-z33bh2"
                       data-framer-name="Desktop"
                       href="./work"
@@ -50866,11 +50866,11 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$--><!--$-->
+                  <!--/\$--><!--\$-->
                   <div class="framer-1nq7vgu-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-9daau2 framer-z33bh2"
                       data-framer-name="Desktop"
                       href="./news"
@@ -50922,11 +50922,11 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$--><!--$-->
+                  <!--/\$--><!--\$-->
                   <div class="framer-18judq9-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-9daau2 framer-z33bh2"
                       data-framer-name="Desktop"
                       href="./contact"
@@ -50978,13 +50978,13 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
-                  <!--/$-->
+                  <!--/\$-->
                 </div>
                 <div class="framer-ux0qok" data-framer-name="Socials">
                   <div class="framer-ilqezk-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-OvScZ framer-1lzgxyh framer-v-1lzgxyh framer-7uuncv"
                       data-framer-name="Desktop"
                       href="https://x.com"
@@ -51013,10 +51013,10 @@ window.pageBodyContent = `<script
                           transform: translate(-50%, -50%);
                         "
                       ></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
                   <div class="framer-1syfhev-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-OvScZ framer-1lzgxyh framer-v-1lzgxyh framer-7uuncv"
                       data-framer-name="Desktop"
                       href="https://instagram.com"
@@ -51045,10 +51045,10 @@ window.pageBodyContent = `<script
                           transform: translate(-50%, -50%);
                         "
                       ></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
                   <div class="framer-1wkuptz-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-OvScZ framer-1lzgxyh framer-v-1lzgxyh framer-7uuncv"
                       data-framer-name="Desktop"
                       href="https://linkedin.com"
@@ -51077,7 +51077,7 @@ window.pageBodyContent = `<script
                           transform: translate(-50%, -50%);
                         "
                       ></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
                 </div>
                 <div class="framer-oesbze" data-framer-name="Email">
@@ -51189,7 +51189,7 @@ window.pageBodyContent = `<script
                     </p>
                   </div>
                   <div class="framer-f5et7m-container">
-                    <!--$--><a
+                    <!--\$--><a
                       class="framer-GJ5Yx framer-4ocri framer-9daau2 framer-v-9daau2 framer-z33bh2"
                       data-framer-name="Desktop"
                       href="tel:(+1) 930 046 720"
@@ -51242,7 +51242,7 @@ window.pageBodyContent = `<script
                             );
                           "
                         ></div></div></a
-                    ><!--/$-->
+                    ><!--/\$-->
                   </div>
                 </div>
               </div>
@@ -51345,16 +51345,16 @@ window.pageBodyContent = `<script
               "
             ></div>
           </div>
-          <!--/$-->
+          <!--/\$-->
         </div></a
-      ><!--/$-->
+      ><!--/\$-->
     </div>
     <div
       class="framer-45rxis-container"
       data-framer-appear-id="45rxis"
       style="opacity: 0.001; transform: none"
     >
-      <!--$--><!--$--><a
+      <!--\$--><!--\$--><a
         class="framer-0Fd6a framer-132yh2n framer-v-132yh2n framer-2muf5s"
         data-border="true"
         data-framer-name="Button"
@@ -51446,7 +51446,7 @@ window.pageBodyContent = `<script
                     );
                   "
                 >
-                  Buy Template — $39
+                  Buy Template — \$39
                 </div>
               </div>
             </div>
@@ -51497,11 +51497,11 @@ window.pageBodyContent = `<script
             border-top-right-radius: 100px;
           "
         ></div></a
-      ><!--/$--><!--/$-->
+      ><!--/\$--><!--/\$-->
     </div>
   </div>
   <div id="template-overlay"></div>
-  <!--/$--><!--/$-->
+  <!--/\$--><!--/\$-->
 </div>
 <script>
   (() => {
@@ -51601,7 +51601,7 @@ window.pageBodyContent = `<script
 </script>
 
 <!-- Removed Badge -->
-      <!--$-->
+      <!--\$-->
       <p style="position: absolute; transform: scale(0.001)">
         Create a free website with Framer, the website builder loved by
         startups, designers and agencies.
@@ -51611,7 +51611,7 @@ window.pageBodyContent = `<script
         class="framer-g7oZR framer-1um7t9d"
         style="--1bd4d3i: rgb(0, 0, 0); --otdjsv: rgb(0, 0, 0)"
       ></div>
-      <!--/$-->
+      <!--/\$-->
     </div>
     <div
       class="framer-j4ugry"
@@ -51649,7 +51649,7 @@ window.pageBodyContent = `<script
         opacity: 0.04;
       "
     ></div></a
-  ><!--/$--><!--/$--><!--/$-->
+  ><!--/\$--><!--/\$--><!--/\$-->
 </div>
 <script>
   var animator = (() => {
@@ -51665,7 +51665,7 @@ window.pageBodyContent = `<script
     var J = (e) => Array.isArray(e) && typeof e[0] == "number";
     var ee = { value: null, addProjectionMetrics: null };
     var re = { layout: 0, mainThread: 0, waapi: 0 };
-    var $ = (e, r, t = 10) => {
+    var \$ = (e, r, t = 10) => {
       let o = "",
         s = Math.max(Math.round(r / t), 2);
       for (let i = 0; i < s; i++)
@@ -51877,7 +51877,7 @@ window.pageBodyContent = `<script
         },
         toString: () => {
           let l = Math.min(j(Z), 2e4),
-            T = $((V) => Z.next(l * V).value, l, 30);
+            T = \$((V) => Z.next(l * V).value, l, 30);
           return l + "ms " + T;
         },
         toTransition: () => {},
@@ -51944,7 +51944,7 @@ window.pageBodyContent = `<script
       if (e)
         return typeof e == "function"
           ? be()
-            ? $(e, r)
+            ? \$(e, r)
             : "ease-out"
           : J(e)
             ? C(e)
@@ -52107,7 +52107,7 @@ window.pageBodyContent = `<script
         z: "translateZ",
         transformPerspective: "perspective",
       },
-      $e = {
+      \$e = {
         translateX: "px",
         translateY: "px",
         translateZ: "px",
@@ -52121,7 +52121,7 @@ window.pageBodyContent = `<script
         rotateY: "deg",
       };
     function Ve(e, r) {
-      let t = $e[e];
+      let t = \$e[e];
       return !t || (typeof r == "string" && r.endsWith(t)) ? r : \`\${r}\${t}\`;
     }
     function xe(e) {
@@ -52492,7 +52492,7 @@ window.pageBodyContent = `<script
   src="https://framerusercontent.com/sites/3PPgNeSnDzjOGtco1CpDmV/script_main.BOTh8kLw.mjs"
 ></script>
 <script type="framer/handover" id="__framer__handoverData">
-  [{"0":1,"1":174},["Map",2,3,42,43,70,71,96,97,122,123,148,149],"{\\"from\\":\\"0a1bb352-ded4-4798-bf5f-02a4db733aa9\\",\\"limit\\":{\\"type\\":\\"LiteralValue\\",\\"value\\":3},\\"select\\":[{\\"collection\\":\\"nfGdk5XBL\\",\\"name\\":\\"rm5PlWMCY\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"nfGdk5XBL\\",\\"name\\":\\"dbStpq3Qm\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"nfGdk5XBL\\",\\"name\\":\\"Re9muAIh6\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"nfGdk5XBL\\",\\"name\\":\\"id\\",\\"type\\":\\"Identifier\\"}]}default",[4,20,31],{"rm5PlWMCY":5,"dbStpq3Qm":13,"Re9muAIh6":16,"id":18},{"type":6,"value":7},"responsiveimage",{"src":8,"srcSet":9,"pixelWidth":10,"pixelHeight":11,"alt":12},"https://framerusercontent.com/images/DL994ipyrTIcgnmOaxrkpBmDfsM.png?width=2000&height=1333","https://framerusercontent.com/images/DL994ipyrTIcgnmOaxrkpBmDfsM.png?scale-down-to=512&width=2000&height=1333 512w,https://framerusercontent.com/images/DL994ipyrTIcgnmOaxrkpBmDfsM.png?scale-down-to=1024&width=2000&height=1333 1024w,https://framerusercontent.com/images/DL994ipyrTIcgnmOaxrkpBmDfsM.png?width=2000&height=1333 2000w",2000,1333,"Cover Image",{"type":14,"value":15},"string","How great design drives perception and growth",{"type":14,"value":17},"how-great-design-drives-perception-and-growth",{"type":14,"value":19},"n8cd3v532",{"rm5PlWMCY":21,"dbStpq3Qm":25,"Re9muAIh6":27,"id":29},{"type":6,"value":22},{"src":23,"srcSet":24,"pixelWidth":10,"pixelHeight":11,"alt":12},"https://framerusercontent.com/images/4CqljEsEr9QpsbQxnpClCqZoiBk.png?width=2000&height=1333","https://framerusercontent.com/images/4CqljEsEr9QpsbQxnpClCqZoiBk.png?scale-down-to=512&width=2000&height=1333 512w,https://framerusercontent.com/images/4CqljEsEr9QpsbQxnpClCqZoiBk.png?scale-down-to=1024&width=2000&height=1333 1024w,https://framerusercontent.com/images/4CqljEsEr9QpsbQxnpClCqZoiBk.png?width=2000&height=1333 2000w",{"type":14,"value":26},"Why clarity is the foundation of modern brands",{"type":14,"value":28},"why-clarity-is-the-foundation-of-modern-brands",{"type":14,"value":30},"R8eRsGbPf",{"rm5PlWMCY":32,"dbStpq3Qm":36,"Re9muAIh6":38,"id":40},{"type":6,"value":33},{"src":34,"srcSet":35,"pixelWidth":10,"pixelHeight":11,"alt":12},"https://framerusercontent.com/images/kXzp9AQMamtZCOBZ2Eh77Rr91AM.png?width=2000&height=1333","https://framerusercontent.com/images/kXzp9AQMamtZCOBZ2Eh77Rr91AM.png?scale-down-to=512&width=2000&height=1333 512w,https://framerusercontent.com/images/kXzp9AQMamtZCOBZ2Eh77Rr91AM.png?scale-down-to=1024&width=2000&height=1333 1024w,https://framerusercontent.com/images/kXzp9AQMamtZCOBZ2Eh77Rr91AM.png?width=2000&height=1333 2000w",{"type":14,"value":37},"Designing digital systems that scale with intention",{"type":14,"value":39},"designing-digital-systems-that-scale-with-intention",{"type":14,"value":41},"vyKJclRXB","{\\"from\\":\\"619b5609-281f-4723-9596-5b9c9341b996\\",\\"limit\\":{\\"type\\":\\"LiteralValue\\",\\"value\\":1},\\"offset\\":{\\"type\\":\\"LiteralValue\\",\\"value\\":3},\\"select\\":[{\\"collection\\":\\"z3I7_iITm\\",\\"name\\":\\"abBbIejoX\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"z3I7_iITm\\",\\"name\\":\\"mJQmbKa99\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"z3I7_iITm\\",\\"name\\":\\"QxV6fIjfn\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"z3I7_iITm\\",\\"name\\":\\"lgzelf9ze\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"z3I7_iITm\\",\\"name\\":\\"OyY146xWe\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"z3I7_iITm\\",\\"name\\":\\"sbiAQUjbe\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"z3I7_iITm\\",\\"name\\":\\"id\\",\\"type\\":\\"Identifier\\"}]}default",[44],{"abBbIejoX":45,"mJQmbKa99":47,"QxV6fIjfn":49,"lgzelf9ze":56,"OyY146xWe":61,"sbiAQUjbe":66,"id":68},{"type":14,"value":46},"Vertex",{"type":14,"value":48},"Technical Consulting · SEO Foundations",{"type":6,"value":50},{"src":51,"srcSet":52,"pixelWidth":53,"pixelHeight":54,"alt":55},"https://framerusercontent.com/images/ymC1BOjovVZzi63gYowVmVi5w.png?width=2400&height=1600","https://framerusercontent.com/images/ymC1BOjovVZzi63gYowVmVi5w.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/ymC1BOjovVZzi63gYowVmVi5w.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/ymC1BOjovVZzi63gYowVmVi5w.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/ymC1BOjovVZzi63gYowVmVi5w.png?width=2400&height=1600 2400w",2400,1600,"Thumbnail of Vertex",{"type":6,"value":57},{"src":58,"srcSet":59,"pixelWidth":53,"pixelHeight":54,"alt":60},"https://framerusercontent.com/images/CClaOUoHCVnVJMtgpehVG4TPEA.png?width=2400&height=1600","https://framerusercontent.com/images/CClaOUoHCVnVJMtgpehVG4TPEA.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/CClaOUoHCVnVJMtgpehVG4TPEA.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/CClaOUoHCVnVJMtgpehVG4TPEA.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/CClaOUoHCVnVJMtgpehVG4TPEA.png?width=2400&height=1600 2400w","Preview 1 of Vertex",{"type":6,"value":62},{"src":63,"srcSet":64,"pixelWidth":53,"pixelHeight":54,"alt":65},"https://framerusercontent.com/images/A7mxDc4HvFyQwrIkisaKI6vS2Rc.png?width=2400&height=1600","https://framerusercontent.com/images/A7mxDc4HvFyQwrIkisaKI6vS2Rc.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/A7mxDc4HvFyQwrIkisaKI6vS2Rc.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/A7mxDc4HvFyQwrIkisaKI6vS2Rc.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/A7mxDc4HvFyQwrIkisaKI6vS2Rc.png?width=2400&height=1600 2400w","Preview 2 of Vertex",{"type":14,"value":67},"vertex",{"type":14,"value":69},"dt58WghbV","{\\"from\\":\\"619b5609-281f-4723-9596-5b9c9341b996\\",\\"limit\\":{\\"type\\":\\"LiteralValue\\",\\"value\\":1},\\"offset\\":{\\"type\\":\\"LiteralValue\\",\\"value\\":1},\\"select\\":[{\\"collection\\":\\"xVzvIBGvF\\",\\"name\\":\\"abBbIejoX\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"xVzvIBGvF\\",\\"name\\":\\"mJQmbKa99\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"xVzvIBGvF\\",\\"name\\":\\"QxV6fIjfn\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"xVzvIBGvF\\",\\"name\\":\\"lgzelf9ze\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"xVzvIBGvF\\",\\"name\\":\\"OyY146xWe\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"xVzvIBGvF\\",\\"name\\":\\"sbiAQUjbe\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"xVzvIBGvF\\",\\"name\\":\\"id\\",\\"type\\":\\"Identifier\\"}]}default",[72],{"abBbIejoX":73,"mJQmbKa99":75,"QxV6fIjfn":77,"lgzelf9ze":82,"OyY146xWe":87,"sbiAQUjbe":92,"id":94},{"type":14,"value":74},"Aether",{"type":14,"value":76},"Brand Strategy · Positioning",{"type":6,"value":78},{"src":79,"srcSet":80,"pixelWidth":53,"pixelHeight":54,"alt":81},"https://framerusercontent.com/images/egRrU8WyZ5piuyK7T9DMVMWiJvE.png?width=2400&height=1600","https://framerusercontent.com/images/egRrU8WyZ5piuyK7T9DMVMWiJvE.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/egRrU8WyZ5piuyK7T9DMVMWiJvE.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/egRrU8WyZ5piuyK7T9DMVMWiJvE.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/egRrU8WyZ5piuyK7T9DMVMWiJvE.png?width=2400&height=1600 2400w","Thumbnail of Aether",{"type":6,"value":83},{"src":84,"srcSet":85,"pixelWidth":53,"pixelHeight":54,"alt":86},"https://framerusercontent.com/images/QOj2yLDHxbHGnJKw5BSx74pvnE.png?width=2400&height=1600","https://framerusercontent.com/images/QOj2yLDHxbHGnJKw5BSx74pvnE.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/QOj2yLDHxbHGnJKw5BSx74pvnE.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/QOj2yLDHxbHGnJKw5BSx74pvnE.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/QOj2yLDHxbHGnJKw5BSx74pvnE.png?width=2400&height=1600 2400w","Preview 1 of Aether",{"type":6,"value":88},{"src":89,"srcSet":90,"pixelWidth":53,"pixelHeight":54,"alt":91},"https://framerusercontent.com/images/u6vk75XQYT998CWHB13e87hCHzE.png?width=2400&height=1600","https://framerusercontent.com/images/u6vk75XQYT998CWHB13e87hCHzE.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/u6vk75XQYT998CWHB13e87hCHzE.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/u6vk75XQYT998CWHB13e87hCHzE.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/u6vk75XQYT998CWHB13e87hCHzE.png?width=2400&height=1600 2400w","Preview 2 of Aether",{"type":14,"value":93},"aether",{"type":14,"value":95},"L99JrqGEq","{\\"from\\":\\"619b5609-281f-4723-9596-5b9c9341b996\\",\\"limit\\":{\\"type\\":\\"LiteralValue\\",\\"value\\":1},\\"offset\\":{\\"type\\":\\"LiteralValue\\",\\"value\\":0},\\"select\\":[{\\"collection\\":\\"Xj5vqpH9w\\",\\"name\\":\\"abBbIejoX\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"Xj5vqpH9w\\",\\"name\\":\\"mJQmbKa99\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"Xj5vqpH9w\\",\\"name\\":\\"QxV6fIjfn\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"Xj5vqpH9w\\",\\"name\\":\\"lgzelf9ze\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"Xj5vqpH9w\\",\\"name\\":\\"OyY146xWe\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"Xj5vqpH9w\\",\\"name\\":\\"sbiAQUjbe\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"Xj5vqpH9w\\",\\"name\\":\\"id\\",\\"type\\":\\"Identifier\\"}]}default",[98],{"abBbIejoX":99,"mJQmbKa99":101,"QxV6fIjfn":103,"lgzelf9ze":108,"OyY146xWe":113,"sbiAQUjbe":118,"id":120},{"type":14,"value":100},"Atlas",{"type":14,"value":102},"Microinteractions · Engagement Optimization",{"type":6,"value":104},{"src":105,"srcSet":106,"pixelWidth":53,"pixelHeight":54,"alt":107},"https://framerusercontent.com/images/sN8jTSPUuKTqtDSrQRiTd50X5A.png?width=2400&height=1600","https://framerusercontent.com/images/sN8jTSPUuKTqtDSrQRiTd50X5A.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/sN8jTSPUuKTqtDSrQRiTd50X5A.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/sN8jTSPUuKTqtDSrQRiTd50X5A.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/sN8jTSPUuKTqtDSrQRiTd50X5A.png?width=2400&height=1600 2400w","Thumbnail of Atlas",{"type":6,"value":109},{"src":110,"srcSet":111,"pixelWidth":53,"pixelHeight":54,"alt":112},"https://framerusercontent.com/images/BK1LEPqx6Ldumi0lg8YrCFue0.png?width=2400&height=1600","https://framerusercontent.com/images/BK1LEPqx6Ldumi0lg8YrCFue0.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/BK1LEPqx6Ldumi0lg8YrCFue0.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/BK1LEPqx6Ldumi0lg8YrCFue0.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/BK1LEPqx6Ldumi0lg8YrCFue0.png?width=2400&height=1600 2400w","Preview 1 of Atlas",{"type":6,"value":114},{"src":115,"srcSet":116,"pixelWidth":53,"pixelHeight":54,"alt":117},"https://framerusercontent.com/images/yzBTlvIId9U4zJmknlA96eimXBk.png?width=2400&height=1600","https://framerusercontent.com/images/yzBTlvIId9U4zJmknlA96eimXBk.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/yzBTlvIId9U4zJmknlA96eimXBk.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/yzBTlvIId9U4zJmknlA96eimXBk.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/yzBTlvIId9U4zJmknlA96eimXBk.png?width=2400&height=1600 2400w","Preview 2 of Atlas",{"type":14,"value":119},"atlas",{"type":14,"value":121},"m94Ww_rgj","{\\"from\\":\\"619b5609-281f-4723-9596-5b9c9341b996\\",\\"limit\\":{\\"type\\":\\"LiteralValue\\",\\"value\\":1},\\"offset\\":{\\"type\\":\\"LiteralValue\\",\\"value\\":2},\\"select\\":[{\\"collection\\":\\"IsUmeJK4A\\",\\"name\\":\\"abBbIejoX\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"IsUmeJK4A\\",\\"name\\":\\"mJQmbKa99\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"IsUmeJK4A\\",\\"name\\":\\"QxV6fIjfn\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"IsUmeJK4A\\",\\"name\\":\\"lgzelf9ze\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"IsUmeJK4A\\",\\"name\\":\\"OyY146xWe\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"IsUmeJK4A\\",\\"name\\":\\"sbiAQUjbe\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"IsUmeJK4A\\",\\"name\\":\\"id\\",\\"type\\":\\"Identifier\\"}]}default",[124],{"abBbIejoX":125,"mJQmbKa99":127,"QxV6fIjfn":129,"lgzelf9ze":134,"OyY146xWe":139,"sbiAQUjbe":144,"id":146},{"type":14,"value":126},"Nova",{"type":14,"value":128},"Web Development · Tracking Setup",{"type":6,"value":130},{"src":131,"srcSet":132,"pixelWidth":53,"pixelHeight":54,"alt":133},"https://framerusercontent.com/images/dX0xMXTqtBD1g6xfrvngR4WnaY.png?width=2400&height=1600","https://framerusercontent.com/images/dX0xMXTqtBD1g6xfrvngR4WnaY.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/dX0xMXTqtBD1g6xfrvngR4WnaY.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/dX0xMXTqtBD1g6xfrvngR4WnaY.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/dX0xMXTqtBD1g6xfrvngR4WnaY.png?width=2400&height=1600 2400w","Thumbnail of Nova",{"type":6,"value":135},{"src":136,"srcSet":137,"pixelWidth":53,"pixelHeight":54,"alt":138},"https://framerusercontent.com/images/8dTk8A2dIIibyC2BJmXjDZc8UFw.png?width=2400&height=1600","https://framerusercontent.com/images/8dTk8A2dIIibyC2BJmXjDZc8UFw.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/8dTk8A2dIIibyC2BJmXjDZc8UFw.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/8dTk8A2dIIibyC2BJmXjDZc8UFw.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/8dTk8A2dIIibyC2BJmXjDZc8UFw.png?width=2400&height=1600 2400w","Preview 1 of Nova",{"type":6,"value":140},{"src":141,"srcSet":142,"pixelWidth":53,"pixelHeight":54,"alt":143},"https://framerusercontent.com/images/b6SK4aHEOP8cdseDyz9KI75VY.png?width=2400&height=1600","https://framerusercontent.com/images/b6SK4aHEOP8cdseDyz9KI75VY.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/b6SK4aHEOP8cdseDyz9KI75VY.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/b6SK4aHEOP8cdseDyz9KI75VY.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/b6SK4aHEOP8cdseDyz9KI75VY.png?width=2400&height=1600 2400w","Preview 2 of Nova",{"type":14,"value":145},"nova",{"type":14,"value":147},"BAmsBC_Qx","{\\"from\\":\\"619b5609-281f-4723-9596-5b9c9341b996\\",\\"limit\\":{\\"type\\":\\"LiteralValue\\",\\"value\\":1},\\"offset\\":{\\"type\\":\\"LiteralValue\\",\\"value\\":4},\\"select\\":[{\\"collection\\":\\"FzBPf7jNB\\",\\"name\\":\\"abBbIejoX\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"FzBPf7jNB\\",\\"name\\":\\"mJQmbKa99\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"FzBPf7jNB\\",\\"name\\":\\"QxV6fIjfn\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"FzBPf7jNB\\",\\"name\\":\\"lgzelf9ze\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"FzBPf7jNB\\",\\"name\\":\\"OyY146xWe\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"FzBPf7jNB\\",\\"name\\":\\"sbiAQUjbe\\",\\"type\\":\\"Identifier\\"},{\\"collection\\":\\"FzBPf7jNB\\",\\"name\\":\\"id\\",\\"type\\":\\"Identifier\\"}]}default",[150],{"abBbIejoX":151,"mJQmbKa99":153,"QxV6fIjfn":155,"lgzelf9ze":160,"OyY146xWe":165,"sbiAQUjbe":170,"id":172},{"type":14,"value":152},"Pulse",{"type":14,"value":154},"Motion · GSAP Animations",{"type":6,"value":156},{"src":157,"srcSet":158,"pixelWidth":53,"pixelHeight":54,"alt":159},"https://framerusercontent.com/images/zWE8LaEXhuU9EYeVC1GE0yD4.png?width=2400&height=1600","https://framerusercontent.com/images/zWE8LaEXhuU9EYeVC1GE0yD4.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/zWE8LaEXhuU9EYeVC1GE0yD4.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/zWE8LaEXhuU9EYeVC1GE0yD4.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/zWE8LaEXhuU9EYeVC1GE0yD4.png?width=2400&height=1600 2400w","Thumbnail of Pulse",{"type":6,"value":161},{"src":162,"srcSet":163,"pixelWidth":53,"pixelHeight":54,"alt":164},"https://framerusercontent.com/images/QijtlIJKcE7UdxOv6kdln5P2Eo.png?width=2400&height=1600","https://framerusercontent.com/images/QijtlIJKcE7UdxOv6kdln5P2Eo.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/QijtlIJKcE7UdxOv6kdln5P2Eo.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/QijtlIJKcE7UdxOv6kdln5P2Eo.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/QijtlIJKcE7UdxOv6kdln5P2Eo.png?width=2400&height=1600 2400w","Preview 1 of Pulse",{"type":6,"value":166},{"src":167,"srcSet":168,"pixelWidth":53,"pixelHeight":54,"alt":169},"https://framerusercontent.com/images/5QlFsipbMKrGCKDbfxghlEC5o.png?width=2400&height=1600","https://framerusercontent.com/images/5QlFsipbMKrGCKDbfxghlEC5o.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/5QlFsipbMKrGCKDbfxghlEC5o.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/5QlFsipbMKrGCKDbfxghlEC5o.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/5QlFsipbMKrGCKDbfxghlEC5o.png?width=2400&height=1600 2400w","Preview 2 of Pulse",{"type":14,"value":171},"pulse",{"type":14,"value":173},"wn5ZoY6pc",["Map"]]
+  [{"0":1,"1":174},["Map",2,3,42,43,70,71,96,97,122,123,148,149],"{\\\\"from\\\\":\\\\"0a1bb352-ded4-4798-bf5f-02a4db733aa9\\\\",\\\\"limit\\\\":{\\\\"type\\\\":\\\\"LiteralValue\\\\",\\\\"value\\\\":3},\\\\"select\\\\":[{\\\\"collection\\\\":\\\\"nfGdk5XBL\\\\",\\\\"name\\\\":\\\\"rm5PlWMCY\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"nfGdk5XBL\\\\",\\\\"name\\\\":\\\\"dbStpq3Qm\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"nfGdk5XBL\\\\",\\\\"name\\\\":\\\\"Re9muAIh6\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"nfGdk5XBL\\\\",\\\\"name\\\\":\\\\"id\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"}]}default",[4,20,31],{"rm5PlWMCY":5,"dbStpq3Qm":13,"Re9muAIh6":16,"id":18},{"type":6,"value":7},"responsiveimage",{"src":8,"srcSet":9,"pixelWidth":10,"pixelHeight":11,"alt":12},"https://framerusercontent.com/images/DL994ipyrTIcgnmOaxrkpBmDfsM.png?width=2000&height=1333","https://framerusercontent.com/images/DL994ipyrTIcgnmOaxrkpBmDfsM.png?scale-down-to=512&width=2000&height=1333 512w,https://framerusercontent.com/images/DL994ipyrTIcgnmOaxrkpBmDfsM.png?scale-down-to=1024&width=2000&height=1333 1024w,https://framerusercontent.com/images/DL994ipyrTIcgnmOaxrkpBmDfsM.png?width=2000&height=1333 2000w",2000,1333,"Cover Image",{"type":14,"value":15},"string","How great design drives perception and growth",{"type":14,"value":17},"how-great-design-drives-perception-and-growth",{"type":14,"value":19},"n8cd3v532",{"rm5PlWMCY":21,"dbStpq3Qm":25,"Re9muAIh6":27,"id":29},{"type":6,"value":22},{"src":23,"srcSet":24,"pixelWidth":10,"pixelHeight":11,"alt":12},"https://framerusercontent.com/images/4CqljEsEr9QpsbQxnpClCqZoiBk.png?width=2000&height=1333","https://framerusercontent.com/images/4CqljEsEr9QpsbQxnpClCqZoiBk.png?scale-down-to=512&width=2000&height=1333 512w,https://framerusercontent.com/images/4CqljEsEr9QpsbQxnpClCqZoiBk.png?scale-down-to=1024&width=2000&height=1333 1024w,https://framerusercontent.com/images/4CqljEsEr9QpsbQxnpClCqZoiBk.png?width=2000&height=1333 2000w",{"type":14,"value":26},"Why clarity is the foundation of modern brands",{"type":14,"value":28},"why-clarity-is-the-foundation-of-modern-brands",{"type":14,"value":30},"R8eRsGbPf",{"rm5PlWMCY":32,"dbStpq3Qm":36,"Re9muAIh6":38,"id":40},{"type":6,"value":33},{"src":34,"srcSet":35,"pixelWidth":10,"pixelHeight":11,"alt":12},"https://framerusercontent.com/images/kXzp9AQMamtZCOBZ2Eh77Rr91AM.png?width=2000&height=1333","https://framerusercontent.com/images/kXzp9AQMamtZCOBZ2Eh77Rr91AM.png?scale-down-to=512&width=2000&height=1333 512w,https://framerusercontent.com/images/kXzp9AQMamtZCOBZ2Eh77Rr91AM.png?scale-down-to=1024&width=2000&height=1333 1024w,https://framerusercontent.com/images/kXzp9AQMamtZCOBZ2Eh77Rr91AM.png?width=2000&height=1333 2000w",{"type":14,"value":37},"Designing digital systems that scale with intention",{"type":14,"value":39},"designing-digital-systems-that-scale-with-intention",{"type":14,"value":41},"vyKJclRXB","{\\\\"from\\\\":\\\\"619b5609-281f-4723-9596-5b9c9341b996\\\\",\\\\"limit\\\\":{\\\\"type\\\\":\\\\"LiteralValue\\\\",\\\\"value\\\\":1},\\\\"offset\\\\":{\\\\"type\\\\":\\\\"LiteralValue\\\\",\\\\"value\\\\":3},\\\\"select\\\\":[{\\\\"collection\\\\":\\\\"z3I7_iITm\\\\",\\\\"name\\\\":\\\\"abBbIejoX\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"z3I7_iITm\\\\",\\\\"name\\\\":\\\\"mJQmbKa99\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"z3I7_iITm\\\\",\\\\"name\\\\":\\\\"QxV6fIjfn\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"z3I7_iITm\\\\",\\\\"name\\\\":\\\\"lgzelf9ze\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"z3I7_iITm\\\\",\\\\"name\\\\":\\\\"OyY146xWe\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"z3I7_iITm\\\\",\\\\"name\\\\":\\\\"sbiAQUjbe\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"z3I7_iITm\\\\",\\\\"name\\\\":\\\\"id\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"}]}default",[44],{"abBbIejoX":45,"mJQmbKa99":47,"QxV6fIjfn":49,"lgzelf9ze":56,"OyY146xWe":61,"sbiAQUjbe":66,"id":68},{"type":14,"value":46},"Vertex",{"type":14,"value":48},"Technical Consulting · SEO Foundations",{"type":6,"value":50},{"src":51,"srcSet":52,"pixelWidth":53,"pixelHeight":54,"alt":55},"https://framerusercontent.com/images/ymC1BOjovVZzi63gYowVmVi5w.png?width=2400&height=1600","https://framerusercontent.com/images/ymC1BOjovVZzi63gYowVmVi5w.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/ymC1BOjovVZzi63gYowVmVi5w.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/ymC1BOjovVZzi63gYowVmVi5w.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/ymC1BOjovVZzi63gYowVmVi5w.png?width=2400&height=1600 2400w",2400,1600,"Thumbnail of Vertex",{"type":6,"value":57},{"src":58,"srcSet":59,"pixelWidth":53,"pixelHeight":54,"alt":60},"https://framerusercontent.com/images/CClaOUoHCVnVJMtgpehVG4TPEA.png?width=2400&height=1600","https://framerusercontent.com/images/CClaOUoHCVnVJMtgpehVG4TPEA.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/CClaOUoHCVnVJMtgpehVG4TPEA.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/CClaOUoHCVnVJMtgpehVG4TPEA.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/CClaOUoHCVnVJMtgpehVG4TPEA.png?width=2400&height=1600 2400w","Preview 1 of Vertex",{"type":6,"value":62},{"src":63,"srcSet":64,"pixelWidth":53,"pixelHeight":54,"alt":65},"https://framerusercontent.com/images/A7mxDc4HvFyQwrIkisaKI6vS2Rc.png?width=2400&height=1600","https://framerusercontent.com/images/A7mxDc4HvFyQwrIkisaKI6vS2Rc.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/A7mxDc4HvFyQwrIkisaKI6vS2Rc.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/A7mxDc4HvFyQwrIkisaKI6vS2Rc.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/A7mxDc4HvFyQwrIkisaKI6vS2Rc.png?width=2400&height=1600 2400w","Preview 2 of Vertex",{"type":14,"value":67},"vertex",{"type":14,"value":69},"dt58WghbV","{\\\\"from\\\\":\\\\"619b5609-281f-4723-9596-5b9c9341b996\\\\",\\\\"limit\\\\":{\\\\"type\\\\":\\\\"LiteralValue\\\\",\\\\"value\\\\":1},\\\\"offset\\\\":{\\\\"type\\\\":\\\\"LiteralValue\\\\",\\\\"value\\\\":1},\\\\"select\\\\":[{\\\\"collection\\\\":\\\\"xVzvIBGvF\\\\",\\\\"name\\\\":\\\\"abBbIejoX\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"xVzvIBGvF\\\\",\\\\"name\\\\":\\\\"mJQmbKa99\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"xVzvIBGvF\\\\",\\\\"name\\\\":\\\\"QxV6fIjfn\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"xVzvIBGvF\\\\",\\\\"name\\\\":\\\\"lgzelf9ze\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"xVzvIBGvF\\\\",\\\\"name\\\\":\\\\"OyY146xWe\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"xVzvIBGvF\\\\",\\\\"name\\\\":\\\\"sbiAQUjbe\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"xVzvIBGvF\\\\",\\\\"name\\\\":\\\\"id\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"}]}default",[72],{"abBbIejoX":73,"mJQmbKa99":75,"QxV6fIjfn":77,"lgzelf9ze":82,"OyY146xWe":87,"sbiAQUjbe":92,"id":94},{"type":14,"value":74},"Aether",{"type":14,"value":76},"Brand Strategy · Positioning",{"type":6,"value":78},{"src":79,"srcSet":80,"pixelWidth":53,"pixelHeight":54,"alt":81},"https://framerusercontent.com/images/egRrU8WyZ5piuyK7T9DMVMWiJvE.png?width=2400&height=1600","https://framerusercontent.com/images/egRrU8WyZ5piuyK7T9DMVMWiJvE.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/egRrU8WyZ5piuyK7T9DMVMWiJvE.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/egRrU8WyZ5piuyK7T9DMVMWiJvE.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/egRrU8WyZ5piuyK7T9DMVMWiJvE.png?width=2400&height=1600 2400w","Thumbnail of Aether",{"type":6,"value":83},{"src":84,"srcSet":85,"pixelWidth":53,"pixelHeight":54,"alt":86},"https://framerusercontent.com/images/QOj2yLDHxbHGnJKw5BSx74pvnE.png?width=2400&height=1600","https://framerusercontent.com/images/QOj2yLDHxbHGnJKw5BSx74pvnE.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/QOj2yLDHxbHGnJKw5BSx74pvnE.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/QOj2yLDHxbHGnJKw5BSx74pvnE.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/QOj2yLDHxbHGnJKw5BSx74pvnE.png?width=2400&height=1600 2400w","Preview 1 of Aether",{"type":6,"value":88},{"src":89,"srcSet":90,"pixelWidth":53,"pixelHeight":54,"alt":91},"https://framerusercontent.com/images/u6vk75XQYT998CWHB13e87hCHzE.png?width=2400&height=1600","https://framerusercontent.com/images/u6vk75XQYT998CWHB13e87hCHzE.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/u6vk75XQYT998CWHB13e87hCHzE.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/u6vk75XQYT998CWHB13e87hCHzE.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/u6vk75XQYT998CWHB13e87hCHzE.png?width=2400&height=1600 2400w","Preview 2 of Aether",{"type":14,"value":93},"aether",{"type":14,"value":95},"L99JrqGEq","{\\\\"from\\\\":\\\\"619b5609-281f-4723-9596-5b9c9341b996\\\\",\\\\"limit\\\\":{\\\\"type\\\\":\\\\"LiteralValue\\\\",\\\\"value\\\\":1},\\\\"offset\\\\":{\\\\"type\\\\":\\\\"LiteralValue\\\\",\\\\"value\\\\":0},\\\\"select\\\\":[{\\\\"collection\\\\":\\\\"Xj5vqpH9w\\\\",\\\\"name\\\\":\\\\"abBbIejoX\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"Xj5vqpH9w\\\\",\\\\"name\\\\":\\\\"mJQmbKa99\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"Xj5vqpH9w\\\\",\\\\"name\\\\":\\\\"QxV6fIjfn\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"Xj5vqpH9w\\\\",\\\\"name\\\\":\\\\"lgzelf9ze\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"Xj5vqpH9w\\\\",\\\\"name\\\\":\\\\"OyY146xWe\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"Xj5vqpH9w\\\\",\\\\"name\\\\":\\\\"sbiAQUjbe\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"Xj5vqpH9w\\\\",\\\\"name\\\\":\\\\"id\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"}]}default",[98],{"abBbIejoX":99,"mJQmbKa99":101,"QxV6fIjfn":103,"lgzelf9ze":108,"OyY146xWe":113,"sbiAQUjbe":118,"id":120},{"type":14,"value":100},"Atlas",{"type":14,"value":102},"Microinteractions · Engagement Optimization",{"type":6,"value":104},{"src":105,"srcSet":106,"pixelWidth":53,"pixelHeight":54,"alt":107},"https://framerusercontent.com/images/sN8jTSPUuKTqtDSrQRiTd50X5A.png?width=2400&height=1600","https://framerusercontent.com/images/sN8jTSPUuKTqtDSrQRiTd50X5A.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/sN8jTSPUuKTqtDSrQRiTd50X5A.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/sN8jTSPUuKTqtDSrQRiTd50X5A.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/sN8jTSPUuKTqtDSrQRiTd50X5A.png?width=2400&height=1600 2400w","Thumbnail of Atlas",{"type":6,"value":109},{"src":110,"srcSet":111,"pixelWidth":53,"pixelHeight":54,"alt":112},"https://framerusercontent.com/images/BK1LEPqx6Ldumi0lg8YrCFue0.png?width=2400&height=1600","https://framerusercontent.com/images/BK1LEPqx6Ldumi0lg8YrCFue0.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/BK1LEPqx6Ldumi0lg8YrCFue0.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/BK1LEPqx6Ldumi0lg8YrCFue0.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/BK1LEPqx6Ldumi0lg8YrCFue0.png?width=2400&height=1600 2400w","Preview 1 of Atlas",{"type":6,"value":114},{"src":115,"srcSet":116,"pixelWidth":53,"pixelHeight":54,"alt":117},"https://framerusercontent.com/images/yzBTlvIId9U4zJmknlA96eimXBk.png?width=2400&height=1600","https://framerusercontent.com/images/yzBTlvIId9U4zJmknlA96eimXBk.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/yzBTlvIId9U4zJmknlA96eimXBk.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/yzBTlvIId9U4zJmknlA96eimXBk.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/yzBTlvIId9U4zJmknlA96eimXBk.png?width=2400&height=1600 2400w","Preview 2 of Atlas",{"type":14,"value":119},"atlas",{"type":14,"value":121},"m94Ww_rgj","{\\\\"from\\\\":\\\\"619b5609-281f-4723-9596-5b9c9341b996\\\\",\\\\"limit\\\\":{\\\\"type\\\\":\\\\"LiteralValue\\\\",\\\\"value\\\\":1},\\\\"offset\\\\":{\\\\"type\\\\":\\\\"LiteralValue\\\\",\\\\"value\\\\":2},\\\\"select\\\\":[{\\\\"collection\\\\":\\\\"IsUmeJK4A\\\\",\\\\"name\\\\":\\\\"abBbIejoX\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"IsUmeJK4A\\\\",\\\\"name\\\\":\\\\"mJQmbKa99\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"IsUmeJK4A\\\\",\\\\"name\\\\":\\\\"QxV6fIjfn\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"IsUmeJK4A\\\\",\\\\"name\\\\":\\\\"lgzelf9ze\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"IsUmeJK4A\\\\",\\\\"name\\\\":\\\\"OyY146xWe\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"IsUmeJK4A\\\\",\\\\"name\\\\":\\\\"sbiAQUjbe\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"IsUmeJK4A\\\\",\\\\"name\\\\":\\\\"id\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"}]}default",[124],{"abBbIejoX":125,"mJQmbKa99":127,"QxV6fIjfn":129,"lgzelf9ze":134,"OyY146xWe":139,"sbiAQUjbe":144,"id":146},{"type":14,"value":126},"Nova",{"type":14,"value":128},"Web Development · Tracking Setup",{"type":6,"value":130},{"src":131,"srcSet":132,"pixelWidth":53,"pixelHeight":54,"alt":133},"https://framerusercontent.com/images/dX0xMXTqtBD1g6xfrvngR4WnaY.png?width=2400&height=1600","https://framerusercontent.com/images/dX0xMXTqtBD1g6xfrvngR4WnaY.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/dX0xMXTqtBD1g6xfrvngR4WnaY.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/dX0xMXTqtBD1g6xfrvngR4WnaY.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/dX0xMXTqtBD1g6xfrvngR4WnaY.png?width=2400&height=1600 2400w","Thumbnail of Nova",{"type":6,"value":135},{"src":136,"srcSet":137,"pixelWidth":53,"pixelHeight":54,"alt":138},"https://framerusercontent.com/images/8dTk8A2dIIibyC2BJmXjDZc8UFw.png?width=2400&height=1600","https://framerusercontent.com/images/8dTk8A2dIIibyC2BJmXjDZc8UFw.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/8dTk8A2dIIibyC2BJmXjDZc8UFw.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/8dTk8A2dIIibyC2BJmXjDZc8UFw.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/8dTk8A2dIIibyC2BJmXjDZc8UFw.png?width=2400&height=1600 2400w","Preview 1 of Nova",{"type":6,"value":140},{"src":141,"srcSet":142,"pixelWidth":53,"pixelHeight":54,"alt":143},"https://framerusercontent.com/images/b6SK4aHEOP8cdseDyz9KI75VY.png?width=2400&height=1600","https://framerusercontent.com/images/b6SK4aHEOP8cdseDyz9KI75VY.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/b6SK4aHEOP8cdseDyz9KI75VY.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/b6SK4aHEOP8cdseDyz9KI75VY.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/b6SK4aHEOP8cdseDyz9KI75VY.png?width=2400&height=1600 2400w","Preview 2 of Nova",{"type":14,"value":145},"nova",{"type":14,"value":147},"BAmsBC_Qx","{\\\\"from\\\\":\\\\"619b5609-281f-4723-9596-5b9c9341b996\\\\",\\\\"limit\\\\":{\\\\"type\\\\":\\\\"LiteralValue\\\\",\\\\"value\\\\":1},\\\\"offset\\\\":{\\\\"type\\\\":\\\\"LiteralValue\\\\",\\\\"value\\\\":4},\\\\"select\\\\":[{\\\\"collection\\\\":\\\\"FzBPf7jNB\\\\",\\\\"name\\\\":\\\\"abBbIejoX\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"FzBPf7jNB\\\\",\\\\"name\\\\":\\\\"mJQmbKa99\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"FzBPf7jNB\\\\",\\\\"name\\\\":\\\\"QxV6fIjfn\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"FzBPf7jNB\\\\",\\\\"name\\\\":\\\\"lgzelf9ze\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"FzBPf7jNB\\\\",\\\\"name\\\\":\\\\"OyY146xWe\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"FzBPf7jNB\\\\",\\\\"name\\\\":\\\\"sbiAQUjbe\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"},{\\\\"collection\\\\":\\\\"FzBPf7jNB\\\\",\\\\"name\\\\":\\\\"id\\\\",\\\\"type\\\\":\\\\"Identifier\\\\"}]}default",[150],{"abBbIejoX":151,"mJQmbKa99":153,"QxV6fIjfn":155,"lgzelf9ze":160,"OyY146xWe":165,"sbiAQUjbe":170,"id":172},{"type":14,"value":152},"Pulse",{"type":14,"value":154},"Motion · GSAP Animations",{"type":6,"value":156},{"src":157,"srcSet":158,"pixelWidth":53,"pixelHeight":54,"alt":159},"https://framerusercontent.com/images/zWE8LaEXhuU9EYeVC1GE0yD4.png?width=2400&height=1600","https://framerusercontent.com/images/zWE8LaEXhuU9EYeVC1GE0yD4.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/zWE8LaEXhuU9EYeVC1GE0yD4.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/zWE8LaEXhuU9EYeVC1GE0yD4.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/zWE8LaEXhuU9EYeVC1GE0yD4.png?width=2400&height=1600 2400w","Thumbnail of Pulse",{"type":6,"value":161},{"src":162,"srcSet":163,"pixelWidth":53,"pixelHeight":54,"alt":164},"https://framerusercontent.com/images/QijtlIJKcE7UdxOv6kdln5P2Eo.png?width=2400&height=1600","https://framerusercontent.com/images/QijtlIJKcE7UdxOv6kdln5P2Eo.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/QijtlIJKcE7UdxOv6kdln5P2Eo.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/QijtlIJKcE7UdxOv6kdln5P2Eo.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/QijtlIJKcE7UdxOv6kdln5P2Eo.png?width=2400&height=1600 2400w","Preview 1 of Pulse",{"type":6,"value":166},{"src":167,"srcSet":168,"pixelWidth":53,"pixelHeight":54,"alt":169},"https://framerusercontent.com/images/5QlFsipbMKrGCKDbfxghlEC5o.png?width=2400&height=1600","https://framerusercontent.com/images/5QlFsipbMKrGCKDbfxghlEC5o.png?scale-down-to=512&width=2400&height=1600 512w,https://framerusercontent.com/images/5QlFsipbMKrGCKDbfxghlEC5o.png?scale-down-to=1024&width=2400&height=1600 1024w,https://framerusercontent.com/images/5QlFsipbMKrGCKDbfxghlEC5o.png?scale-down-to=2048&width=2400&height=1600 2048w,https://framerusercontent.com/images/5QlFsipbMKrGCKDbfxghlEC5o.png?width=2400&height=1600 2400w","Preview 2 of Pulse",{"type":14,"value":171},"pulse",{"type":14,"value":173},"wn5ZoY6pc",["Map"]]
 </script>
 <div
   id="svg-templates"
