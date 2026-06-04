@@ -255,6 +255,31 @@
           margin-top: -3rem !important;
       }
 
+      /* Text colors for grid-work */
+      .grid-work .top-text:not(.for-b),
+      .grid-work .h2,
+      .grid-work .small-ftd,
+      .grid-work .work-title {
+          color: #576E47 !important;
+      }
+
+      /* Progressive Reveal Animation */
+      .reveal-wrapper {
+          display: inline-block;
+          overflow: hidden;
+          vertical-align: top;
+      }
+      .reveal-text {
+          display: inline-block;
+          transform: translateY(110%);
+          opacity: 0;
+          transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.8s ease-out;
+      }
+      .reveal-text.in-view {
+          transform: translateY(0);
+          opacity: 1;
+      }
+
       /* Hide Webflow badge */
       .w-webflow-badge {
           display: none !important;
@@ -440,6 +465,33 @@
                             temp.innerHTML = gridHtmlStr;
                             target.insertAdjacentElement('afterend', temp.firstElementChild);
                             
+                            // Initialize progressive reveal for "Work" title
+                            const h2Title = document.querySelector('.grid-work .h2');
+                            if (h2Title) {
+                                const textNode = h2Title.childNodes[0]; // "Work" text
+                                const word = textNode.textContent.trim();
+                                const lettersHtml = word.split('').map((char, i) => 
+                                    `<span class="reveal-wrapper"><span class="reveal-text" style="transition-delay: ${i * 0.15}s">${char}</span></span>`
+                                ).join('');
+                                
+                                const smallFtd = h2Title.querySelector('.small-ftd');
+                                const smallHtml = smallFtd ? `<span class="reveal-wrapper"><span class="reveal-text small-ftd" style="transition-delay: ${(word.length) * 0.15}s">${smallFtd.textContent}</span></span>` : '';
+                                
+                                h2Title.innerHTML = lettersHtml + smallHtml;
+
+                                const observer = new IntersectionObserver((entries) => {
+                                    entries.forEach(entry => {
+                                        if (entry.isIntersecting) {
+                                            entry.target.querySelectorAll('.reveal-text').forEach(el => el.classList.add('in-view'));
+                                        } else {
+                                            // Remove class when out of view so it animates again next time
+                                            entry.target.querySelectorAll('.reveal-text').forEach(el => el.classList.remove('in-view'));
+                                        }
+                                    });
+                                }, { threshold: 0.1 });
+                                observer.observe(h2Title);
+                            }
+
                             // Restart Webflow so animations work on the new element
                             if (window.Webflow) {
                                 window.Webflow.destroy();
