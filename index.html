@@ -36,14 +36,28 @@
                     if (el.innerText.includes('Omnera')) {
                         const firstSpan = el.querySelector('span');
                         if (firstSpan && firstSpan.innerText.includes('Omnera')) {
-                            firstSpan.innerText = b + " ";
+                            const word = "Slay The Strategy ";
+                            firstSpan.innerHTML = word.split('').map(char => 
+                                char === ' ' 
+                                    ? '<span style="display:inline-block">&nbsp;</span>' 
+                                    : `<span style="display:inline-block">${char}</span>`
+                            ).join('');
                         }
+                    }
+                });
+
+                // Enforce branding in testimonials (framer-1wdac2p and others)
+                document.querySelectorAll('.framer-1wdac2p p, .framer-xll4ew p').forEach(el => {
+                    if (el.innerText.includes('Omnera')) {
+                        el.innerText = el.innerText.replace(/Omnera/g, b);
                     }
                 });
 
                 // Remove the badges and their containers
                 const badges = document.querySelectorAll('.__framer-badge, #__framer-badge-container, .framer-72rtr7-container, .framer-45rxis-container, .framer-129rlqa-container, .framer-1mj00lo');
                 badges.forEach(el => el.remove());
+
+                
             }
 
             // Immediate enforcement

@@ -38654,7 +38654,7 @@ window.pageBodyContent = `<script
                               data-styles-preset="kxEAksfkx"
                               dir="auto"
                             >
-                              “Working with Omnera felt like having an in-house
+                              “Working with Slay The Strategy felt like having an in-house
                               strategic team. They challenged our assumptions,
                               refined our positioning, and translated it into a
                               digital experience that actually performs.”
@@ -39798,7 +39798,7 @@ window.pageBodyContent = `<script
                               dir="auto"
                               style="--framer-text-alignment: center"
                             >
-                              “Working with Omnera felt like having an in-house
+                              “Working with Slay The Strategy felt like having an in-house
                               strategic team. They challenged our assumptions,
                               refined our positioning, and translated it into a
                               digital experience that actually performs.”
@@ -40940,7 +40940,7 @@ window.pageBodyContent = `<script
                               data-styles-preset="kxEAksfkx"
                               dir="auto"
                             >
-                              “Working with Omnera felt like having an in-house
+                              “Working with Slay The Strategy felt like having an in-house
                               strategic team. They challenged our assumptions,
                               refined our positioning, and translated it into a
                               digital experience that actually performs.”
