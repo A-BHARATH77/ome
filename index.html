@@ -10,9 +10,6 @@
             pointer-events: none !important;
             opacity: 0 !important;
         }
-        .circle-divider {
-            background-color: #576E47 !important;
-        }
     </style>
     <script>
         (function() {
@@ -491,11 +488,6 @@
         padding-left: 6% !important;
         padding-right: 6% !important;
     }
-
-    .service-media-sticky {
-        top: 12vh !important; /* Offset to clear the navbar */
-        padding-top: 2rem !important;
-    }
     </style>
 
 
@@ -811,11 +803,14 @@
       pointer-events: none;
       opacity: 0;
       z-index: 2;
+      border-radius: 50%;
+      overflow: hidden;
     }
     #brandLogo img {
       display: block;
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
       border-radius: 50%;
     }
 
@@ -877,33 +872,119 @@
       opacity: 0.85;
     }
 
-    /* ===== MOBILE HERO OVERRIDES (must be after base styles to win cascade) ===== */
+    /* ===== MOBILE HERO OVERRIDES ===== */
     @media (max-width: 1000px) {
       .hero-big-text { left: 1rem; top: 5rem; }
-      .hero-big-text h2 { font-size: 1.8rem !important; line-height: 1.1; }
+      .hero-big-text h2 { font-size: clamp(3rem, 11vw, 5rem) !important; line-height: 0.95; }
       .hero-tag { left: 1rem; bottom: 1.2rem; }
       .hero-tag span { font-size: 0.75rem; }
       .hero-para { right: 1rem; left: 1rem; bottom: 3rem; max-width: 100%; text-align: left; }
-      .hero-para p { font-size: 1rem !important; line-height: 1.5; letter-spacing: 0; }
+      .hero-para p { font-size: 1.4rem !important; line-height: 1.4; letter-spacing: -0.01em; }
     }
     @media (max-width: 480px) {
-      .hero-big-text { left: 0.75rem; top: 4.5rem; }
-      .hero-big-text h2 { font-size: 1.25rem !important; }
-      .hero-tag { left: 0.75rem; bottom: 0.6rem; }
-      .hero-tag span { font-size: 0.6rem; }
-      .hero-para { right: 0.75rem; left: 0.75rem; bottom: 1.8rem; }
-      .hero-para p { font-size: 0.75rem !important; line-height: 1.45; }
+      .hero-big-text { left: 0.8rem; top: 6.5rem; right: 0.8rem; }
+      .hero-big-text h2 {
+        font-size: clamp(3.2rem, 18vw, 5rem) !important;
+        line-height: 0.9;
+        word-break: break-word;
+      }
+      .hero-tag { left: 0.8rem; bottom: 0.8rem; }
+      .hero-tag span { font-size: 0.65rem; letter-spacing: 0.04em; }
+      .hero-para { right: 0.8rem; left: 0.8rem; bottom: 2.5rem; }
+      .hero-para p { font-size: 1.3rem !important; line-height: 1.4; }
     }
   </style>
 <style>.framer-i2anp5 { display: none !important; }</style>
   <!-- Preload GSAP so it starts fetching at the earliest possible moment -->
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" as="script">
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js" as="script">
-  <!-- Shared navbar styles (used on all custom pages) -->
+  
+  <!-- Shared navbar styles -->
   <link rel="stylesheet" href="./assets/css/navbar.css">
+  
+  <style>
+    /* Kill the original Framer navbar entirely — no visual bleed */
+    nav[data-framer-name*="Light"],
+    nav[data-framer-name*="Phone"],
+    nav[data-framer-name*="Tablet"],
+    .framer-qa4kqy-container,
+    .framer-yP8J4,
+    .framer-32zx3o {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+    }
+  </style>
+
 </head>
 
 <body>
+  <!-- ── Inline Navbar (fixed, always visible) ───────────────────── -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-logo" href="./index.html">Slay The Strategy</a>
+      <div class="nav-menu">
+        <a class="nav-link" href="./index.html">Home</a>
+        <a class="nav-link" href="./about.html">About</a>
+        <a class="nav-link" href="./work.html">Work</a>
+        <a class="nav-cta" href="./contact.html"><span>Let's Talk</span></a>
+      </div>
+      <!-- Hamburger (mobile only) -->
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile fullscreen menu -->
+  <div class="nav-mobile-menu" id="navMobileMenu" aria-hidden="true">
+    <a href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./work.html">Work</a>
+    <a href="./contact.html" class="nav-mobile-cta">Let's Talk</a>
+  </div>
+
+  <script>
+    // Hamburger toggle
+    (function() {
+      var btn  = document.getElementById('navHamburger');
+      var menu = document.getElementById('navMobileMenu');
+      if (!btn || !menu) return;
+      btn.addEventListener('click', function() {
+        var open = menu.classList.toggle('open');
+        btn.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open);
+        menu.setAttribute('aria-hidden', !open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      });
+      // Close on link click
+      menu.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+          menu.classList.remove('open');
+          btn.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          menu.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        });
+      });
+    })();
+
+    // Mark current page link active
+    (function() {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      document.querySelectorAll('.nav-link, .nav-mobile-menu a').forEach(function(a) {
+        var href = (a.getAttribute('href') || '').split('/').pop();
+        if (href === page || (page === '' && href === 'index.html')) {
+          a.classList.add('active');
+        }
+      });
+    })();
+  </script>
+
+
   <!-- Disable scrolling until animation finishes -->
   <style>
     body.no-scroll {
@@ -916,10 +997,6 @@
     <section class="hero" data-framer-cursor="1cfk11o">
     <div class="hero-bg"></div>
 
-    <!-- Brand logo: centered during load, flies to navbar after flip -->
-    <div id="brandLogo">
-      <img src="./assets/images/logo.webp" alt="Slay The Strategy" />
-    </div>
 
     <div class="counter">
       <div class="counter-1 digit"></div>
@@ -991,12 +1068,17 @@
     </div>
 
   </section>
-<div id="main">
-        <!-- Content will be loaded here -->
-    </div>
-    
-    <div id="main">
-        <!-- Content will be loaded here -->
+
+  <!-- Brand logo lives OUTSIDE the hero so Framer's cursor JS doesn't touch it -->
+  <div id="brandLogo">
+    <img src="./assets/images/logo.webp" alt="Slay The Strategy" />
+  </div>
+
+    <div id="framer-content-wrapper">
+      <div id="navbar-root"></div>
+      <div id="main">
+          <!-- Content will be loaded here -->
+      </div>
     </div>
 
     
@@ -1004,7 +1086,6 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
 <script>
 
@@ -1070,16 +1151,17 @@
       return mainTimeline;
     }
 
+
     (() => {
       // --- Initialize brand logo: centered in viewport ---
       const logo     = document.getElementById('brandLogo');
       const logoSize = Math.min(window.innerWidth * 0.13, 160);
       if (logo) {
-        // Pure pixel placement at viewport center — no % units so GSAP tweens cleanly
         gsap.set(logo, {
-          width: logoSize,
-          top:   (window.innerHeight - logoSize) / 2,
-          left:  (window.innerWidth  - logoSize) / 2,
+          width:  logoSize,
+          height: logoSize,
+          top:    (window.innerHeight - logoSize) / 2,
+          left:   (window.innerWidth  - logoSize) / 2,
         });
         gsap.to(logo, { opacity: 1, duration: 0.6, delay: 0.1 });
       }
@@ -1123,6 +1205,7 @@
                 top:      18,
                 left:     (window.innerWidth - navSize) / 2,
                 width:    navSize,
+                height:   navSize,
                 duration: 1.0,
                 ease:     'power4.inOut',
                 onComplete: () => {
@@ -1221,6 +1304,8 @@
 
     })();
 
+
+
   </script>
     <script src="assets/js/head.js"></script>
     <script src="assets/js/body.js"></script>
@@ -1244,65 +1329,21 @@
 
                 
                 // --- INJECT SERVICES SECTION BELOW framer-12jl4kx ---
-                const servicesSectionHtml = "<section class=\"section\"><div class=\"spacer-xxl\"></div><div class=\"container\"><div><div class=\"bottom-grid _1 grd\"><p class=\"top-text\">(Services)<br/></p><div id=\"w-node-_50c97e78-689d-c503-7c39-25216ec6da78-993a4bf1\" class=\"circle-divider\"></div><div id=\"w-node-d9be3535-bb31-516d-7780-2fd23a4b50f5-993a4bf1\" class=\"circle-divider hide-crc\"></div><div id=\"w-node-_834d27be-a307-1552-5d45-d5d881496a66-993a4bf1\"><a data-wf--button-shadow--variant=\"base\" href=\"https://cal.com/\" target=\"_blank\" class=\"contact-info for-button w-inline-block\" style=\"background-color: #576E47 !important; border-color: #576E47 !important;\"><div class=\"z-index-btn\"><p class=\"top-text for-b\" style=\"color: #f7f2e6 !important;\">Get started</p></div><div class=\"bg-change\" style=\"background-color: #576E47 !important;\"></div></a></div></div><div class=\"margin-70 add-px\"><div class=\"service-grid\"><div id=\"w-node-ce703fd1-c7cb-2ca9-85fc-0ba6f65055e0-993a4bf1\" class=\"service-list\"><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9b-cdf55b9b\" data-wf--service-item--variant=\"active\" data-wf-component-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" data-wf-variant-state=\"f1d8637b-90be-ebd5-37d3-ac536866b560\" data-w-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" class=\"service-wrapper\"><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9c-cdf55b9b\" class=\"service-title-wrap w-variant-f1d8637b-90be-ebd5-37d3-ac536866b560\"><p class=\"top-text big svr\">(001)</p><h2 data-wf-target=\"[[[&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9b&quot;,&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9d&quot;],[&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9a&quot;]]]\" class=\"service-title\">Web Design</h2></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9f-cdf55b9b\" class=\"service-media-wrap w-variant-f1d8637b-90be-ebd5-37d3-ac536866b560\"><div class=\"service-media-sticky\"><div class=\"image-wrap for-service\"><img width=\"70\" loading=\"lazy\" alt=\"\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fa1_Scene%20%239.webp\" sizes=\"70px\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fa1_Scene%2520%25239-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fa1_Scene%2520%25239-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fa1_Scene%2520%25239-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fa1_Scene%2520%25239-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fa1_Scene%20%239.webp 2000w\" class=\"paralax-image\"/></div><div><p class=\"top-text big nm\">Modern, responsive, and user-friendly websites designed to engage visitors and drive conversions.</p></div></div></div></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9b-cdf55b9b\" data-wf--service-item--variant=\"base\" data-wf-component-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" data-wf-variant-state=\"base\" data-w-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" class=\"service-wrapper\"><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9c-cdf55b9b\" class=\"service-title-wrap\"><p class=\"top-text big svr\">(002)</p><h2 data-wf-target=\"[[[&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9b&quot;,&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9d&quot;],[&quot;76107fa3-fdb6-1b5c-7ff3-66200c46f46f&quot;]]]\" class=\"service-title\">Social Media</h2></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9f-cdf55b9b\" class=\"service-media-wrap\"><div class=\"service-media-sticky\"><div class=\"image-wrap for-service\"><img width=\"70\" loading=\"lazy\" alt=\"\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9b_Scene%20%235.webp\" sizes=\"70px\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9b_Scene%2520%25235-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9b_Scene%2520%25235-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9b_Scene%2520%25235-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9b_Scene%2520%25235-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9b_Scene%20%235.webp 2000w\" class=\"paralax-image\"/></div><div><p class=\"top-text big nm\">We create scroll-stopping social content designed to build brand presence and drive engagement.</p></div></div></div></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9b-cdf55b9b\" data-wf--service-item--variant=\"base\" data-wf-component-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" data-wf-variant-state=\"base\" data-w-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" class=\"service-wrapper\"><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9c-cdf55b9b\" class=\"service-title-wrap\"><p class=\"top-text big svr\">(003)</p><h2 data-wf-target=\"[[[&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9b&quot;,&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9d&quot;],[&quot;fa7e0766-9e1a-6b84-b792-c64c2be770c7&quot;]]]\" class=\"service-title\">Development</h2></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9f-cdf55b9b\" class=\"service-media-wrap\"><div class=\"service-media-sticky\"><div class=\"image-wrap for-service\"><img width=\"70\" loading=\"lazy\" alt=\"\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f99_Scene%20%2310%20(Light).webp\" sizes=\"70px\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f99_Scene%2520%252310%2520(Light)-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f99_Scene%2520%252310%2520(Light)-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f99_Scene%2520%252310%2520(Light)-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f99_Scene%2520%252310%2520(Light)-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f99_Scene%20%2310%20(Light).webp 2000w\" class=\"paralax-image\"/></div><div><p class=\"top-text big nm\">Modern, responsive, and user-friendly websites designed to engage visitors and drive conversions.</p></div></div></div></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9b-cdf55b9b\" data-wf--service-item--variant=\"base\" data-wf-component-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" data-wf-variant-state=\"base\" data-w-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" class=\"service-wrapper\"><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9c-cdf55b9b\" class=\"service-title-wrap\"><p class=\"top-text big svr\">(004)</p><h2 data-wf-target=\"[[[&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9b&quot;,&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9d&quot;],[&quot;c39fabf3-175c-f00f-0886-574de86b3fdb&quot;]]]\" class=\"service-title\">Brand Identity</h2></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9f-cdf55b9b\" class=\"service-media-wrap\"><div class=\"service-media-sticky\"><div class=\"image-wrap for-service\"><img width=\"70\" loading=\"lazy\" alt=\"\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fbf_Scene%20%238.webp\" sizes=\"70px\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fbf_Scene%2520%25238-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fbf_Scene%2520%25238-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fbf_Scene%2520%25238-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fbf_Scene%2520%25238-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fbf_Scene%20%238.webp 2000w\" class=\"paralax-image\"/></div><div><p class=\"top-text big nm\">We craft cohesive brand identities that communicate purpose, personality, and credibility.</p></div></div></div></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9b-cdf55b9b\" data-wf--service-item--variant=\"base\" data-wf-component-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" data-wf-variant-state=\"base\" data-w-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" class=\"service-wrapper\"><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9c-cdf55b9b\" class=\"service-title-wrap\"><p class=\"top-text big svr\">(005)</p><h2 data-wf-target=\"[[[&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9b&quot;,&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9d&quot;],[&quot;cfee193c-adae-b6c6-6b35-b4de35a8dd89&quot;]]]\" class=\"service-title\">Marketing</h2></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9f-cdf55b9b\" class=\"service-media-wrap\"><div class=\"service-media-sticky\"><div class=\"image-wrap for-service\"><img width=\"70\" loading=\"lazy\" alt=\"\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9a_Scene%2018.webp\" sizes=\"70px\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9a_Scene%252018-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9a_Scene%252018-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9a_Scene%252018-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9a_Scene%252018-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9a_Scene%2018.webp 2000w\" class=\"paralax-image\"/></div><div><p class=\"top-text big nm\">We develop strategic marketing assets that amplify brand reach and support growth.</p></div></div></div></div></div></div></div></div></div></section></div>";
+                const servicesSectionHtml = "<section class=\"section\"><div class=\"spacer-xxl\"></div><div class=\"container\"><div><div class=\"bottom-grid _1 grd\"><p class=\"top-text\">(Services)<br/></p><div id=\"w-node-_50c97e78-689d-c503-7c39-25216ec6da78-993a4bf1\" class=\"circle-divider\"></div><div id=\"w-node-d9be3535-bb31-516d-7780-2fd23a4b50f5-993a4bf1\" class=\"circle-divider hide-crc\"></div><div id=\"w-node-_834d27be-a307-1552-5d45-d5d881496a66-993a4bf1\"><a data-wf--button-shadow--variant=\"base\" href=\"https://cal.com/\" target=\"_blank\" class=\"contact-info for-button w-inline-block\"><div class=\"z-index-btn\"><p class=\"top-text for-b\">Get started</p></div><div class=\"bg-change\"></div></a></div></div><div class=\"margin-70 add-px\"><div class=\"service-grid\"><div id=\"w-node-ce703fd1-c7cb-2ca9-85fc-0ba6f65055e0-993a4bf1\" class=\"service-list\"><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9b-cdf55b9b\" data-wf--service-item--variant=\"active\" data-wf-component-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" data-wf-variant-state=\"f1d8637b-90be-ebd5-37d3-ac536866b560\" data-w-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" class=\"service-wrapper\"><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9c-cdf55b9b\" class=\"service-title-wrap w-variant-f1d8637b-90be-ebd5-37d3-ac536866b560\"><p class=\"top-text big svr\">(001)</p><h2 data-wf-target=\"[[[&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9b&quot;,&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9d&quot;],[&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9a&quot;]]]\" class=\"service-title\">Web Design</h2></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9f-cdf55b9b\" class=\"service-media-wrap w-variant-f1d8637b-90be-ebd5-37d3-ac536866b560\"><div class=\"service-media-sticky\"><div class=\"image-wrap for-service\"><img width=\"70\" loading=\"lazy\" alt=\"\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fa1_Scene%20%239.webp\" sizes=\"70px\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fa1_Scene%2520%25239-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fa1_Scene%2520%25239-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fa1_Scene%2520%25239-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fa1_Scene%2520%25239-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fa1_Scene%20%239.webp 2000w\" class=\"paralax-image\"/></div><div><p class=\"top-text big nm\">Modern, responsive, and user-friendly websites designed to engage visitors and drive conversions.</p></div></div></div></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9b-cdf55b9b\" data-wf--service-item--variant=\"base\" data-wf-component-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" data-wf-variant-state=\"base\" data-w-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" class=\"service-wrapper\"><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9c-cdf55b9b\" class=\"service-title-wrap\"><p class=\"top-text big svr\">(002)</p><h2 data-wf-target=\"[[[&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9b&quot;,&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9d&quot;],[&quot;76107fa3-fdb6-1b5c-7ff3-66200c46f46f&quot;]]]\" class=\"service-title\">Social Media</h2></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9f-cdf55b9b\" class=\"service-media-wrap\"><div class=\"service-media-sticky\"><div class=\"image-wrap for-service\"><img width=\"70\" loading=\"lazy\" alt=\"\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9b_Scene%20%235.webp\" sizes=\"70px\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9b_Scene%2520%25235-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9b_Scene%2520%25235-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9b_Scene%2520%25235-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9b_Scene%2520%25235-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9b_Scene%20%235.webp 2000w\" class=\"paralax-image\"/></div><div><p class=\"top-text big nm\">We create scroll-stopping social content designed to build brand presence and drive engagement.</p></div></div></div></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9b-cdf55b9b\" data-wf--service-item--variant=\"base\" data-wf-component-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" data-wf-variant-state=\"base\" data-w-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" class=\"service-wrapper\"><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9c-cdf55b9b\" class=\"service-title-wrap\"><p class=\"top-text big svr\">(003)</p><h2 data-wf-target=\"[[[&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9b&quot;,&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9d&quot;],[&quot;fa7e0766-9e1a-6b84-b792-c64c2be770c7&quot;]]]\" class=\"service-title\">Development</h2></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9f-cdf55b9b\" class=\"service-media-wrap\"><div class=\"service-media-sticky\"><div class=\"image-wrap for-service\"><img width=\"70\" loading=\"lazy\" alt=\"\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f99_Scene%20%2310%20(Light).webp\" sizes=\"70px\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f99_Scene%2520%252310%2520(Light)-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f99_Scene%2520%252310%2520(Light)-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f99_Scene%2520%252310%2520(Light)-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f99_Scene%2520%252310%2520(Light)-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f99_Scene%20%2310%20(Light).webp 2000w\" class=\"paralax-image\"/></div><div><p class=\"top-text big nm\">Modern, responsive, and user-friendly websites designed to engage visitors and drive conversions.</p></div></div></div></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9b-cdf55b9b\" data-wf--service-item--variant=\"base\" data-wf-component-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" data-wf-variant-state=\"base\" data-w-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" class=\"service-wrapper\"><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9c-cdf55b9b\" class=\"service-title-wrap\"><p class=\"top-text big svr\">(004)</p><h2 data-wf-target=\"[[[&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9b&quot;,&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9d&quot;],[&quot;c39fabf3-175c-f00f-0886-574de86b3fdb&quot;]]]\" class=\"service-title\">Brand Identity</h2></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9f-cdf55b9b\" class=\"service-media-wrap\"><div class=\"service-media-sticky\"><div class=\"image-wrap for-service\"><img width=\"70\" loading=\"lazy\" alt=\"\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fbf_Scene%20%238.webp\" sizes=\"70px\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fbf_Scene%2520%25238-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fbf_Scene%2520%25238-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fbf_Scene%2520%25238-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fbf_Scene%2520%25238-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4fbf_Scene%20%238.webp 2000w\" class=\"paralax-image\"/></div><div><p class=\"top-text big nm\">We craft cohesive brand identities that communicate purpose, personality, and credibility.</p></div></div></div></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9b-cdf55b9b\" data-wf--service-item--variant=\"base\" data-wf-component-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" data-wf-variant-state=\"base\" data-w-id=\"f4f6d413-6968-d40f-07ed-7736cdf55b9b\" class=\"service-wrapper\"><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9c-cdf55b9b\" class=\"service-title-wrap\"><p class=\"top-text big svr\">(005)</p><h2 data-wf-target=\"[[[&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9b&quot;,&quot;f4f6d413-6968-d40f-07ed-7736cdf55b9d&quot;],[&quot;cfee193c-adae-b6c6-6b35-b4de35a8dd89&quot;]]]\" class=\"service-title\">Marketing</h2></div><div id=\"w-node-f4f6d413-6968-d40f-07ed-7736cdf55b9f-cdf55b9b\" class=\"service-media-wrap\"><div class=\"service-media-sticky\"><div class=\"image-wrap for-service\"><img width=\"70\" loading=\"lazy\" alt=\"\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9a_Scene%2018.webp\" sizes=\"70px\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9a_Scene%252018-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9a_Scene%252018-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9a_Scene%252018-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9a_Scene%252018-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4bf2/699b6466d5f19893993a4f9a_Scene%2018.webp 2000w\" class=\"paralax-image\"/></div><div><p class=\"top-text big nm\">We develop strategic marketing assets that amplify brand reach and support growth.</p></div></div></div></div></div></div></div></div></div></section></div>";
                 
-                // --- Reveal Section
-                const haywireText = "Not So Haywire";
-                const haywireHtml = haywireText.split('').map(char => 
-                    char === ' ' ? '<span style="display:inline-block; width: 0.3em;">&nbsp;</span>' : `<span class="haywire-char" style="display:inline-block; translate: 0 0; will-change: transform;">${char}</span>`
-                ).join('');
-
-                const textAnimHtml = `<section class="text-anim-section" style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: center; background-color: #f7f2e6; overflow: hidden; position: relative; perspective: 2000px; padding: 0; margin: 0; box-sizing: border-box;"><div style="width: 100%; display: flex; justify-content: center; align-items: center; overflow: hidden;"><h2 class="haywire-title" style="font-family: 'Switzer', sans-serif; font-size: clamp(2rem, 9vw, 12rem); color: #576E47; font-weight: 600; line-height: 1; margin: 0; white-space: nowrap; letter-spacing: -0.03em; text-align: center; display: flex; justify-content: center; align-items: center; width: fit-content;">${haywireHtml}</h2></div></section>`;
-
                 setTimeout(() => {
                     const targetSection = document.querySelector('.framer-12jl4kx');
-                    if (targetSection && !document.querySelector('.text-anim-section')) {
+                    // Check if target exists and if we haven't already injected this specific content
+                    if (targetSection && !document.querySelector('.service-grid')) {
                         const temp = document.createElement('div');
-                        temp.innerHTML = textAnimHtml + servicesSectionHtml;
-
+                        temp.innerHTML = servicesSectionHtml;
+                        
+                        // Insert all children of temp after targetSection
                         let lastInserted = targetSection;
                         while (temp.firstChild) {
                             const node = temp.firstChild;
                             lastInserted.insertAdjacentElement('afterend', node);
                             lastInserted = node;
-                        }
-
-                        // Twisted Chord Animation with ScrollTrigger
-                        const chars = document.querySelectorAll('.haywire-char');
-                        const section = document.querySelector('.text-anim-section');
-                        
-                        if (chars.length > 0 && section && window.gsap && window.ScrollTrigger) {
-                            const tl = gsap.timeline({
-                                scrollTrigger: {
-                                    trigger: section,
-                                    start: "top top",
-                                    end: "bottom top",
-                                    scrub: 1,
-                                    pin: true,
-                                    anticipatePin: 1
-                                }
-                            });
-
-                            tl.to(chars, {
-                                rotationY: 360,
-                                scaleY: 1.4,
-                                scaleX: 0.8,
-                                stagger: {
-                                    each: 0.05,
-                                    from: "center"
-                                },
-                                ease: "power2.inOut"
-                            })
-                            .to(chars, {
-                                rotationY: 720,
-                                scaleY: 1,
-                                scaleX: 1,
-                                stagger: {
-                                    each: 0.05,
-                                    from: "center"
-                                },
-                                ease: "power2.inOut"
-                            });
                         }
 
                         // Restart Webflow IX2 for animations
@@ -1317,7 +1358,7 @@
                 }, 2000);
                 // -----------------------------------------------------
 // --- INJECT GRID WORK ---
-                const gridHtmlStr = "<div class=\"grid-work\"><div class=\"sticky-lft\"><div><p class=\"top-text\">(Portfolio 26\u00a9)<br/></p><h2 class=\"h2\">Work<span class=\"small-ftd\">(4)</span></h2></div><div class=\"circle-divider\"></div><div data-w-id=\"7821829e-5017-66e8-880e-9d87324de2d8\"><a class=\"contact-info for-button w-inline-block\" data-wf--button-shadow--variant=\"base\" href=\"/work/work-3\" style=\"background-color: #576E47 !important; border-color: #576E47 !important;\"><div class=\"z-index-btn\"><p class=\"top-text for-b\" style=\"color: #f7f2e6 !important;\">View all work</p></div><div class=\"bg-change\" style=\"background-color: #576E47 !important;\"></div></a></div></div><div class=\"work-main\" id=\"w-node-ba158952-0b86-f81a-6d4b-f6ffa8e54dd6-993a4bf1\"><div class=\"w-layout-grid wrok-wrapper\"><div class=\"work-card card-1\"><div class=\"collection-list-wrapper w-dyn-list\"><div class=\"collection-list-full w-dyn-items\" role=\"list\"><div class=\"collection-full w-dyn-item\" role=\"listitem\"><a class=\"work-main-wrapper w-inline-block\" href=\"/project/forma-digital\"><div class=\"image-wrap full-width\" data-w-id=\"e7e268ed-acf2-211a-26d8-c41fc9aa8d6a\"><img alt=\"\" class=\"paralax-image\" loading=\"lazy\" sizes=\"100vw\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d79_work-1.webp\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d79_work-1-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d79_work-1-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d79_work-1-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d79_work-1-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d79_work-1-p-2000.webp 2000w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d79_work-1.webp 2400w\"/></div><div class=\"work-title-main\"><h3 class=\"work-title b\">Forma Digital</h3><div class=\"copy-flex\"><h3 class=\"work-title\">26</h3><h3 class=\"work-title\">\u00a9</h3></div></div></a></div></div></div></div><div class=\"work-card card-2\"><div class=\"collection-list-wrapper w-dyn-list\"><div class=\"collection-list-full w-dyn-items\" role=\"list\"><div class=\"collection-full w-dyn-item\" role=\"listitem\"><a class=\"work-main-wrapper w-inline-block\" href=\"/project/one-step\"><div class=\"image-wrap full-width\" data-w-id=\"8df319aa-c211-90dd-41ed-2ef2c0bab9eb\"><img alt=\"\" class=\"paralax-image\" loading=\"lazy\" sizes=\"100vw\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d34_work-5.webp\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d34_work-5-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d34_work-5-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d34_work-5-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d34_work-5-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d34_work-5-p-2000.webp 2000w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d34_work-5.webp 2400w\"/></div><div class=\"work-title-main\"><h3 class=\"work-title b\">One Step</h3><div class=\"copy-flex\"><h3 class=\"work-title\">24</h3><h3 class=\"work-title\">\u00a9</h3></div></div></a></div></div></div></div><div class=\"work-card card-3\"><div class=\"collection-list-wrapper w-dyn-list\"><div class=\"collection-list-full w-dyn-items\" role=\"list\"><div class=\"collection-full w-dyn-item\" role=\"listitem\"><a class=\"work-main-wrapper w-inline-block\" href=\"/project/nero-vision\"><div class=\"image-wrap full-width\" data-w-id=\"2614d8f8-b7ab-24a2-8e64-e06f0de90ef3\"><img alt=\"\" class=\"paralax-image\" loading=\"lazy\" sizes=\"100vw\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d1a_work-4.webp\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d1a_work-4-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d1a_work-4-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d1a_work-4-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d1a_work-4-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d1a_work-4-p-2000.webp 2000w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d1a_work-4.webp 2400w\"/></div><div class=\"work-title-main\"><h3 class=\"work-title b\">Nero Vision</h3><div class=\"copy-flex\"><h3 class=\"work-title\">25</h3><h3 class=\"work-title\">\u00a9</h3></div></div></a></div></div></div></div><div class=\"work-card no-mrg\"><div class=\"collection-list-wrapper w-dyn-list\"><div class=\"collection-list-full w-dyn-items\" role=\"list\"><div class=\"collection-full w-dyn-item\" role=\"listitem\"><a class=\"work-main-wrapper w-inline-block\" href=\"/project/bold-moves\"><div class=\"image-wrap full-width\" data-w-id=\"cb58189f-e9d6-6917-3bf2-b9e596e096fd\"><img alt=\"\" class=\"paralax-image\" loading=\"lazy\" sizes=\"100vw\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d8f_work-8.webp\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d8f_work-8-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d8f_work-8-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d8f_work-8-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d8f_work-8-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d8f_work-8-p-2000.webp 2000w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d8f_work-8.webp 2400w\"/></div><div class=\"work-title-main\"><h3 class=\"work-title b\">Bold Moves</h3><div class=\"copy-flex\"><h3 class=\"work-title\">24</h3><h3 class=\"work-title\">\u00a9</h3></div></div></a></div></div></div></div></div></div></div>";
+                const gridHtmlStr = "<div class=\"grid-work\"><div class=\"sticky-lft\"><div><p class=\"top-text\">(Portfolio 26\u00a9)<br/></p><h2 class=\"h2\">Work<span class=\"small-ftd\">(4)</span></h2></div><div class=\"circle-divider\"></div><div data-w-id=\"7821829e-5017-66e8-880e-9d87324de2d8\"><a class=\"contact-info for-button w-inline-block\" data-wf--button-shadow--variant=\"base\" href=\"/work/work-3\"><div class=\"z-index-btn\"><p class=\"top-text for-b\">View all work</p></div><div class=\"bg-change\"></div></a></div></div><div class=\"work-main\" id=\"w-node-ba158952-0b86-f81a-6d4b-f6ffa8e54dd6-993a4bf1\"><div class=\"w-layout-grid wrok-wrapper\"><div class=\"work-card card-1\"><div class=\"collection-list-wrapper w-dyn-list\"><div class=\"collection-list-full w-dyn-items\" role=\"list\"><div class=\"collection-full w-dyn-item\" role=\"listitem\"><a class=\"work-main-wrapper w-inline-block\" href=\"/project/forma-digital\"><div class=\"image-wrap full-width\" data-w-id=\"e7e268ed-acf2-211a-26d8-c41fc9aa8d6a\"><img alt=\"\" class=\"paralax-image\" loading=\"lazy\" sizes=\"100vw\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d79_work-1.webp\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d79_work-1-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d79_work-1-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d79_work-1-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d79_work-1-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d79_work-1-p-2000.webp 2000w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d79_work-1.webp 2400w\"/></div><div class=\"work-title-main\"><h3 class=\"work-title b\">Forma Digital</h3><div class=\"copy-flex\"><h3 class=\"work-title\">26</h3><h3 class=\"work-title\">\u00a9</h3></div></div></a></div></div></div></div><div class=\"work-card card-2\"><div class=\"collection-list-wrapper w-dyn-list\"><div class=\"collection-list-full w-dyn-items\" role=\"list\"><div class=\"collection-full w-dyn-item\" role=\"listitem\"><a class=\"work-main-wrapper w-inline-block\" href=\"/project/one-step\"><div class=\"image-wrap full-width\" data-w-id=\"8df319aa-c211-90dd-41ed-2ef2c0bab9eb\"><img alt=\"\" class=\"paralax-image\" loading=\"lazy\" sizes=\"100vw\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d34_work-5.webp\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d34_work-5-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d34_work-5-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d34_work-5-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d34_work-5-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d34_work-5-p-2000.webp 2000w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d34_work-5.webp 2400w\"/></div><div class=\"work-title-main\"><h3 class=\"work-title b\">One Step</h3><div class=\"copy-flex\"><h3 class=\"work-title\">24</h3><h3 class=\"work-title\">\u00a9</h3></div></div></a></div></div></div></div><div class=\"work-card card-3\"><div class=\"collection-list-wrapper w-dyn-list\"><div class=\"collection-list-full w-dyn-items\" role=\"list\"><div class=\"collection-full w-dyn-item\" role=\"listitem\"><a class=\"work-main-wrapper w-inline-block\" href=\"/project/nero-vision\"><div class=\"image-wrap full-width\" data-w-id=\"2614d8f8-b7ab-24a2-8e64-e06f0de90ef3\"><img alt=\"\" class=\"paralax-image\" loading=\"lazy\" sizes=\"100vw\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d1a_work-4.webp\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d1a_work-4-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d1a_work-4-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d1a_work-4-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d1a_work-4-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d1a_work-4-p-2000.webp 2000w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d1a_work-4.webp 2400w\"/></div><div class=\"work-title-main\"><h3 class=\"work-title b\">Nero Vision</h3><div class=\"copy-flex\"><h3 class=\"work-title\">25</h3><h3 class=\"work-title\">\u00a9</h3></div></div></a></div></div></div></div><div class=\"work-card no-mrg\"><div class=\"collection-list-wrapper w-dyn-list\"><div class=\"collection-list-full w-dyn-items\" role=\"list\"><div class=\"collection-full w-dyn-item\" role=\"listitem\"><a class=\"work-main-wrapper w-inline-block\" href=\"/project/bold-moves\"><div class=\"image-wrap full-width\" data-w-id=\"cb58189f-e9d6-6917-3bf2-b9e596e096fd\"><img alt=\"\" class=\"paralax-image\" loading=\"lazy\" sizes=\"100vw\" src=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d8f_work-8.webp\" srcset=\"https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d8f_work-8-p-500.webp 500w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d8f_work-8-p-800.webp 800w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d8f_work-8-p-1080.webp 1080w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d8f_work-8-p-1600.webp 1600w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d8f_work-8-p-2000.webp 2000w, https://cdn.prod.website-files.com/699b6466d5f19893993a4c2c/699b6466d5f19893993a4d8f_work-8.webp 2400w\"/></div><div class=\"work-title-main\"><h3 class=\"work-title b\">Bold Moves</h3><div class=\"copy-flex\"><h3 class=\"work-title\">24</h3><h3 class=\"work-title\">\u00a9</h3></div></div></a></div></div></div></div></div></div></div>";
                 
                 // We use a MutationObserver to wait for Framer's hydration to finish,
                 // or fallback to a timeout.
@@ -1454,6 +1495,7 @@
 
 <!-- Shared page transition script (handles all other internal links) -->
 <script src="./assets/js/transitions.js"></script>
+    <script src="./assets/js/navbar.js"></script>
 </body>
 
 </html>
