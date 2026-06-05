@@ -74,20 +74,9 @@
     <!-- ── Page transition curtain ──────────────────────────────── -->
     <div id="page-curtain"></div>
 
-    <!-- ── Navbar (inlined — edit navbar.html as the source of truth) ── -->
-    <nav class="site-nav" aria-label="Main navigation">
-        <div class="nav-inner">
-            <a class="nav-logo" href="./index.html" aria-label="Slay The Strategy — Home">
-                Slay The Strategy
-            </a>
-            <div class="nav-menu" role="list">
-                <a class="nav-link"        href="./index.html" role="listitem">Home</a>
-                <a class="nav-link active" href="./about.html" role="listitem" aria-current="page">About</a>
-                <a class="nav-link"        href="./work.html"  role="listitem">Work</a>
-                <a class="nav-cta"         href="./contact.html"><span>Let's Talk</span></a>
-            </div>
-        </div>
-    </nav>
+    <!-- ── Navbar: loaded from the single source of truth (navbar.html) ── -->
+    <div id="navbar-root"></div>
+    <script src="./assets/js/navbar.js"></script>
 
     <!-- ── About content ────────────────────────────────────────── -->
     <main id="about-content">

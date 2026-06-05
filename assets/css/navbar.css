@@ -1,134 +1,239 @@
-/* ── Shared Navbar Styles ────────────────────────────────────────────────────
- * Loaded on every page. Mirrors the Framer navbar design:
- * Switzer font, 1200px max-width, 70px height, pill CTA with hover overlay.
- * ─────────────────────────────────────────────────────────────────────────── */
+/* ── Navbar — Minimal Floating ───────────────────────────────────────────── */
 
 :root {
-    --nav-bg:    #f1efe7;
-    --nav-fg:    rgb(26, 26, 26);
-    --nav-muted: rgba(26, 26, 26, 0.6);
-    --nav-h:     70px;
-    --nav-max-w: 1200px;
-    --nav-font:  "Switzer", "Switzer Placeholder", sans-serif;
-    --nav-r:     10px;
+    --nav-fg:    #576E47;
+    --nav-faint: rgba(87, 110, 71, 0.45);
+    --nav-h:     72px;
+    --nav-font:  "PP Neue Montreal", "Switzer", "Switzer Placeholder", sans-serif;
 }
 
+/* ── Fixed wrapper — sits on top of everything ───────────────────────────── */
 .site-nav {
-    width: 100%;
-    display: flex;
-    flex-flow: row;
-    place-content: center;
-    align-items: center;
-    padding: 0 30px;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 9999;
-    background-color: var(--nav-bg);
+    background: transparent;
+    pointer-events: none;
+    cursor: auto !important;
 }
 
+/* Restore cursor on all navbar children */
+.site-nav * { cursor: auto !important; }
+.nav-cta, .nav-cta * { cursor: pointer !important; }
+.nav-link  { cursor: pointer !important; }
+.nav-logo  { cursor: pointer !important; }
+
+/* ── Inner row — logo left, links right ──────────────────────────────────── */
 .nav-inner {
     width: 100%;
-    max-width: var(--nav-max-w);
+    max-width: 1400px;
     min-height: var(--nav-h);
+    margin: 0 auto;
+    padding: 0 36px;
+    box-sizing: border-box;
     display: flex;
-    flex-flow: row;
-    place-content: center space-between;
     align-items: center;
+    justify-content: space-between;
+    pointer-events: auto;
 }
 
-/* Logo */
+/* ── Logo ────────────────────────────────────────────────────────────────── */
 .nav-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
     font-family: var(--nav-font);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.02em;
     color: var(--nav-fg);
     text-decoration: none;
     white-space: nowrap;
-    flex: none;
+    flex-shrink: 0;
+    position: relative;
+    /* underline reveal on hover */
 }
+.nav-logo::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background: var(--nav-fg);
+    transition: width 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.nav-logo:hover::after { width: 100%; }
 
-/* Nav link group */
+/* ── Right-side links group ──────────────────────────────────────────────── */
 .nav-menu {
     display: flex;
-    flex-flow: row;
     align-items: center;
-    gap: 0;
-    flex: none;
+    gap: 4px;
 }
 
+/* ── Plain nav links ─────────────────────────────────────────────────────── */
 .nav-link {
-    min-width: 120px;
-    display: flex;
-    place-content: center;
-    align-items: center;
     font-family: var(--nav-font);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.02em;
     color: var(--nav-fg);
     text-decoration: none;
     white-space: nowrap;
-    padding: 10px 0;
-    transition: opacity 0.2s ease;
-}
-
-.nav-link:hover { opacity: 0.6; }
-
-/* Highlight the current page — set automatically by navbar.js */
-.nav-link.active {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-}
-
-/* "Let's Talk" CTA pill button */
-.nav-cta {
+    padding: 8px 16px;
+    border-radius: 6px;
     position: relative;
+    transition: color 0.25s ease;
+}
+/* subtle underline sweep */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 16px;
+    right: 16px;
+    height: 1px;
+    background: var(--nav-fg);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.nav-link:hover       { color: var(--nav-fg); }
+.nav-link:hover::after { transform: scaleX(1); transform-origin: left; }
+
+/* Active state */
+.nav-link.active::after {
+    transform: scaleX(1);
+    opacity: 0.4;
+}
+
+/* ── "Let's Talk" CTA ────────────────────────────────────────────────────── */
+.nav-cta {
+    margin-left: 12px;
     display: flex;
-    place-content: center;
     align-items: center;
-    padding: 15px 24px;
+    justify-content: center;
+    padding: 10px 22px;
     font-family: var(--nav-font);
     font-size: 1rem;
     font-weight: 500;
-    letter-spacing: -0.5px;
-    color: var(--nav-muted);
+    letter-spacing: -0.01em;
+    color: var(--nav-fg);
     text-decoration: none;
     white-space: nowrap;
-    border-radius: var(--nav-r);
-    background-color: rgb(245, 245, 245);
+    border-radius: 9px;
+    border: 1.5px solid rgba(87, 110, 71, 0.3);
+    background: #f1efe7;
+    position: relative;
     overflow: hidden;
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: border-color 0.3s ease, color 0.3s ease;
 }
-
-/* Dark fill overlay on hover */
-.nav-cta::after {
+/* fill wipe on hover */
+.nav-cta::before {
     content: '';
     position: absolute;
     inset: 0;
-    background-color: var(--nav-fg);
-    border-radius: 200%;
-    transform: scale(0);
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-                border-radius 0.4s ease;
+    background: var(--nav-fg);
+    transform: translateY(101%);
+    transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
 }
-
-.nav-cta:hover { color: rgb(245, 245, 245); }
-
-.nav-cta:hover::after {
-    transform: scale(2.5);
-    border-radius: var(--nav-r);
-}
-
+.nav-cta:hover { color: #f1efe7; border-color: var(--nav-fg); }
+.nav-cta:hover::before { transform: translateY(0); }
 .nav-cta span { position: relative; z-index: 1; }
 
-/* Mobile */
+/* ── Mobile hamburger ────────────────────────────────────────────────────── */
 @media (max-width: 809px) {
-    .site-nav { padding: 0 15px; }
-    .nav-link  { min-width: 80px; font-size: 0.9rem; }
-    .nav-cta   { padding: 12px 16px; font-size: 0.9rem; }
+    .nav-inner  { padding: 0 18px; }
+    .nav-logo   { font-size: 0.95rem; }
+
+    /* Hide text links, show hamburger button */
+    .nav-link   { display: none; }
+    .nav-cta    { display: none; }
+
+    /* Hamburger button */
+    .nav-hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 40px;
+        height: 40px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 6px;
+        border-radius: 8px;
+        transition: background 0.2s ease;
+        pointer-events: auto;
+    }
+    .nav-hamburger:hover { background: rgba(87,110,71,0.08); }
+
+    .nav-hamburger span {
+        display: block;
+        width: 100%;
+        height: 1.5px;
+        background: var(--nav-fg);
+        border-radius: 2px;
+        transform-origin: center;
+        transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1),
+                    opacity   0.25s ease;
+    }
+
+    /* Open state — top & bottom lines form an X */
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    /* Mobile dropdown panel */
+    .nav-mobile-menu {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100vh;
+        background: #f1efe7;
+        z-index: 9998;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 2rem;
+        gap: 0.5rem;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-8px);
+        transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    .nav-mobile-menu.open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .nav-mobile-menu a {
+        font-family: var(--nav-font);
+        font-size: 3rem;
+        font-weight: 500;
+        letter-spacing: -0.03em;
+        color: var(--nav-fg);
+        text-decoration: none;
+        line-height: 1.15;
+        transition: opacity 0.2s ease;
+    }
+    .nav-mobile-menu a:hover { opacity: 0.5; }
+
+    .nav-mobile-cta {
+        margin-top: 2rem;
+        font-size: 1.1rem !important;
+        font-weight: 600 !important;
+        padding: 12px 28px;
+        border-radius: 10px;
+        border: 1.5px solid rgba(87,110,71,0.35);
+        color: var(--nav-fg) !important;
+    }
+}
+
+/* Hide hamburger on desktop */
+@media (min-width: 810px) {
+    .nav-hamburger    { display: none; }
+    .nav-mobile-menu  { display: none; }
 }
