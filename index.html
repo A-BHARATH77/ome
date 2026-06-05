@@ -913,6 +913,10 @@
       backdrop-filter: none !important;
       -webkit-backdrop-filter: none !important;
     }
+
+    /* Remove Max Bennet testimonial image and text */
+    .framer-1i9q6mg,
+    .framer-f2zciy { display: none !important; }
   </style>
 
 </head>
@@ -976,6 +980,55 @@
         if (href === page || (page === '' && href === 'index.html')) {
           a.classList.add('active');
         }
+      });
+    })();
+
+    // ── Text Scramble effect on nav links ─────────────────────────────────
+    (function() {
+      var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&';
+
+      function scramble(el) {
+        var original = el.dataset.original || el.textContent.trim();
+        el.dataset.original = original;
+
+        var frame = 0;
+        var totalFrames = 18; // how many scramble frames before resolving
+        var resolved = 0;
+        var raf;
+
+        function tick() {
+          var output = '';
+          for (var i = 0; i < original.length; i++) {
+            if (original[i] === ' ') {
+              output += ' ';
+            } else if (i < resolved) {
+              // this char has resolved back to original
+              output += original[i];
+            } else {
+              // still scrambling
+              output += chars[Math.floor(Math.random() * chars.length)];
+            }
+          }
+          el.textContent = output;
+          frame++;
+          // resolve one extra character every 6 frames (slower)
+          if (frame % 6 === 0) resolved++;
+          if (resolved < original.length) {
+            raf = requestAnimationFrame(tick);
+          } else {
+            el.textContent = original; // snap to final
+          }
+        }
+
+        cancelAnimationFrame(raf);
+        resolved = 0;
+        frame = 0;
+        tick();
+      }
+
+      // Apply to all nav links + logo
+      document.querySelectorAll('.nav-link, .nav-logo').forEach(function(el) {
+        el.addEventListener('mouseenter', function() { scramble(el); });
       });
     })();
   </script>
@@ -1449,7 +1502,7 @@
     }
 
     function applyVisibility() {
-      var home = isHome();
+      var home = isHome(); 
       if (hero) hero.style.display = home ? '' : 'none';
       if (logo) logo.style.display = home ? '' : 'none';
     }
