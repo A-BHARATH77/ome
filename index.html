@@ -43,115 +43,46 @@
                 
                 // Enforce branding in the main intro h2 section
                 document.querySelectorAll('.framer-1u3tvov-container h2').forEach(el => {
+                    const newText = "Slay The Strategy crafts digital strategies designed to elevate brands with clarity, precision and intent.";
+                    if (el.innerText !== newText) {
+                        el.innerText = newText;
+                    }
                     el.style.color = '#576E47';
                     el.style.setProperty('color', '#576E47', 'important');
                     el.style.maxWidth = 'none';
                     el.style.width = '100%';
-                    if (!el.dataset.revealed) {
-                        el.dataset.revealed = 'true';
-                        const word = "Slay The Strategy crafts digital strategies designed to elevate brands with clarity, precision and intent.";
-                        const lettersHtml = word.split('').map((char, i) => 
-                            char === ' ' 
-                            ? `<span class="reveal-wrapper"><span class="reveal-text" style="transition-delay: ${i * 0.02}s">&nbsp;</span></span>`
-                            : `<span class="reveal-wrapper"><span class="reveal-text" style="transition-delay: ${i * 0.02}s">${char}</span></span>`
-                        ).join('');
-                        el.innerHTML = lettersHtml;
-
-                        const observer = new IntersectionObserver((entries) => {
-                            entries.forEach(entry => {
-                                if (entry.isIntersecting) {
-                                    entry.target.querySelectorAll('.reveal-text').forEach(child => child.classList.add('in-view'));
-                                } else {
-                                    entry.target.querySelectorAll('.reveal-text').forEach(child => child.classList.remove('in-view'));
-                                }
-                            });
-                        }, { threshold: 0.1 });
-                        observer.observe(el);
-                    }
                 });
 
                 // Enforce branding in the Featured Works h2 section
                 document.querySelectorAll('.framer-1juymhg-container h2').forEach(el => {
+                    const newText = "Featured Works";
+                    if (el.innerText !== newText) {
+                        el.innerText = newText;
+                    }
                     el.style.color = '#576E47';
                     el.style.setProperty('color', '#576E47', 'important');
-                    
-                    if (!el.dataset.revealed) {
-                        el.dataset.revealed = 'true';
-                        const word = "Featured Works";
-                        const lettersHtml = word.split('').map((char, i) => 
-                            char === ' ' 
-                            ? `<span class="reveal-wrapper"><span class="reveal-text" style="transition-delay: ${i * 0.02}s">&nbsp;</span></span>`
-                            : `<span class="reveal-wrapper"><span class="reveal-text" style="transition-delay: ${i * 0.02}s">${char}</span></span>`
-                        ).join('');
-                        el.innerHTML = lettersHtml;
-
-                        const observer = new IntersectionObserver((entries) => {
-                            entries.forEach(entry => {
-                                if (entry.isIntersecting) {
-                                    entry.target.querySelectorAll('.reveal-text').forEach(child => child.classList.add('in-view'));
-                                } else {
-                                    entry.target.querySelectorAll('.reveal-text').forEach(child => child.classList.remove('in-view'));
-                                }
-                            });
-                        }, { threshold: 0.1 });
-                        observer.observe(el);
-                    }
                 });
 
                 // Enforce branding in the What we do h2 section
                 document.querySelectorAll('.framer-1enug1h-container h2').forEach(el => {
+                    const newText = "Advanced brands require advanced thinking";
+                    if (el.innerText !== newText) {
+                        el.innerText = newText;
+                    }
                     el.style.color = '#576E47';
                     el.style.setProperty('color', '#576E47', 'important');
                     el.style.maxWidth = '80%';
                     el.style.setProperty('max-width', '80%', 'important');
-                    if (!el.dataset.revealed) {
-                        el.dataset.revealed = 'true';
-                        const word = "Advanced brands require advanced thinking";
-                        const lettersHtml = word.split('').map((char, i) => 
-                            char === ' ' 
-                            ? `<span class="reveal-wrapper"><span class="reveal-text" style="transition-delay: ${i * 0.02}s">&nbsp;</span></span>`
-                            : `<span class="reveal-wrapper"><span class="reveal-text" style="transition-delay: ${i * 0.02}s">${char}</span></span>`
-                        ).join('');
-                        el.innerHTML = lettersHtml;
-
-                        const observer = new IntersectionObserver((entries) => {
-                            entries.forEach(entry => {
-                                if (entry.isIntersecting) {
-                                    entry.target.querySelectorAll('.reveal-text').forEach(child => child.classList.add('in-view'));
-                                } else {
-                                    entry.target.querySelectorAll('.reveal-text').forEach(child => child.classList.remove('in-view'));
-                                }
-                            });
-                        }, { threshold: 0.1 });
-                        observer.observe(el);
-                    }
                 });
 
                 // Enforce branding in the Testimonials h2 section
                 document.querySelectorAll('.framer-mh591z-container h2').forEach(el => {
+                    const newText = "Testimonials";
+                    if (el.innerText !== newText) {
+                        el.innerText = newText;
+                    }
                     el.style.color = '#576E47';
                     el.style.setProperty('color', '#576E47', 'important');
-                    if (!el.dataset.revealed) {
-                        el.dataset.revealed = 'true';
-                        const word = "Testimonials";
-                        const lettersHtml = word.split('').map((char, i) => 
-                            char === ' ' 
-                            ? `<span class="reveal-wrapper"><span class="reveal-text" style="transition-delay: ${i * 0.02}s">&nbsp;</span></span>`
-                            : `<span class="reveal-wrapper"><span class="reveal-text" style="transition-delay: ${i * 0.02}s">${char}</span></span>`
-                        ).join('');
-                        el.innerHTML = lettersHtml;
-
-                        const observer = new IntersectionObserver((entries) => {
-                            entries.forEach(entry => {
-                                if (entry.isIntersecting) {
-                                    entry.target.querySelectorAll('.reveal-text').forEach(child => child.classList.add('in-view'));
-                                } else {
-                                    entry.target.querySelectorAll('.reveal-text').forEach(child => child.classList.remove('in-view'));
-                                }
-                            });
-                        }, { threshold: 0.1 });
-                        observer.observe(el);
-                    }
                 });
 
                 // Enforce branding in testimonials (framer-1wdac2p and others)
@@ -166,10 +97,7 @@
                     el.style.backgroundColor = '#f7f2e6';
                 });
 
-                // Enforce Pricing section background and card color
-                document.querySelectorAll('.framer-qz0awc').forEach(el => {
-                    el.style.backgroundColor = '#f7f2e6';
-                });
+                // Enforce Pricing section card color
                 document.querySelectorAll('.framer-30bjch').forEach(el => {
                     el.style.backgroundColor = '#ffffff';
                 });
@@ -227,6 +155,36 @@
                     }
                 });
 
+                // Enforce footer phone number
+                document.querySelectorAll('.framer-QKZ6y a[href^="tel:"]').forEach(el => {
+                    const newPhone = "+91 90363 83777";
+                    if (el.href !== `tel:${newPhone}`) {
+                        el.href = `tel:${newPhone}`;
+                    }
+                    const phoneText = el.querySelector('p');
+                    if (phoneText && phoneText.innerText !== newPhone) {
+                        phoneText.innerText = newPhone;
+                    }
+                });
+
+                // Enforce footer email address
+                document.querySelectorAll('.framer-QKZ6y a[href^="mailto:"]').forEach(el => {
+                    const newEmail = "hello@slaystrategy.com";
+                    if (el.href !== `mailto:${newEmail}`) {
+                        el.href = `mailto:${newEmail}`;
+                    }
+                    // Target all possible text containers inside the link
+                    el.querySelectorAll('p, span, div').forEach(textEl => {
+                        if (textEl.innerText.includes('hello@omnera.com') || textEl.innerText === 'hello@omnera.com') {
+                            textEl.innerText = newEmail;
+                        }
+                    });
+                    // Fallback for direct text
+                    if (el.innerText.includes('hello@omnera.com')) {
+                        el.innerText = el.innerText.replace('hello@omnera.com', newEmail);
+                    }
+                });
+
                 // Replace Copyright with legal links
                 document.querySelectorAll('.framer-1ezafib').forEach(el => {
                     if (!el.querySelector('.slay-legal-links')) {
@@ -240,7 +198,7 @@
                 });
 
                 // Remove the badges and their containers
-                const badges = document.querySelectorAll('.__framer-badge, #__framer-badge-container, .framer-72rtr7-container, .framer-45rxis-container, .framer-129rlqa-container, .framer-1mj00lo, .framer-zuy0af , .framer-1qb8q1l, .framer-eaavvc, .w-webflow-badge, .framer-d9hokq');
+                const badges = document.querySelectorAll('.__framer-badge, #__framer-badge-container, .framer-72rtr7-container, .framer-45rxis-container, .framer-129rlqa-container, .framer-1mj00lo, .framer-zuy0af , .framer-1qb8q1l, .framer-eaavvc, .w-webflow-badge, .framer-d9hokq, .framer-qz0awc, .framer-1i04qca');
                 badges.forEach(el => el.remove());
 
                 // Replace footer logo with infinite marquee
