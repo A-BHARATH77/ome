@@ -35,20 +35,122 @@
                     }
                 });
 
-                // Enforce branding in the letter-by-letter h2 section
+                document.querySelectorAll('.framer-9svcg4').forEach(el => {
+                    el.style.gridColumn = 'span 4';
+                    el.style.setProperty('grid-column', 'span 4', 'important');
+                    el.style.width = '100%';
+                });
+                
+                // Enforce branding in the main intro h2 section
                 document.querySelectorAll('.framer-1u3tvov-container h2').forEach(el => {
                     el.style.color = '#576E47';
-                    el.querySelectorAll('span').forEach(span => span.style.color = '#576E47');
-                    if (el.innerText.includes('Omnera')) {
-                        const firstSpan = el.querySelector('span');
-                        if (firstSpan && firstSpan.innerText.includes('Omnera')) {
-                            const word = "Slay The Strategy ";
-                            firstSpan.innerHTML = word.split('').map(char => 
-                                char === ' ' 
-                                    ? '<span style="display:inline-block">&nbsp;</span>' 
-                                    : `<span style="display:inline-block">${char}</span>`
-                            ).join('');
-                        }
+                    el.style.setProperty('color', '#576E47', 'important');
+                    el.style.maxWidth = 'none';
+                    el.style.width = '100%';
+                    if (!el.dataset.revealed) {
+                        el.dataset.revealed = 'true';
+                        const word = "Slay The Strategy crafts digital strategies designed to elevate brands with clarity, precision and intent.";
+                        const lettersHtml = word.split('').map((char, i) => 
+                            char === ' ' 
+                            ? `<span class="reveal-wrapper"><span class="reveal-text" style="transition-delay: ${i * 0.02}s">&nbsp;</span></span>`
+                            : `<span class="reveal-wrapper"><span class="reveal-text" style="transition-delay: ${i * 0.02}s">${char}</span></span>`
+                        ).join('');
+                        el.innerHTML = lettersHtml;
+
+                        const observer = new IntersectionObserver((entries) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    entry.target.querySelectorAll('.reveal-text').forEach(child => child.classList.add('in-view'));
+                                } else {
+                                    entry.target.querySelectorAll('.reveal-text').forEach(child => child.classList.remove('in-view'));
+                                }
+                            });
+                        }, { threshold: 0.1 });
+                        observer.observe(el);
+                    }
+                });
+
+                // Enforce branding in the Featured Works h2 section
+                document.querySelectorAll('.framer-1juymhg-container h2').forEach(el => {
+                    el.style.color = '#576E47';
+                    el.style.setProperty('color', '#576E47', 'important');
+                    
+                    if (!el.dataset.revealed) {
+                        el.dataset.revealed = 'true';
+                        const word = "Featured Works";
+                        const lettersHtml = word.split('').map((char, i) => 
+                            char === ' ' 
+                            ? `<span class="reveal-wrapper"><span class="reveal-text" style="transition-delay: ${i * 0.02}s">&nbsp;</span></span>`
+                            : `<span class="reveal-wrapper"><span class="reveal-text" style="transition-delay: ${i * 0.02}s">${char}</span></span>`
+                        ).join('');
+                        el.innerHTML = lettersHtml;
+
+                        const observer = new IntersectionObserver((entries) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    entry.target.querySelectorAll('.reveal-text').forEach(child => child.classList.add('in-view'));
+                                } else {
+                                    entry.target.querySelectorAll('.reveal-text').forEach(child => child.classList.remove('in-view'));
+                                }
+                            });
+                        }, { threshold: 0.1 });
+                        observer.observe(el);
+                    }
+                });
+
+                // Enforce branding in the What we do h2 section
+                document.querySelectorAll('.framer-1enug1h-container h2').forEach(el => {
+                    el.style.color = '#576E47';
+                    el.style.setProperty('color', '#576E47', 'important');
+                    el.style.maxWidth = '80%';
+                    el.style.setProperty('max-width', '80%', 'important');
+                    if (!el.dataset.revealed) {
+                        el.dataset.revealed = 'true';
+                        const word = "Advanced brands require advanced thinking";
+                        const lettersHtml = word.split('').map((char, i) => 
+                            char === ' ' 
+                            ? `<span class="reveal-wrapper"><span class="reveal-text" style="transition-delay: ${i * 0.02}s">&nbsp;</span></span>`
+                            : `<span class="reveal-wrapper"><span class="reveal-text" style="transition-delay: ${i * 0.02}s">${char}</span></span>`
+                        ).join('');
+                        el.innerHTML = lettersHtml;
+
+                        const observer = new IntersectionObserver((entries) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    entry.target.querySelectorAll('.reveal-text').forEach(child => child.classList.add('in-view'));
+                                } else {
+                                    entry.target.querySelectorAll('.reveal-text').forEach(child => child.classList.remove('in-view'));
+                                }
+                            });
+                        }, { threshold: 0.1 });
+                        observer.observe(el);
+                    }
+                });
+
+                // Enforce branding in the Testimonials h2 section
+                document.querySelectorAll('.framer-mh591z-container h2').forEach(el => {
+                    el.style.color = '#576E47';
+                    el.style.setProperty('color', '#576E47', 'important');
+                    if (!el.dataset.revealed) {
+                        el.dataset.revealed = 'true';
+                        const word = "Testimonials";
+                        const lettersHtml = word.split('').map((char, i) => 
+                            char === ' ' 
+                            ? `<span class="reveal-wrapper"><span class="reveal-text" style="transition-delay: ${i * 0.02}s">&nbsp;</span></span>`
+                            : `<span class="reveal-wrapper"><span class="reveal-text" style="transition-delay: ${i * 0.02}s">${char}</span></span>`
+                        ).join('');
+                        el.innerHTML = lettersHtml;
+
+                        const observer = new IntersectionObserver((entries) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    entry.target.querySelectorAll('.reveal-text').forEach(child => child.classList.add('in-view'));
+                                } else {
+                                    entry.target.querySelectorAll('.reveal-text').forEach(child => child.classList.remove('in-view'));
+                                }
+                            });
+                        }, { threshold: 0.1 });
+                        observer.observe(el);
                     }
                 });
 
@@ -89,9 +191,124 @@
                     el.style.setProperty('--framer-text-color', '#576E47', 'important');
                 });
 
+                // Enforce footer background color and padding
+                document.querySelectorAll('.framer-QKZ6y').forEach(el => {
+                    el.style.backgroundColor = '#576E47';
+                    el.style.setProperty('background-color', '#576E47', 'important');
+                    
+                    // Reduce bottom padding to zero
+                    el.style.paddingBottom = '0px';
+                    el.style.setProperty('padding-bottom', '0px', 'important');
+                });
+
+                // Enforce footer text colors
+                document.querySelectorAll('.framer-QKZ6y, .framer-QKZ6y *').forEach(el => {
+                    el.style.color = '#f7f2e6';
+                    el.style.setProperty('--framer-text-color', '#f7f2e6', 'important');
+                    el.style.setProperty('color', '#f7f2e6', 'important');
+                    
+                    // Apply weight only if NOT part of the marquee
+                    if (!el.closest('.slay-footer-marquee')) {
+                        el.style.fontWeight = '700';
+                        el.style.setProperty('font-weight', '700', 'important');
+                    }
+                });
+
+                // Enforce social badge colors
+                document.querySelectorAll('.framer-ux0qok a').forEach(el => {
+                    el.style.backgroundColor = '#f7f2e6';
+                    el.style.setProperty('background-color', '#f7f2e6', 'important');
+                    el.style.setProperty('--token-46338170-2382-4577-8047-44d0960f402f', '#f7f2e6', 'important');
+                    
+                    // Ensure the icons inside are dark green for contrast
+                    const icon = el.querySelector('div');
+                    if (icon) {
+                        icon.style.setProperty('--awo075', '#576E47', 'important');
+                    }
+                });
+
+                // Replace Copyright with legal links
+                document.querySelectorAll('.framer-1ezafib').forEach(el => {
+                    if (!el.querySelector('.slay-legal-links')) {
+                        el.innerHTML = `
+                            <div class="slay-legal-links" style="display: flex; flex-direction: column; gap: 8px;">
+                                <a href="./privacy" style="color: #f7f2e6 !important; font-size: 13px; font-weight: 700; opacity: 0.7; text-decoration: none;">Privacy Policy</a>
+                                <a href="./terms" style="color: #f7f2e6 !important; font-size: 13px; font-weight: 700; opacity: 0.7; text-decoration: none;">Terms and Conditions</a>
+                            </div>
+                        `;
+                    }
+                });
+
                 // Remove the badges and their containers
-                const badges = document.querySelectorAll('.__framer-badge, #__framer-badge-container, .framer-72rtr7-container, .framer-45rxis-container, .framer-129rlqa-container, .framer-1mj00lo, .framer-zuy0af , .framer-1qb8q1l, .framer-eaavvc, .w-webflow-badge');
+                const badges = document.querySelectorAll('.__framer-badge, #__framer-badge-container, .framer-72rtr7-container, .framer-45rxis-container, .framer-129rlqa-container, .framer-1mj00lo, .framer-zuy0af , .framer-1qb8q1l, .framer-eaavvc, .w-webflow-badge, .framer-d9hokq');
                 badges.forEach(el => el.remove());
+
+                // Replace footer logo with infinite marquee
+                document.querySelectorAll('.framer-5lvuu9-container [data-framer-name="Logo"]').forEach(logoDiv => {
+                    logoDiv.style.opacity = '1';
+                    logoDiv.style.width = '100vw';
+                    logoDiv.style.height = 'auto';
+                    logoDiv.style.minHeight = 'fit-content';
+                    logoDiv.style.marginLeft = 'calc(-50vw + 50%)';
+                    logoDiv.style.position = 'relative';
+                    logoDiv.style.zIndex = '1';
+                    logoDiv.style.overflow = 'visible';
+                    logoDiv.style.display = 'block';
+                    
+                    const wrapper = logoDiv.querySelector('[data-framer-background-image-wrapper]');
+                    if (wrapper) wrapper.style.display = 'none';
+                    
+                    if (!logoDiv.querySelector('.slay-footer-marquee')) {
+                        // Remove old static text if it exists
+                        const oldText = logoDiv.querySelector('.slay-footer-text');
+                        if (oldText) oldText.remove();
+
+                        const marquee = document.createElement('div');
+                        marquee.className = 'slay-footer-marquee';
+                        marquee.style.width = '100%';
+                        marquee.style.overflow = 'hidden';
+                        marquee.style.display = 'flex';
+                        marquee.style.pointerEvents = 'none';
+                        
+                        if (!document.getElementById('slay-marquee-css')) {
+                            const style = document.createElement('style');
+                            style.id = 'slay-marquee-css';
+                            style.innerHTML = `
+                                @keyframes slayMarquee {
+                                    from { transform: translateX(0); }
+                                    to { transform: translateX(-25%); }
+                                }
+                                .slay-marquee-track {
+                                    display: flex;
+                                    white-space: nowrap;
+                                    animation: slayMarquee 20s linear infinite;
+                                }
+                                .slay-marquee-unit {
+                                    display: flex;
+                                    gap: 6vw;
+                                    padding-right: 6vw;
+                                    font-size: clamp(2rem, 11vw, 22rem);
+                                    font-weight: 500;
+                                    color: #f7f2e6;
+                                    font-family: "PP Neue Montreal", sans-serif;
+                                    text-transform: uppercase;
+                                    line-height: 0.8;
+                                    letter-spacing: -0.02em;
+                                }
+                            `;
+                            document.head.appendChild(style);
+                        }
+
+                        const track = document.createElement('div');
+                        track.className = 'slay-marquee-track';
+                        
+                        const unitHtml = '<div class="slay-marquee-unit"><span>Slay</span><span>The</span><span>Strategy</span></div>';
+                        track.innerHTML = unitHtml + unitHtml + unitHtml + unitHtml;
+                        
+                        marquee.appendChild(track);
+                        logoDiv.appendChild(marquee);
+                    }
+                });
             }
 
             // Immediate enforcement
@@ -314,12 +531,14 @@
           display: inline-block;
           overflow: hidden;
           vertical-align: top;
+          padding-bottom: 0.15em;
+          margin-bottom: -0.15em;
       }
       .reveal-text {
           display: inline-block;
           transform: translateY(110%);
           opacity: 0;
-          transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.8s ease-out;
+          transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.5s ease-out;
       }
       .reveal-text.in-view {
           transform: translateY(0);
