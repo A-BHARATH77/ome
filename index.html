@@ -162,12 +162,22 @@
                     }
                 });
 
-                // Enforce social badge colors
+                // Enforce social badge colors and links
                 document.querySelectorAll('.framer-ux0qok a').forEach(el => {
                     el.style.backgroundColor = '#f7f2e6';
                     el.style.setProperty('background-color', '#f7f2e6', 'important');
                     el.style.setProperty('--token-46338170-2382-4577-8047-44d0960f402f', '#f7f2e6', 'important');
                     
+                    // Update Instagram link specifically
+                    if (el.href.includes('instagram.com')) {
+                        el.href = 'https://www.instagram.com/slaythestrategy.agency/';
+                    }
+
+                    // Update LinkedIn link specifically
+                    if (el.href.includes('linkedin.com')) {
+                        el.href = 'https://www.linkedin.com/company/slay-the-strategy/';
+                    }
+
                     // Ensure the icons inside are dark green for contrast
                     const icon = el.querySelector('div');
                     if (icon) {
@@ -218,7 +228,7 @@
                 });
 
                 // Remove the badges and their containers
-                const badges = document.querySelectorAll('.__framer-badge, #__framer-badge-container, .framer-72rtr7-container, .framer-45rxis-container, .framer-129rlqa-container, .framer-1mj00lo, .framer-zuy0af , .framer-1qb8q1l, .framer-eaavvc, .w-webflow-badge, .framer-d9hokq, .framer-qz0awc, .framer-1i04qca');
+                const badges = document.querySelectorAll('.__framer-badge, #__framer-badge-container, .framer-72rtr7-container, .framer-45rxis-container, .framer-129rlqa-container, .framer-1mj00lo, .framer-zuy0af , .framer-1qb8q1l, .framer-eaavvc, .w-webflow-badge, .framer-d9hokq, .framer-qz0awc, .framer-1i04qca, .framer-QKZ6y a[href*="/news"], .framer-oesbze');
                 badges.forEach(el => el.remove());
 
                 // Replace footer logo with infinite marquee
