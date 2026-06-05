@@ -94,6 +94,14 @@
                     el.style.backgroundColor = '#576E47';
                     el.style.setProperty('background-color', '#576E47', 'important');
                     
+                    // Target the background layer if present
+                    const bgChange = el.querySelector('.bg-change');
+                    if (bgChange) {
+                        bgChange.style.backgroundColor = '#576E47';
+                        bgChange.style.setProperty('background-color', '#576E47', 'important');
+                        bgChange.style.opacity = '1';
+                    }
+
                     // Target text elements inside
                     el.querySelectorAll('p, span').forEach(textEl => {
                         textEl.style.color = '#f7f2e6';
@@ -464,7 +472,7 @@
 
     .service-media-sticky {
         top: 12vh !important; /* Offset to clear the navbar */
-        padding-top: 12rem !important;
+        padding-top: 10rem !important;
     }
     </style>
 
