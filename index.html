@@ -89,9 +89,24 @@
                     }
                 });
 
-                // Enforce button background color
-                document.querySelectorAll('.framer-1pzq8pd').forEach(el => {
-                    el.style.backgroundColor = '#f7f2e6';
+                // Enforce button colors (Services and Work sections)
+                document.querySelectorAll('.contact-info.for-button, .framer-1pzq8pd').forEach(el => {
+                    el.style.backgroundColor = '#576E47';
+                    el.style.setProperty('background-color', '#576E47', 'important');
+                    
+                    // Target text elements inside
+                    el.querySelectorAll('p, span').forEach(textEl => {
+                        textEl.style.color = '#f7f2e6';
+                        textEl.style.setProperty('color', '#f7f2e6', 'important');
+                    });
+                });
+
+                // Enforce dot colors (Services and Work sections)
+                document.querySelectorAll('.circle-divider').forEach(el => {
+                    el.style.backgroundColor = '#576E47';
+                    el.style.setProperty('background-color', '#576E47', 'important');
+                    el.style.borderColor = '#576E47';
+                    el.style.setProperty('border-color', '#576E47', 'important');
                 });
 
                 // Enforce Pricing section card color
@@ -445,6 +460,11 @@
         width: 100% !important;
         padding-left: 6% !important;
         padding-right: 6% !important;
+    }
+
+    .service-media-sticky {
+        top: 12vh !important; /* Offset to clear the navbar */
+        padding-top: 12rem !important;
     }
     </style>
 
