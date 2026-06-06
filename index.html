@@ -280,6 +280,58 @@
           }
         });
 
+        // Enforce branding in the "Inside Slay" button
+        document.querySelectorAll('.framer-9318u0 a.framer-icduyd p').forEach(el => {
+          const btnText = "Inside Slay";
+          if (el.innerText !== btnText) {
+            el.innerText = btnText;
+          }
+          el.style.opacity = '0.7';
+          el.style.setProperty('opacity', '0.7', 'important');
+          if (cachedTopTextStyle) {
+            el.style.fontSize = cachedTopTextStyle.fontSize;
+            el.style.setProperty('font-size', cachedTopTextStyle.fontSize, 'important');
+            el.style.fontWeight = cachedTopTextStyle.fontWeight;
+            el.style.setProperty('font-weight', cachedTopTextStyle.fontWeight, 'important');
+            el.style.letterSpacing = cachedTopTextStyle.letterSpacing;
+            el.style.setProperty('letter-spacing', cachedTopTextStyle.letterSpacing, 'important');
+            el.style.lineHeight = cachedTopTextStyle.lineHeight;
+            el.style.setProperty('line-height', cachedTopTextStyle.lineHeight, 'important');
+            el.style.fontFamily = cachedTopTextStyle.fontFamily;
+            el.style.setProperty('font-family', cachedTopTextStyle.fontFamily, 'important');
+            if (cachedTopTextStyle.textTransform) {
+              el.style.textTransform = cachedTopTextStyle.textTransform;
+              el.style.setProperty('text-transform', cachedTopTextStyle.textTransform, 'important');
+            }
+          }
+        });
+
+        // Enforce branding in the "Get In Touch" button
+        document.querySelectorAll('.framer-9318u0 a.framer-1svty61 p').forEach(el => {
+          const btnText = "Get In Touch";
+          if (el.innerText !== btnText) {
+            el.innerText = btnText;
+          }
+          el.style.opacity = '0.7';
+          el.style.setProperty('opacity', '0.7', 'important');
+          if (cachedTopTextStyle) {
+            el.style.fontSize = cachedTopTextStyle.fontSize;
+            el.style.setProperty('font-size', cachedTopTextStyle.fontSize, 'important');
+            el.style.fontWeight = cachedTopTextStyle.fontWeight;
+            el.style.setProperty('font-weight', cachedTopTextStyle.fontWeight, 'important');
+            el.style.letterSpacing = cachedTopTextStyle.letterSpacing;
+            el.style.setProperty('letter-spacing', cachedTopTextStyle.letterSpacing, 'important');
+            el.style.lineHeight = cachedTopTextStyle.lineHeight;
+            el.style.setProperty('line-height', cachedTopTextStyle.lineHeight, 'important');
+            el.style.fontFamily = cachedTopTextStyle.fontFamily;
+            el.style.setProperty('font-family', cachedTopTextStyle.fontFamily, 'important');
+            if (cachedTopTextStyle.textTransform) {
+              el.style.textTransform = cachedTopTextStyle.textTransform;
+              el.style.setProperty('text-transform', cachedTopTextStyle.textTransform, 'important');
+            }
+          }
+        });
+
         // Enforce branding in the Services section label
         document.querySelectorAll('.section .bottom-grid._1.grd .top-text').forEach(el => {
           if (el.innerText.includes('(Services)') && cachedTopTextStyle) {
@@ -2017,10 +2069,13 @@
         tick();
       }
 
-      // Apply to all nav links + logo
-      document.querySelectorAll('.nav-link, .nav-logo').forEach(function (el) {
-        el.addEventListener('mouseenter', function () { scramble(el); });
-      });
+      // Use event delegation for both static and dynamic elements (including buttons)
+      document.body.addEventListener('mouseenter', function (e) {
+        var target = e.target;
+        if (target.matches('.nav-link, .nav-logo, .framer-9318u0 a.framer-icduyd p, .framer-9318u0 a.framer-1svty61 p')) {
+          scramble(target);
+        }
+      }, true);
     })();
   </script>
 
