@@ -18449,7 +18449,7 @@ window.pageBodyContent = `<script
                       data-styles-preset="kxEAksfkx"
                       dir="auto"
                     >
-                      What we do©
+                      {WHAT_WE_DO_LABEL}
                     </p>
                   </div>
                   <div class="framer-1enug1h-container">
@@ -19033,7 +19033,7 @@ window.pageBodyContent = `<script
                       data-styles-preset="kxEAksfkx"
                       dir="auto"
                     >
-                      What we do©
+                      {WHAT_WE_DO_LABEL}
                     </p>
                   </div>
                   <div class="framer-1enug1h-container">
@@ -19617,7 +19617,7 @@ window.pageBodyContent = `<script
                       data-styles-preset="kxEAksfkx"
                       dir="auto"
                     >
-                      What we do©
+                      {WHAT_WE_DO_LABEL}
                     </p>
                   </div>
                   <div class="framer-1enug1h-container">
