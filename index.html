@@ -475,9 +475,14 @@
           el.style.backgroundColor = '#ffffff';
         });
 
+        // Remove the original Framer footer container
+        document.querySelectorAll('.framer-5lvuu9-container').forEach(el => {
+          el.remove();
+        });
+
         // Enforce favicon
         document.querySelectorAll('link[rel*="icon"]').forEach(el => {
-          el.href = 'Resources/logo.webp';
+          el.href = './assets/images/logo.webp';
         });
 
         // Enforce color for specific preset
@@ -544,6 +549,26 @@
           const icon = el.querySelector('div');
           if (icon) {
             icon.style.setProperty('--awo075', '#576E47', 'important');
+          }
+        });
+
+        // Enforce footer navigation links
+        document.querySelectorAll('.framer-1btu5lk a').forEach(el => {
+          const href = el.getAttribute('href') || '';
+          const text = el.innerText.toLowerCase();
+          
+          if (text.includes('home')) {
+            el.href = './index.html';
+          } else if (text.includes('about')) {
+            el.href = './about.html';
+          } else if (text.includes('contact')) {
+            el.href = './contact.html';
+          } else if (text.includes('news')) {
+            // Remove News link if not used
+            el.closest('[class*="-container"]')?.remove() || el.remove();
+          } else if (text.includes('work')) {
+             // Link to portfolio section on home for now if work.html missing
+             el.href = './index.html#portfolio';
           }
         });
 
@@ -1942,6 +1967,7 @@
 
   <!-- Shared navbar styles -->
   <link rel="stylesheet" href="./assets/css/navbar.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
 
   <style>
     /* Kill the original Framer navbar entirely — no visual bleed */
@@ -2177,9 +2203,7 @@
     </div>
   </div>
 
-
-
-
+  <div id="footer-root"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
@@ -2573,10 +2597,7 @@
       applyVisibility();
     })();
   </script>
-  <!-- Page transition curtain (brand green wipe covers exit, slides off on enter) -->
-  <div id="page-curtain"></div>
-
-  <!-- Intercept Framer's ./about SPA link → hard-navigate with transition -->
+  <!-- Intercept Framer's ./about SPA link → hard-navigate -->
   <script>
     document.addEventListener('click', function (e) {
       var link = e.target.closest('a');
@@ -2585,20 +2606,11 @@
       if (href === './about' || href === '/about' || href.endsWith('/about')) {
         e.preventDefault();
         e.stopImmediatePropagation();
-        // Trigger curtain cover, then navigate
-        var curtain = document.getElementById('page-curtain');
-        if (curtain) {
-          curtain.classList.add('curtain-cover');
-          setTimeout(function () { window.location.href = './about.html'; }, 600);
-        } else {
-          window.location.href = './about.html';
-        }
+        window.location.href = './about.html';
       }
     }, true);
   </script>
 
-  <!-- Shared page transition script (handles all other internal links) -->
-  <script src="./assets/js/transitions.js"></script>
   <script src="./assets/js/navbar.js"></script>
 </body>
 
