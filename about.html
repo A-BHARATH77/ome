@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About — Slay The Strategy</title>
+    <link rel="icon" href="./assets/images/logo.webp">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <style>
+        @import url("https://fonts.cdnfonts.com/css/pp-neue-montreal");
+        
+        :root {
+            --bg: #111; /* Dark background */
+            --brand: #fff;
+            --text-light: #fff;
+        }
+
+        body {
+            background-color: var(--bg);
+            margin: 0;
+            font-family: "PP Neue Montreal", sans-serif;
+            color: var(--brand);
+            /* Allow scrolling */
+        }
+
+        .hero-section {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('./assets/images/about.avif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Dark overlay for better text readability */
+        .hero-section::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .hero-title {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: clamp(6rem, 16vw, 15rem);
+            font-weight: 500;
+            letter-spacing: -4px;
+            margin: 0;
+            line-height: 1;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            z-index: 2;
+            max-width: 600px;
+        }
+
+        .bottom-left h2 {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: clamp(2rem, 3.5vw, 3rem);
+            font-weight: 600;
+            margin: 0;
+            line-height: 1.1;
+            letter-spacing: -1px;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            z-index: 2;
+            max-width: 320px;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .bottom-right p {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 1.05rem;
+            line-height: 1.3;
+            margin: 0;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+            opacity: 0.95;
+        }
+
+        .scroll-section {
+            background-color: #f7f2e6;
+            color: #576E47;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 6%;
+        }
+
+        .scroll-content {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .meet-label {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #576E47;
+            opacity: 0.7;
+            letter-spacing: -0.2px;
+        }
+
+        .scroll-heading {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 2.8rem;
+            line-height: 1.15;
+            font-weight: 600;
+            margin: 0;
+            letter-spacing: -0.5px;
+            color: #576E47;
+        }
+
+        .scroll-heading .light-text {
+            opacity: 0.3;
+        }
+
+        .founder-section {
+            background-color: #f7f2e6;
+            padding: 40px 10% 100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: flex-end;
+            min-height: auto;
+        }
+
+        .founder-text-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding-bottom: 20px;
+        }
+
+        .founder-quote {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 1.6rem;
+            line-height: 1.25;
+            font-weight: 600;
+            color: #576E47;
+            margin: 0 0 20px 0;
+            max-width: 450px;
+            letter-spacing: -0.5px;
+        }
+
+        .founder-name-tag {
+            background-color: rgba(87, 110, 71, 0.1);
+            color: #576E47;
+            padding: 8px 14px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+        }
+
+        .founder-image-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .founder-image {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 12px 40px rgba(87, 110, 71, 0.15);
+            object-fit: cover;
+        }
+
+        .why-us-section {
+            background-color: #f7f2e6;
+            padding: 100px 10%;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 60px;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .why-us-image-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .why-us-image {
+            width: 100%;
+            max-width: 650px;
+            height: 100%;
+            max-height: 500px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .why-us-text-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px 0;
+        }
+
+        .why-us-top {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .why-us-label {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #576E47;
+            margin: 0;
+            opacity: 0.7;
+            letter-spacing: -0.2px;
+        }
+
+        .why-us-heading {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: clamp(2.5rem, 4vw, 3.5rem);
+            line-height: 1.1;
+            font-weight: 600;
+            color: #576E47;
+            margin: 0;
+            letter-spacing: -1px;
+            max-width: 500px;
+        }
+
+        .why-us-bottom {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #576E47;
+            font-weight: 600;
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 0.95rem;
+            border-bottom: 1px solid #576E47;
+            padding-bottom: 2px;
+            margin-top: 40px;
+        }
+
+        .why-us-bottom svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .process-section {
+            background-color: #f7f2e6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 60px 6%;
+            box-sizing: border-box;
+        }
+
+        .process-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .process-header {
+            margin-bottom: 30px;
+        }
+
+        .process-header-label {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #576E47;
+            margin: 0 0 10px 0;
+            opacity: 0.7;
+            letter-spacing: -0.2px;
+        }
+
+        .process-header-title {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.1;
+            font-weight: 600;
+            color: #576E47;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        .process-row {
+            display: flex;
+            gap: 16px;
+            width: 50%;
+        }
+
+        .process-row.top {
+            /* left half — default */
+        }
+
+        .process-row.bottom {
+            margin-left: auto; /* push to right half */
+        }
+
+        .process-card {
+            flex: 1;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 270px;
+            box-sizing: border-box;
+            box-shadow: 0 2px 12px rgba(87,110,71,0.06);
+            border: 1px solid rgba(87,110,71,0.08);
+        }
+
+        .process-badge {
+            background-color: #f2f2f2;
+            color: #888;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-weight: 400;
+            font-size: 0.85rem;
+            letter-spacing: 0;
+            align-self: flex-start;
+        }
+
+        .process-text {
+            margin-top: 0;
+        }
+
+        .process-title {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.2px;
+        }
+
+        .process-desc {
+            font-size: 0.88rem;
+            line-height: 1.45;
+            color: #888;
+            opacity: 1;
+            margin: 0;
+            font-weight: 400;
+        }
+
+        @media (max-width: 1024px) {
+            .process-card {
+                width: calc(50% - 10px);
+            }
+            .process-row.top, .process-row.bottom {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 5rem; }
+            .bottom-left { bottom: 20px; left: 20px; }
+            .bottom-right { bottom: 20px; right: 20px; max-width: 250px; }
+            .founder-section, .why-us-section {
+                grid-template-columns: 1fr;
+                padding: 60px 6%;
+                gap: 40px;
+            }
+            .process-row {
+                flex-direction: column;
+            }
+            .process-card {
+                width: 100%;
+                min-height: auto;
+            }
+            .process-section {
+                padding: 60px 6%;
+                min-height: auto;
+            }
+            .stats-section {
+                min-height: auto;
+                padding: 60px 6%;
+            }
+            .stats-content {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+
+        .stats-section {
+            background-color: #f7f2e6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 80px 6%;
+            box-sizing: border-box;
+        }
+
+        .stats-content {
+            margin-left: 50%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .stats-label {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #576E47;
+            margin: 0 0 30px 0;
+            opacity: 0.7;
+            letter-spacing: -0.2px;
+        }
+
+        .stats-row {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 30px 0;
+            border-top: 1px solid rgba(87,110,71,0.15);
+        }
+
+        .stats-row:last-child {
+            border-bottom: 1px solid rgba(87,110,71,0.15);
+        }
+
+        .stats-number {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: clamp(4rem, 8vw, 7rem);
+            font-weight: 600;
+            color: #576E47;
+            line-height: 1;
+            letter-spacing: -3px;
+            min-width: 160px;
+            margin: 0;
+        }
+
+        .stats-desc {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #576E47;
+            opacity: 0.7;
+            max-width: 280px;
+            margin: 0;
+            font-weight: 400;
+        }
+        /* ── Footer ── */
+        .about-footer {
+            background-color: #576E47;
+            color: #f7f2e6;
+            overflow: hidden;
+            padding: 60px 6% 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 60px;
+        }
+
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .footer-headline {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            font-weight: 700;
+            color: #f7f2e6;
+            margin: 0;
+            line-height: 1.15;
+            letter-spacing: -0.5px;
+        }
+
+        .footer-contact-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #f7f2e6;
+            opacity: 0.6;
+            margin: 0 0 4px 0;
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+        }
+
+        .footer-email {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #f7f2e6;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .footer-legal {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-top: auto;
+        }
+
+        .footer-legal a {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 0.8rem;
+            color: #f7f2e6;
+            opacity: 0.5;
+            text-decoration: none;
+        }
+
+        .footer-legal a:hover { opacity: 0.8; }
+
+        .footer-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 40px;
+            padding-top: 15px;
+        }
+
+        .footer-nav-social {
+            display: flex;
+            align-items: flex-start;
+            gap: 60px;
+        }
+
+        .footer-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .footer-nav a {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 0.95rem;
+            color: #f7f2e6;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            font-weight: 500;
+            opacity: 0.85;
+            transition: opacity 0.2s;
+        }
+
+        .footer-nav a:hover { opacity: 1; }
+
+        .footer-socials {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .social-btn {
+            width: 38px;
+            height: 38px;
+            border: 1px solid rgba(247,242,230,0.3);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f7f2e6;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .social-btn:hover { background: rgba(247,242,230,0.1); }
+
+        .social-btn svg { width: 16px; height: 16px; }
+
+        .footer-phone {
+            text-align: right;
+        }
+
+        .footer-phone-label {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 0.8rem;
+            color: #f7f2e6;
+            opacity: 0.55;
+            margin: 0 0 2px 0;
+            font-weight: 600;
+        }
+
+        .footer-phone-number {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #f7f2e6;
+            margin: 0;
+        }
+
+        .footer-marquee-wrapper {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .footer-marquee {
+            display: flex;
+            white-space: nowrap;
+            animation: marqueeScroll 14s linear infinite;
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: clamp(5rem, 18vw, 15rem);
+            font-weight: 700;
+            color: #f7f2e6;
+            line-height: 0.9;
+            letter-spacing: -4px;
+            will-change: transform;
+        }
+
+        @keyframes marqueeScroll {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        @media (max-width: 768px) {
+            .footer-top { grid-template-columns: 1fr; }
+            .footer-right { align-items: flex-start; }
+            .footer-marquee { font-size: 4rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <a class="nav-logo" href="./index.html">Slay The Strategy</a>
+        <div class="nav-menu">
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link active" href="./about.html">About</a>
+          <a class="nav-link" href="./index.html#portfolio">Work</a>
+          <a class="nav-cta" href="./contact.html"><span>Let's Talk</span></a>
+        </div>
+        <button class="nav-hamburger" id="navHamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="nav-mobile-menu" id="navMobileMenu">
+      <a href="./index.html">Home</a>
+      <a href="./about.html" class="active">About</a>
+      <a href="./index.html#portfolio">Work</a>
+      <a href="./contact.html">Let's Talk</a>
+    </div>
+    
+    <div class="hero-section">
+        <h1 class="hero-title">About&copy;</h1>
+
+        <div class="bottom-left">
+            <h2>Built for performance.<br/>Designed for growth&trade;</h2>
+        </div>
+
+        <div class="bottom-right">
+            <p>Crafting digital experiences where<br/>strategy meets precision &mdash; built to<br/>grow, evolve, and perform over time.</p>
+        </div>
+    </div>
+
+    <div class="scroll-section">
+        <div class="scroll-content">
+            <p class="meet-label">(Meet Slay The Strategy)</p>
+            <h2 class="scroll-heading">
+                A small studio with highly<br/>
+                talented, top-notch<br/>
+                designers and professionals.
+            </h2>
+        </div>
+    </div>
+
+    <div class="founder-section">
+        <div class="founder-text-wrapper">
+            <h3 class="founder-quote">&ldquo;We didn&rsquo;t start Omnera&copy; to follow trends &mdash; we started it to build systems that last.&rdquo;</h3>
+            <span class="founder-name-tag">John Doe, Founder</span>
+        </div>
+        <div class="founder-image-wrapper">
+            <img src="./assets/images/founder.webp" alt="John Doe, Founder" class="founder-image">
+        </div>
+    </div>
+
+    <div class="why-us-section">
+        <div class="why-us-image-wrapper">
+            <img src="./assets/images/y8TsG9y3wUDf17GDFWYp7Y38k.avif" alt="Why Us" class="why-us-image">
+        </div>
+        <div class="why-us-text-wrapper">
+            <div class="why-us-top">
+                <p class="why-us-label">(Why us)</p>
+                <h2 class="why-us-heading">We build systems that perform, scale, and last.</h2>
+            </div>
+            <a href="#" class="why-us-bottom">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                <span>Omnera&copy;</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="process-section">
+        <div class="process-container">
+            <div class="process-header">
+                <p class="process-header-label">(What we do)</p>
+                <h2 class="process-header-title">Shaping ideas into design<br/>solutions.</h2>
+            </div>
+            <div class="process-row top">
+                <div class="process-card">
+                    <div class="process-badge">01</div>
+                    <div class="process-text">
+                        <h3 class="process-title">The Brief</h3>
+                        <p class="process-desc">Send your details or book a 30-min call. No unnecessary meetings.</p>
+                    </div>
+                </div>
+                <div class="process-card">
+                    <div class="process-badge">02</div>
+                    <div class="process-text">
+                        <h3 class="process-title">Design proposal</h3>
+                        <p class="process-desc">A design approach shaped by insight, scope, and outcome.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="process-row bottom">
+                <div class="process-card">
+                    <div class="process-badge">03</div>
+                    <div class="process-text">
+                        <h3 class="process-title">Design+Coding</h3>
+                        <p class="process-desc">We design and build fast, functional experiences.</p>
+                    </div>
+                </div>
+                <div class="process-card">
+                    <div class="process-badge">04</div>
+                    <div class="process-text">
+                        <h3 class="process-title">Review and Handoff</h3>
+                        <p class="process-desc">Refined details. Ready to scale and maintain.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats-section">
+        <div class="stats-content">
+            <p class="stats-label">(Stats)</p>
+            <div class="stats-row">
+                <h2 class="stats-number">30</h2>
+                <p class="stats-desc">A multidisciplinary team of designers, strategists, and developers dedicated to crafting exceptional digital experiences.</p>
+            </div>
+            <div class="stats-row">
+                <h2 class="stats-number">80</h2>
+                <p class="stats-desc">From startups to established brands, we've delivered transformative projects across industries and markets worldwide.</p>
+            </div>
+            <div class="stats-row">
+                <h2 class="stats-number">+7</h2>
+                <p class="stats-desc">Industry recognition for creativity, innovation, and performance-driven design that pushes boundaries.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="about-footer">
+        <div class="footer-top">
+            <!-- Left column -->
+            <div class="footer-left">
+                <h2 class="footer-headline">Build it once. Build it right&trade;</h2>
+                <div>
+                    <p class="footer-contact-label">New Business:</p>
+                    <a href="mailto:hello@slaystrategy.com" class="footer-email">hello@slaystrategy.com</a>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and Conditions</a>
+                </div>
+            </div>
+            <!-- Right column -->
+            <div class="footer-right">
+                <div class="footer-nav-social">
+                    <nav class="footer-nav">
+                        <a href="./index.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <a href="./index.html#portfolio">Work</a>
+                        <a href="./contact.html">Contact</a>
+                    </nav>
+                    <div class="footer-socials">
+                        <!-- X / Twitter -->
+                        <a href="#" class="social-btn" aria-label="X">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#" class="social-btn" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="#" class="social-btn" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-phone">
+                    <p class="footer-phone-label">Phone:</p>
+                    <p class="footer-phone-number">+91 90363 83777</p>
+                </div>
+            </div>
+        </div>
+        <!-- Scrolling brand marquee -->
+        <div class="footer-marquee-wrapper">
+            <div class="footer-marquee">
+                SLAY&nbsp;THE&nbsp;STRATEGY&nbsp;&nbsp;&nbsp;&nbsp;SLAY&nbsp;THE&nbsp;STRATEGY&nbsp;&nbsp;&nbsp;&nbsp;SLAY&nbsp;THE&nbsp;STRATEGY&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      // Hamburger toggle
+      (function () {
+        var btn = document.getElementById('navHamburger');
+        var menu = document.getElementById('navMobileMenu');
+        if (!btn || !menu) return;
+        btn.addEventListener('click', function () {
+          var open = menu.classList.toggle('open');
+          btn.classList.toggle('open', open);
+          document.body.style.overflow = open ? 'hidden' : '';
+        });
+      })();
+
+      // Text Scramble
+      (function () {
+        var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&';
+        function scramble(el) {
+          var original = el.dataset.original || el.textContent.trim();
+          el.dataset.original = original;
+          var frame = 0, resolved = 0;
+          function tick() {
+            var output = '';
+            for (var i = 0; i < original.length; i++) {
+              if (original[i] === ' ') output += ' ';
+              else if (i < resolved) output += original[i];
+              else output += chars[Math.floor(Math.random() * chars.length)];
+            }
+            el.textContent = output;
+            if (frame++ % 6 === 0) resolved++;
+            if (resolved < original.length) requestAnimationFrame(tick);
+            else el.textContent = original;
+          }
+          tick();
+        }
+        document.body.addEventListener('mouseenter', function (e) {
+          var target = e.target;
+          if (target.matches('.nav-link, .nav-logo')) {
+            scramble(target);
+          }
+        }, true);
+      })();
+    </script>
+</body>
+</html>
