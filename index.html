@@ -6,6 +6,54 @@
 
 <head>
   <style>
+    /* Aggressive Loader Neutralization */
+    [class*="loader" i], [class*="preloader" i], 
+    [id*="loader" i], [id*="preloader" i],
+    [data-framer-name*="loader" i], [data-framer-name*="preloader" i],
+    .__framer-loader, #__framer-loader,
+    .framer-cl-loader, .framer-loading-overlay {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      z-index: -9999 !important;
+    }
+  </style>
+  <script>
+    // Proactive loader removal observer - Extremely Aggressive
+    (function() {
+      const isLoaderElement = (node) => {
+        if (node.nodeType !== 1) return false;
+        const searchTerms = ['loader', 'preloader', 'spinner', 'loading'];
+        const attributes = [node.id, node.className, node.getAttribute('data-framer-name')];
+        
+        return attributes.some(attr => {
+          if (typeof attr !== 'string') return false;
+          const lowerAttr = attr.toLowerCase();
+          return searchTerms.some(term => lowerAttr.includes(term));
+        }) || (node.style && parseInt(node.style.zIndex) > 1000 && !['brandLogo', 'hero'].some(id => node.id === id));
+      };
+
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          mutation.addedNodes.forEach((node) => {
+            if (isLoaderElement(node)) {
+              node.remove();
+            }
+          });
+        });
+      });
+      observer.observe(document.documentElement, { childList: true, subtree: true });
+      
+      // Also run a frequent check for any missed elements
+      setInterval(() => {
+        document.querySelectorAll('*').forEach(node => {
+          if (isLoaderElement(node)) node.remove();
+        });
+      }, 100);
+    })();
+  </script>
+  <style>
     .__framer-badge,
     #__framer-badge-container,
     .framer-72rtr7-container,
@@ -720,7 +768,6 @@
   <meta charset="utf-8">
 
 
-  <script>try { if (localStorage.get("__framer_force_showing_editorbar_since")) { const n = document.createElement("link"); n.rel = "modulepreload"; n.href = "https://framer.com/edit/init.mjs"; document.head.appendChild(n) } } catch (e) { }</script>
   <!-- Start of headStart -->
 
   <!-- End of headStart -->
@@ -1293,11 +1340,6 @@
     type="text/css" />
   <link href="https://unpkg.com/lenis@1.3.4/dist/lenis.css" rel="stylesheet" />
   <style>
-    html.w-mod-js:not(.w-mod-ix3) :is(.h2._01, .contact-info.for-button, .bg-change, .menu-wrapper, [data-wf-target*='["699b6466d5f19893993a4bf1","668513fa-96bc-a471-9254-1244961a6485"]'], .preloader, [data-wf-target*='["699b6466d5f19893993a4bf1","ce714b43-ca02-f75e-a30b-e50c0386be7f"]'], .circle-divider, [data-wf-target*='["699b6466d5f19893993a4bf1","11f4fc70-8a2d-088c-43e4-29580902aa2d"]'], [data-wf-target*='["699b6466d5f19893993a4bf1","57b5af3e-8de7-1a3d-0bcc-71e02f1dacc5"]'], .top-text.big, .team-flex, .photo-section, .cta-sm-title._02, .cta-sm-title._03, .cta-sm-title._04, .cta-sm-title._05, .absolute-photo, .video-grid, .cta-sm-title._06, .play-video, .card-stats-side.front, .card-stats-side.back, .pricing-txt._01, .pricing-txt._02, .pricing-txt._03) {
-      visibility: hidden !important;
-    }
-  </style>
-  <style>
     .glass::before {
       content: "";
       position: absolute;
@@ -1553,7 +1595,6 @@
     :root {
       --bg: #f1efe7;
       --fg: #576E47;
-      --loader-bg: #e0e0d8;
       --stroke: rgba(87, 110, 71, 0.2);
     }
 
@@ -1607,14 +1648,6 @@
       box-shadow: 0 -20px 50px rgba(0, 0, 0, 0.1);
     }
 
-    .preloader {
-      display: none !important;
-      opacity: 0 !important;
-      pointer-events: none !important;
-      visibility: hidden !important;
-      z-index: -999 !important;
-    }
-
     .hero {
       position: sticky;
       top: 0;
@@ -1631,7 +1664,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: var(--loader-bg);
+      background-color: #e0e0d8;
       transform-origin: bottom;
       transform: scaleY(100%);
     }

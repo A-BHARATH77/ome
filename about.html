@@ -299,15 +299,16 @@
         .process-row {
             display: flex;
             gap: 16px;
-            width: 65%;
+            width: 50%;
         }
 
         .process-row.top {
-            /* left half — default */
+            align-self: flex-start;
         }
 
         .process-row.bottom {
-            margin-left: auto; /* push to right half */
+            align-self: flex-end;
+            margin-left: 50%;
         }
 
         .process-card {
