@@ -98,11 +98,11 @@
         .scroll-section {
             background-color: #f7f2e6;
             color: #576E47;
-            min-height: 100vh;
+            min-height: 80vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 40px 6%;
+            padding: 20px 4%;
         }
 
         .scroll-content {
@@ -138,7 +138,7 @@
 
         .founder-section {
             background-color: #f7f2e6;
-            padding: 40px 10% 100px;
+            padding: 20px 4% 60px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
@@ -193,26 +193,27 @@
 
         .why-us-section {
             background-color: #f7f2e6;
-            padding: 100px 10%;
+            padding: 80px 4%;
             display: grid;
             grid-template-columns: 1.2fr 1fr;
-            gap: 60px;
-            align-items: center;
-            min-height: 100vh;
+            gap: 80px;
+            align-items: flex-start;
+            height: 100vh;
+            box-sizing: border-box;
         }
 
         .why-us-image-wrapper {
             width: 100%;
             display: flex;
             justify-content: flex-start;
-            align-items: center;
+            align-items: flex-start;
         }
 
         .why-us-image {
             width: 100%;
-            max-width: 650px;
-            height: 100%;
-            max-height: 500px;
+            max-width: 800px;
+            height: auto;
+            max-height: 70vh;
             border-radius: 8px;
             object-fit: cover;
         }
@@ -220,9 +221,9 @@
         .why-us-text-wrapper {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: flex-start;
-            padding: 20px 0;
+            padding: 0;
         }
 
         .why-us-top {
@@ -244,7 +245,7 @@
 
         .why-us-heading {
             font-family: "Switzer", "Switzer Placeholder", sans-serif;
-            font-size: clamp(2.5rem, 4vw, 3.5rem);
+            font-size: 2.8rem;
             line-height: 1.1;
             font-weight: 600;
             color: #576E47;
@@ -253,37 +254,18 @@
             max-width: 500px;
         }
 
-        .why-us-bottom {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            text-decoration: none;
-            color: #576E47;
-            font-weight: 600;
-            font-family: "Switzer", "Switzer Placeholder", sans-serif;
-            font-size: 0.95rem;
-            border-bottom: 1px solid #576E47;
-            padding-bottom: 2px;
-            margin-top: 40px;
-        }
-
-        .why-us-bottom svg {
-            width: 18px;
-            height: 18px;
-        }
-
         .process-section {
             background-color: #f7f2e6;
-            min-height: 100vh;
+            min-height: 90vh;
             display: flex;
             align-items: center;
-            padding: 60px 6%;
+            padding: 40px 2%;
             box-sizing: border-box;
         }
 
         .process-container {
             width: 100%;
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
@@ -317,7 +299,7 @@
         .process-row {
             display: flex;
             gap: 16px;
-            width: 50%;
+            width: 65%;
         }
 
         .process-row.top {
@@ -395,7 +377,7 @@
             .bottom-right { bottom: 20px; right: 20px; max-width: 250px; }
             .founder-section, .why-us-section {
                 grid-template-columns: 1fr;
-                padding: 60px 6%;
+                padding: 60px 4%;
                 gap: 40px;
             }
             .process-row {
@@ -406,12 +388,12 @@
                 min-height: auto;
             }
             .process-section {
-                padding: 60px 6%;
+                padding: 60px 2%;
                 min-height: auto;
             }
             .stats-section {
                 min-height: auto;
-                padding: 60px 6%;
+                padding: 60px 4%;
             }
             .stats-content {
                 margin-left: 0;
@@ -421,10 +403,10 @@
 
         .stats-section {
             background-color: #f7f2e6;
-            min-height: 100vh;
+            min-height: 90vh;
             display: flex;
             align-items: center;
-            padding: 80px 6%;
+            padding: 60px 4%;
             box-sizing: border-box;
         }
 
@@ -479,12 +461,13 @@
             margin: 0;
             font-weight: 400;
         }
+
         /* ── Footer ── */
         .about-footer {
             background-color: #576E47;
             color: #f7f2e6;
             overflow: hidden;
-            padding: 60px 6% 0;
+            padding: 80px 4% 0;
             box-sizing: border-box;
             min-height: 100vh;
             display: flex;
@@ -504,12 +487,13 @@
             flex-direction: column;
             justify-content: space-between;
             gap: 30px;
+            padding-top: 40px;
         }
 
         .footer-headline {
             font-family: "Switzer", "Switzer Placeholder", sans-serif;
             font-size: clamp(1.5rem, 3vw, 2.2rem);
-            font-weight: 700;
+            font-weight: 800;
             color: #f7f2e6;
             margin: 0;
             line-height: 1.15;
@@ -537,8 +521,9 @@
         .footer-legal {
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 12px;
             margin-top: auto;
+            margin-bottom: 40px;
         }
 
         .footer-legal a {
@@ -557,7 +542,8 @@
             justify-content: space-between;
             align-items: flex-end;
             gap: 40px;
-            padding-top: 15px;
+            padding-top: 40px;
+            padding-right:160px;
         }
 
         .footer-nav-social {
@@ -594,17 +580,17 @@
         .social-btn {
             width: 38px;
             height: 38px;
-            border: 1px solid rgba(247,242,230,0.3);
+            background-color: #f7f2e6;
             border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #f7f2e6;
+            color: #576E47;
             text-decoration: none;
-            transition: background 0.2s;
+            transition: opacity 0.2s;
         }
 
-        .social-btn:hover { background: rgba(247,242,230,0.1); }
+        .social-btn:hover { opacity: 0.8; }
 
         .social-btn svg { width: 16px; height: 16px; }
 
@@ -632,7 +618,8 @@
         .footer-marquee-wrapper {
             width: 100%;
             overflow: hidden;
-            margin-top: 10px;
+            margin-top: 0;
+            padding-bottom: 100px;
         }
 
         .footer-marquee {
@@ -640,8 +627,8 @@
             white-space: nowrap;
             animation: marqueeScroll 14s linear infinite;
             font-family: "Switzer", "Switzer Placeholder", sans-serif;
-            font-size: clamp(5rem, 18vw, 15rem);
-            font-weight: 700;
+            font-size: clamp(4rem, 13vw, 10.5rem);
+            font-weight: 500;
             color: #f7f2e6;
             line-height: 0.9;
             letter-spacing: -4px;
@@ -658,6 +645,7 @@
             .footer-right { align-items: flex-start; }
             .footer-marquee { font-size: 4rem; }
         }
+
     </style>
 </head>
 <body>
@@ -726,10 +714,6 @@
                 <p class="why-us-label">(Why us)</p>
                 <h2 class="why-us-heading">We build systems that perform, scale, and last.</h2>
             </div>
-            <a href="#" class="why-us-bottom">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                <span>Omnera&copy;</span>
-            </a>
         </div>
     </div>
 
