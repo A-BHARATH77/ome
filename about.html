@@ -98,11 +98,10 @@
         .scroll-section {
             background-color: #f7f2e6;
             color: #576E47;
-            min-height: 80vh;
+            padding: 70px 4%;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px 4%;
         }
 
         .scroll-content {
@@ -138,20 +137,19 @@
 
         .founder-section {
             background-color: #f7f2e6;
-            padding: 20px 4% 60px;
+            padding: 70px 4%;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
-            align-items: flex-end;
+            align-items: center;
             min-height: auto;
         }
 
         .founder-text-wrapper {
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
+            justify-content: center;
             align-items: flex-start;
-            padding-bottom: 20px;
         }
 
         .founder-quote {
@@ -193,12 +191,11 @@
 
         .why-us-section {
             background-color: #f7f2e6;
-            padding: 80px 4%;
+            padding: 70px 4%;
             display: grid;
             grid-template-columns: 1.2fr 1fr;
             gap: 80px;
-            align-items: flex-start;
-            height: 100vh;
+            align-items: center;
             box-sizing: border-box;
         }
 
@@ -221,7 +218,7 @@
         .why-us-text-wrapper {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: flex-start;
             padding: 0;
         }
@@ -256,10 +253,9 @@
 
         .process-section {
             background-color: #f7f2e6;
-            min-height: 90vh;
             display: flex;
             align-items: center;
-            padding: 40px 2%;
+            padding: 70px 4%;
             box-sizing: border-box;
         }
 
@@ -376,25 +372,29 @@
             .hero-title { font-size: 5rem; }
             .bottom-left { bottom: 20px; left: 20px; }
             .bottom-right { bottom: 20px; right: 20px; max-width: 250px; }
+            .scroll-section, .founder-section, .why-us-section, .process-section, .stats-section {
+                padding: 50px 4%;
+            }
             .founder-section, .why-us-section {
                 grid-template-columns: 1fr;
-                padding: 60px 4%;
                 gap: 40px;
             }
             .process-row {
                 flex-direction: column;
+                width: 100%;
+            }
+            .process-row.bottom {
+                margin-left: 0;
             }
             .process-card {
                 width: 100%;
                 min-height: auto;
             }
             .process-section {
-                padding: 60px 2%;
                 min-height: auto;
             }
             .stats-section {
                 min-height: auto;
-                padding: 60px 4%;
             }
             .stats-content {
                 margin-left: 0;
@@ -404,10 +404,9 @@
 
         .stats-section {
             background-color: #f7f2e6;
-            min-height: 90vh;
             display: flex;
             align-items: center;
-            padding: 60px 4%;
+            padding: 70px 4%;
             box-sizing: border-box;
         }
 
@@ -468,7 +467,7 @@
             background-color: #576E47;
             color: #f7f2e6;
             overflow: hidden;
-            padding: 80px 4% 0;
+            padding: 70px 4% 0;
             box-sizing: border-box;
             min-height: 100vh;
             display: flex;
@@ -647,7 +646,104 @@
             .footer-marquee { font-size: 4rem; }
         }
 
+        /* ── Clients Grid ── */
+        .clients-section {
+            background-color: #f7f2e6; /* Beige background */
+            padding: 70px 4%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .clients-grid {
+            width: 100%;
+            max-width: 1400px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2px;
+            background-color: transparent; /* Let beige show through gaps */
+            perspective: 1200px; /* Enable 3D space for flipping */
+        }
+
+        .client-card {
+            background-color: #ffffff; /* White cards */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            aspect-ratio: 2.5 / 1;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: background-color 0.3s;
+        }
+
+        .client-card img {
+            max-width: 140px;
+            max-height: 50px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            opacity: 0.9;
+            transition: opacity 0.3s, transform 0.3s;
+            display: block;
+            flex-shrink: 0;
+        }
+
+        .client-card:hover img {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        .client-card.text-card {
+            background-color: transparent;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .client-card.text-card p {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #576E47;
+            margin: 0;
+            line-height: 1.25;
+            letter-spacing: -0.3px;
+        }
+
+        @media (max-width: 1024px) {
+            .clients-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .clients-section {
+                padding: 50px 4%;
+            }
+            .client-card {
+                height: 160px;
+            }
+        }
+
+        /* ── GSAP Text Reveal ── */
+        .reveal-title {
+            overflow: visible;
+        }
+
+        .reveal-line-mask {
+            overflow: hidden;
+            display: block;
+        }
+
+        .reveal-line-inner {
+            display: block;
+            will-change: transform, opacity;
+        }
     </style>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Lenis smooth scroll -->
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -674,10 +770,10 @@
     </div>
     
     <div class="hero-section">
-        <h1 class="hero-title">About&copy;</h1>
+        <h1 class="hero-title reveal-title" data-reveal="hero">About&copy;</h1>
 
         <div class="bottom-left">
-            <h2>Built for performance.<br/>Designed for growth&trade;</h2>
+            <h2 class="reveal-title">Built for performance.<br/>Designed for growth&trade;</h2>
         </div>
 
         <div class="bottom-right">
@@ -688,7 +784,7 @@
     <div class="scroll-section">
         <div class="scroll-content">
             <p class="meet-label">(Meet Slay The Strategy)</p>
-            <h2 class="scroll-heading">
+            <h2 class="scroll-heading reveal-title">
                 A small studio with highly<br/>
                 talented, top-notch<br/>
                 designers and professionals.
@@ -698,8 +794,8 @@
 
     <div class="founder-section">
         <div class="founder-text-wrapper">
-            <h3 class="founder-quote">&ldquo;We didn&rsquo;t start Omnera&copy; to follow trends &mdash; we started it to build systems that last.&rdquo;</h3>
-            <span class="founder-name-tag">John Doe, Founder</span>
+            <h3 class="founder-quote reveal-title">&ldquo;We didn&rsquo;t start Slay The Strategy to follow trends &mdash; we started it to build systems that last.&rdquo;</h3>
+            <span class="founder-name-tag">Deepani, Founder</span>
         </div>
         <div class="founder-image-wrapper">
             <img src="./assets/images/founder.webp" alt="John Doe, Founder" class="founder-image">
@@ -713,7 +809,7 @@
         <div class="why-us-text-wrapper">
             <div class="why-us-top">
                 <p class="why-us-label">(Why us)</p>
-                <h2 class="why-us-heading">We build systems that perform, scale, and last.</h2>
+                <h2 class="why-us-heading reveal-title">We build systems that perform, scale, and last.</h2>
             </div>
         </div>
     </div>
@@ -722,7 +818,7 @@
         <div class="process-container">
             <div class="process-header">
                 <p class="process-header-label">(What we do)</p>
-                <h2 class="process-header-title">Shaping ideas into design<br/>solutions.</h2>
+                <h2 class="process-header-title reveal-title">Shaping ideas into design<br/>solutions.</h2>
             </div>
             <div class="process-row top">
                 <div class="process-card">
@@ -763,16 +859,48 @@
         <div class="stats-content">
             <p class="stats-label">(Stats)</p>
             <div class="stats-row">
-                <h2 class="stats-number">30</h2>
+                <h2 class="stats-number reveal-title">30</h2>
                 <p class="stats-desc">A multidisciplinary team of designers, strategists, and developers dedicated to crafting exceptional digital experiences.</p>
             </div>
             <div class="stats-row">
-                <h2 class="stats-number">80</h2>
+                <h2 class="stats-number reveal-title">80</h2>
                 <p class="stats-desc">From startups to established brands, we've delivered transformative projects across industries and markets worldwide.</p>
             </div>
             <div class="stats-row">
-                <h2 class="stats-number">+7</h2>
+                <h2 class="stats-number reveal-title">+7</h2>
                 <p class="stats-desc">Industry recognition for creativity, innovation, and performance-driven design that pushes boundaries.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clients Section -->
+    <div class="clients-section">
+        <div class="clients-grid">
+            <div class="client-card">
+                <img src="./assets/images/IXfDbWGPm3cd63ui6Omtn3J8D4.avif" alt="Client Logo">
+            </div>
+            <div class="client-card">
+                <img src="./assets/images/IXfDbWGPm3cd63ui6Omtn3J8D4.avif" alt="Client Logo">
+            </div>
+            <div class="client-card">
+                <img src="./assets/images/IXfDbWGPm3cd63ui6Omtn3J8D4.avif" alt="Client Logo">
+            </div>
+            <div class="client-card">
+                <img src="./assets/images/IXfDbWGPm3cd63ui6Omtn3J8D4.avif" alt="Client Logo">
+            </div>
+            
+            <!-- Row 2 -->
+            <div class="client-card">
+                <img src="./assets/images/IXfDbWGPm3cd63ui6Omtn3J8D4.avif" alt="Client Logo">
+            </div>
+            <div class="client-card text-card">
+                <p>Trusted by<br/>clients worldwide</p>
+            </div>
+            <div class="client-card">
+                <img src="./assets/images/IXfDbWGPm3cd63ui6Omtn3J8D4.avif" alt="Client Logo">
+            </div>
+            <div class="client-card">
+                <img src="./assets/images/IXfDbWGPm3cd63ui6Omtn3J8D4.avif" alt="Client Logo">
             </div>
         </div>
     </div>
@@ -781,7 +909,7 @@
         <div class="footer-top">
             <!-- Left column -->
             <div class="footer-left">
-                <h2 class="footer-headline">Build it once. Build it right&trade;</h2>
+                <h2 class="footer-headline reveal-title">Build it once. Build it right&trade;</h2>
                 <div>
                     <p class="footer-contact-label">New Business:</p>
                     <a href="mailto:hello@slaystrategy.com" class="footer-email">hello@slaystrategy.com</a>
@@ -869,6 +997,91 @@
             scramble(target);
           }
         }, true);
+      })();
+
+      // ── Lenis Smooth Scroll ──
+      (function () {
+        var lenis = new Lenis({
+          duration: 1.2,
+          easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
+          smooth: true,
+          smoothTouch: false
+        });
+
+        // Sync Lenis with GSAP's ticker for perfect ScrollTrigger integration
+        gsap.ticker.add(function (time) {
+          lenis.raf(time * 1000);
+        });
+        gsap.ticker.lagSmoothing(0);
+
+        // Keep ScrollTrigger scroll position in sync
+        lenis.on('scroll', ScrollTrigger.update);
+      })();
+
+      // ── GSAP Text Reveal on Scroll ──
+      (function () {
+        gsap.registerPlugin(ScrollTrigger);
+
+        /**
+         * Splits an element's content into line-mask wrappers.
+         * Handles <br> tags as explicit line breaks.
+         * Returns an array of .reveal-line-inner elements (already pre-hidden via CSS).
+         */
+        function splitIntoLines(el) {
+          var rawHTML = el.innerHTML;
+          var parts = rawHTML.split(/<br\s*\/?>/ );
+          var html = parts.map(function (part) {
+            return '<span class="reveal-line-mask"><span class="reveal-line-inner">' + part.trim() + '</span></span>';
+          }).join('');
+          el.innerHTML = html;
+          return Array.from(el.querySelectorAll('.reveal-line-inner'));
+        }
+
+        // ALL .reveal-title elements animate only on scroll
+        document.querySelectorAll('.reveal-title').forEach(function (el) {
+          var lines = splitIntoLines(el);
+
+          // fromTo() gives GSAP explicit from+to states — essential for reverse to work
+          gsap.fromTo(lines,
+            { y: '110%', opacity: 0 },
+            {
+              y: '0%',
+              opacity: 1,
+              duration: 1,
+              ease: 'power4.out',
+              stagger: 0.1,
+              scrollTrigger: {
+                trigger: el,
+                start: 'top 88%',
+                toggleActions: 'play none none reverse'
+              }
+            }
+          );
+        });
+      })();
+
+      // ── Random Card Flips ──
+      (function () {
+        // Only select cards with logos, ignore the text card
+        var cards = document.querySelectorAll('.client-card:not(.text-card)');
+        
+        cards.forEach(function(card) {
+          function randomFlip() {
+            var delay = 3 + Math.random() * 7; // Wait 3 to 10 seconds between flips
+            var dir = Math.random() > 0.5 ? 1 : -1; // Flip left or right randomly
+            
+            gsap.to(card, {
+              rotationY: "+=" + (360 * dir),
+              duration: 1.8,
+              ease: "power2.inOut",
+              delay: delay,
+              onComplete: randomFlip // recursively call for infinite random loop
+            });
+          }
+          
+          // Initial staggered start so they don't all flip at once
+          setTimeout(randomFlip, Math.random() * 5000);
+        });
       })();
     </script>
 </body>
