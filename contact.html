@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact — Slay The Strategy</title>
+    <link rel="icon" href="./assets/images/logo.webp">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <style>
+        @import url("https://fonts.cdnfonts.com/css/pp-neue-montreal");
+        
+        :root {
+            --bg: #fff;
+            --text-dark: #1a1a1a;
+        }
+
+        body {
+            background-color: var(--bg);
+            margin: 0;
+            font-family: "PP Neue Montreal", sans-serif;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        .contact-hero {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .hero-title {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: clamp(6rem, 16vw, 15rem);
+            font-weight: 500;
+            letter-spacing: -4px;
+            margin: 0;
+            line-height: 1;
+            text-align: center;
+            color: #1a1a1a;
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            max-width: 600px;
+        }
+
+        .bottom-left h2 {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.1;
+            letter-spacing: -1px;
+            color: #1a1a1a;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            text-align: right;
+        }
+
+        .bottom-right p {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            margin: 0;
+            font-weight: 700;
+            color: #1a1a1a;
+            letter-spacing: -0.2px;
+        }
+
+        .contact-form-section {
+            display: flex;
+            justify-content: center;
+            padding: 80px 4%;
+            background-color: #fff;
+        }
+
+        .contact-form-container {
+            width: 100%;
+            max-width: 840px;
+            background-color: #f7f7f7;
+            padding: 50px;
+            border-radius: 12px;
+            box-sizing: border-box;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-label {
+            display: block;
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 12px;
+            letter-spacing: -0.2px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 18px 20px;
+            border: none;
+            border-radius: 6px;
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 1rem;
+            color: #1a1a1a;
+            background-color: #fff;
+            box-sizing: border-box;
+            outline: none;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            transition: box-shadow 0.2s ease;
+        }
+
+        .form-input::placeholder {
+            color: #999;
+        }
+
+        .form-input:focus {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        textarea.form-input {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .form-disclaimer {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .form-submit-btn {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .form-submit-btn:hover {
+            background-color: #333;
+            transform: translateY(-2px);
+        }
+
+        /* ── Footer ── */
+        .about-footer {
+            background-color: #576E47;
+            color: #f7f2e6;
+            overflow: hidden;
+            padding: 70px 4% 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 60px;
+        }
+
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 30px;
+            padding-top: 40px;
+        }
+
+        .footer-headline {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            font-weight: 800;
+            color: #f7f2e6;
+            margin: 0;
+            line-height: 1.15;
+            letter-spacing: -0.5px;
+        }
+
+        .footer-contact-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #f7f2e6;
+            opacity: 0.6;
+            margin: 0 0 4px 0;
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+        }
+
+        .footer-email {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #f7f2e6;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .footer-legal {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: auto;
+            margin-bottom: 40px;
+        }
+
+        .footer-legal a {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 0.8rem;
+            color: #f7f2e6;
+            opacity: 0.5;
+            text-decoration: none;
+        }
+
+        .footer-legal a:hover { opacity: 0.8; }
+
+        .footer-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 40px;
+            padding-top: 40px;
+            padding-right:160px;
+        }
+
+        .footer-nav-social {
+            display: flex;
+            align-items: flex-start;
+            gap: 60px;
+        }
+
+        .footer-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .footer-nav a {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 0.95rem;
+            color: #f7f2e6;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            font-weight: 500;
+            opacity: 0.85;
+            transition: opacity 0.2s;
+        }
+
+        .footer-nav a:hover { opacity: 1; }
+
+        .footer-socials {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .social-btn {
+            width: 38px;
+            height: 38px;
+            background-color: #f7f2e6;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #576E47;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        .social-btn:hover { opacity: 0.8; }
+
+        .social-btn svg { width: 16px; height: 16px; }
+
+        .footer-phone {
+            text-align: right;
+        }
+
+        .footer-phone-label {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 0.8rem;
+            color: #f7f2e6;
+            opacity: 0.55;
+            margin: 0 0 2px 0;
+            font-weight: 600;
+        }
+
+        .footer-phone-number {
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #f7f2e6;
+            margin: 0;
+        }
+
+        .footer-marquee-wrapper {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 0;
+            padding-bottom: 100px;
+        }
+
+        .footer-marquee {
+            display: flex;
+            white-space: nowrap;
+            animation: marqueeScroll 14s linear infinite;
+            font-family: "Switzer", "Switzer Placeholder", sans-serif;
+            font-size: clamp(4rem, 13vw, 10.5rem);
+            font-weight: 500;
+            color: #f7f2e6;
+            line-height: 0.9;
+            letter-spacing: -4px;
+            will-change: transform;
+        }
+
+        @keyframes marqueeScroll {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        @media (max-width: 768px) {
+            .contact-hero { padding: 20px; }
+            .hero-title { font-size: 5rem; }
+            .bottom-left { bottom: 20px; left: 20px; }
+            .bottom-right { bottom: 20px; right: 20px; }
+            .bottom-left h2 { font-size: 1.5rem; }
+            
+            .contact-form-container {
+                padding: 30px 20px;
+            }
+            .form-row {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .footer-top { grid-template-columns: 1fr; }
+            .footer-right { align-items: flex-start; }
+            .footer-marquee { font-size: 4rem; }
+        }
+    </style>
+
+    <!-- Lenis smooth scroll -->
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <a class="nav-logo" href="./index.html">Slay The Strategy</a>
+        <div class="nav-menu">
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" href="./about.html">About</a>
+          <a class="nav-link" href="./index.html#portfolio">Work</a>
+          <a class="nav-cta active" href="./contact.html"><span>Let's Talk</span></a>
+        </div>
+        <button class="nav-hamburger" id="navHamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="nav-mobile-menu" id="navMobileMenu">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./index.html#portfolio">Work</a>
+      <a href="./contact.html" class="active">Let's Talk</a>
+    </div>
+
+    <!-- Contact Hero Section -->
+    <div class="contact-hero">
+        <h1 class="hero-title">Contact&copy;</h1>
+
+        <div class="bottom-left">
+            <h2>Share your idea. We&rsquo;ll<br/>shape the direction&trade;</h2>
+        </div>
+
+        <div class="bottom-right">
+            <p>1 First Avenue,<br/>NY 1060, USA</p>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="contact-form-section">
+        <div class="contact-form-container">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <span class="form-label">&copy;Name</span>
+                    <div class="form-row">
+                        <input type="text" class="form-input" placeholder="First name" required>
+                        <input type="text" class="form-input" placeholder="Last name" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <span class="form-label">&copy;Email</span>
+                    <input type="email" class="form-input" placeholder="Your email" required>
+                </div>
+
+                <div class="form-group">
+                    <span class="form-label">&copy; Message</span>
+                    <textarea class="form-input" placeholder="How can we help?..." required></textarea>
+                </div>
+
+                <div class="form-disclaimer">
+                    *By submitting this form, you agree to receive helpful resources and event updates.
+                </div>
+
+                <button type="submit" class="form-submit-btn">Contact Us</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="about-footer">
+        <div class="footer-top">
+            <!-- Left column -->
+            <div class="footer-left">
+                <h2 class="footer-headline">Build it once. Build it right&trade;</h2>
+                <div>
+                    <p class="footer-contact-label">New Business:</p>
+                    <a href="mailto:hello@slaystrategy.com" class="footer-email">hello@slaystrategy.com</a>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and Conditions</a>
+                </div>
+            </div>
+            <!-- Right column -->
+            <div class="footer-right">
+                <div class="footer-nav-social">
+                    <nav class="footer-nav">
+                        <a href="./index.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <a href="./index.html#portfolio">Work</a>
+                        <a href="./contact.html">Contact</a>
+                    </nav>
+                    <div class="footer-socials">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/profile.php?id=61586631632667" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.597 1.323-1.324V1.325C24 .597 23.403 0 22.675 0z"/></svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/slaythestrategy.agency/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/company/slay-the-strategy/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-phone">
+                    <p class="footer-phone-label">Phone:</p>
+                    <p class="footer-phone-number">+91 90363 83777</p>
+                </div>
+            </div>
+        </div>
+        <!-- Scrolling brand marquee -->
+        <div class="footer-marquee-wrapper">
+            <div class="footer-marquee">
+                SLAY&nbsp;THE&nbsp;STRATEGY&nbsp;&nbsp;&nbsp;&nbsp;SLAY&nbsp;THE&nbsp;STRATEGY&nbsp;&nbsp;&nbsp;&nbsp;SLAY&nbsp;THE&nbsp;STRATEGY&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      // Hamburger toggle
+      (function () {
+        var btn = document.getElementById('navHamburger');
+        var menu = document.getElementById('navMobileMenu');
+        if (!btn || !menu) return;
+        btn.addEventListener('click', function () {
+          var open = menu.classList.toggle('open');
+          btn.classList.toggle('open', open);
+          document.body.style.overflow = open ? 'hidden' : '';
+        });
+      })();
+
+      // ── Lenis Smooth Scroll ──
+      (function () {
+        var lenis = new Lenis({
+          duration: 1.2,
+          easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
+          smooth: true,
+          smoothTouch: false
+        });
+
+        function raf(time) {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+      })();
+
+      // Text Scramble
+      (function () {
+        var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&';
+        function scramble(el) {
+          var original = el.dataset.original || el.textContent.trim();
+          el.dataset.original = original;
+          var frame = 0, resolved = 0;
+          function tick() {
+            var output = '';
+            for (var i = 0; i < original.length; i++) {
+              if (original[i] === ' ') output += ' ';
+              else if (i < resolved) output += original[i];
+              else output += chars[Math.floor(Math.random() * chars.length)];
+            }
+            el.textContent = output;
+            if (frame++ % 6 === 0) resolved++;
+            if (resolved < original.length) requestAnimationFrame(tick);
+            else el.textContent = original;
+          }
+          tick();
+        }
+        document.body.addEventListener('mouseenter', function (e) {
+          var target = e.target;
+          if (target.matches('.nav-link, .nav-logo')) {
+            scramble(target);
+          }
+        }, true);
+      })();
+    </script>
+</body>
+</html>

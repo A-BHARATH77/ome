@@ -593,8 +593,37 @@
             el.href = 'https://www.linkedin.com/company/slay-the-strategy/';
           }
 
+          // Update Twitter to Facebook
+          if (el.href.includes('x.com') || el.href.includes('twitter.com')) {
+            el.href = 'https://www.facebook.com/profile.php?id=61586631632667';
+            el.target = '_blank';
+            el.rel = 'noopener noreferrer';
+            let fbIcon = el.querySelector('.slay-fb-icon');
+            if (!fbIcon) {
+              // Hide existing children (like the Twitter icon)
+              Array.from(el.children).forEach(child => {
+                 if (!child.classList.contains('slay-fb-icon')) {
+                   child.style.display = 'none';
+                   child.style.setProperty('display', 'none', 'important');
+                   child.style.opacity = '0';
+                 }
+              });
+              
+              fbIcon = document.createElement('div');
+              fbIcon.className = 'slay-fb-icon';
+              fbIcon.style.cssText = 'display: flex !important; align-items: center !important; justify-content: center !important; width: 100% !important; height: 100% !important; color: #576E47 !important; position: absolute !important; top: 0 !important; left: 0 !important; z-index: 999 !important; pointer-events: none !important; opacity: 1 !important; visibility: visible !important;';
+              fbIcon.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px; display: block; color: #576E47 !important;"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.597 1.323-1.324V1.325C24 .597 23.403 0 22.675 0z"/></svg>';
+              
+              el.style.position = 'relative';
+              el.style.overflow = 'hidden';
+              el.style.opacity = '1';
+              el.style.setProperty('opacity', '1', 'important');
+              el.appendChild(fbIcon);
+            }
+          }
+
           // Ensure the icons inside are dark green for contrast
-          const icon = el.querySelector('div');
+          const icon = el.querySelector('div:not(.slay-fb-icon)');
           if (icon) {
             icon.style.setProperty('--awo075', '#576E47', 'important');
           }
@@ -1992,6 +2021,28 @@
   <style>
     .framer-i2anp5 {
       display: none !important;
+    }
+    .slay-fb-icon {
+      display: flex !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      color: #576E47 !important;
+      background-color: transparent !important;
+      pointer-events: none !important;
+    }
+    .slay-fb-icon svg {
+      width: 20px !important;
+      height: 20px !important;
+      fill: #576E47 !important;
+      display: block !important;
+    }
+    .framer-ux0qok a {
+      position: relative !important;
+      overflow: hidden !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      background-color: #f7f2e6 !important;
     }
   </style>
   <!-- Preload GSAP so it starts fetching at the earliest possible moment -->
