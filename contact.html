@@ -10,8 +10,8 @@
         @import url("https://fonts.cdnfonts.com/css/pp-neue-montreal");
         
         :root {
-            --bg: #fff;
-            --text-dark: #1a1a1a;
+            --bg: #f7f2e6;
+            --text-dark: #576E47;
         }
 
         body {
@@ -29,7 +29,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #fff;
+            background-color: var(--bg);
             padding: 40px;
             box-sizing: border-box;
         }
@@ -42,7 +42,7 @@
             margin: 0;
             line-height: 1;
             text-align: center;
-            color: #1a1a1a;
+            color: var(--text-dark);
         }
 
         .bottom-left {
@@ -59,7 +59,7 @@
             margin: 0;
             line-height: 1.1;
             letter-spacing: -1px;
-            color: #1a1a1a;
+            color: var(--text-dark);
         }
 
         .bottom-right {
@@ -75,7 +75,7 @@
             line-height: 1.4;
             margin: 0;
             font-weight: 700;
-            color: #1a1a1a;
+            color: var(--text-dark);
             letter-spacing: -0.2px;
         }
 
@@ -83,16 +83,17 @@
             display: flex;
             justify-content: center;
             padding: 80px 4%;
-            background-color: #fff;
+            background-color: var(--bg);
         }
 
         .contact-form-container {
             width: 100%;
             max-width: 840px;
-            background-color: #f7f7f7;
+            background-color: #fff;
             padding: 50px;
             border-radius: 12px;
             box-sizing: border-box;
+            box-shadow: 0 4px 20px rgba(87, 110, 71, 0.05);
         }
 
         .form-group {
@@ -104,9 +105,10 @@
             font-family: "Switzer", "Switzer Placeholder", sans-serif;
             font-size: 0.95rem;
             font-weight: 600;
-            color: #555;
+            color: var(--text-dark);
             margin-bottom: 12px;
             letter-spacing: -0.2px;
+            opacity: 0.8;
         }
 
         .form-row {
@@ -117,7 +119,7 @@
         .form-input {
             width: 100%;
             padding: 18px 20px;
-            border: none;
+            border: 1px solid rgba(87, 110, 71, 0.1);
             border-radius: 6px;
             font-family: "Switzer", "Switzer Placeholder", sans-serif;
             font-size: 1rem;
@@ -125,8 +127,8 @@
             background-color: #fff;
             box-sizing: border-box;
             outline: none;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
-            transition: box-shadow 0.2s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.01);
+            transition: all 0.2s ease;
         }
 
         .form-input::placeholder {
@@ -134,7 +136,8 @@
         }
 
         .form-input:focus {
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            box-shadow: 0 4px 12px rgba(87, 110, 71, 0.08);
+            border-color: rgba(87, 110, 71, 0.3);
         }
 
         textarea.form-input {
@@ -145,13 +148,14 @@
         .form-disclaimer {
             font-family: "Switzer", "Switzer Placeholder", sans-serif;
             font-size: 0.85rem;
-            color: #666;
+            color: var(--text-dark);
+            opacity: 0.6;
             margin-bottom: 25px;
         }
 
         .form-submit-btn {
-            background-color: #1a1a1a;
-            color: #fff;
+            background-color: var(--text-dark);
+            color: var(--bg);
             font-family: "Switzer", "Switzer Placeholder", sans-serif;
             font-size: 1.05rem;
             font-weight: 600;
@@ -159,11 +163,11 @@
             border: none;
             border-radius: 8px;
             cursor: pointer;
-            transition: background-color 0.2s, transform 0.2s;
+            transition: opacity 0.2s, transform 0.2s;
         }
 
         .form-submit-btn:hover {
-            background-color: #333;
+            opacity: 0.9;
             transform: translateY(-2px);
         }
 
