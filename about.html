@@ -749,7 +749,10 @@
     <!-- Navbar -->
     <nav class="site-nav">
       <div class="nav-inner">
-        <a class="nav-logo" href="./index.html">Slay The Strategy</a>
+        <a class="nav-logo" href="./index.html">
+          <img src="./assets/images/logo.webp" alt="" class="nav-logo-img">
+          <span class="nav-logo-text">Slay The Strategy</span>
+        </a>
         <div class="nav-menu">
           <a class="nav-link" href="./index.html">Home</a>
           <a class="nav-link active" href="./about.html">About</a>
@@ -974,8 +977,9 @@
       (function () {
         var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&';
         function scramble(el) {
-          var original = el.dataset.original || el.textContent.trim();
-          el.dataset.original = original;
+          var targetEl = el.querySelector('.nav-logo-text') || el;
+          var original = targetEl.dataset.original || targetEl.textContent.trim();
+          targetEl.dataset.original = original;
           var frame = 0, resolved = 0;
           function tick() {
             var output = '';
@@ -984,13 +988,14 @@
               else if (i < resolved) output += original[i];
               else output += chars[Math.floor(Math.random() * chars.length)];
             }
-            el.textContent = output;
+            targetEl.textContent = output;
             if (frame++ % 6 === 0) resolved++;
             if (resolved < original.length) requestAnimationFrame(tick);
-            else el.textContent = original;
+            else targetEl.textContent = original;
           }
           tick();
         }
+
         document.body.addEventListener('mouseenter', function (e) {
           var target = e.target;
           if (target.matches('.nav-link, .nav-logo')) {

@@ -51,6 +51,17 @@
     flex-shrink: 0;
     position: relative;
     /* underline reveal on hover */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-logo-img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
 .nav-logo::after {
     content: '';

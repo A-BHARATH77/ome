@@ -1759,58 +1759,33 @@
       right: 0;
     }
 
-    .images-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    .images-container .img {
-      position: absolute;
-      top: 1.5rem;
-      left: 1.5rem;
-      width: 16vw;
-      aspect-ratio: 4/3;
-      border-radius: 0.5rem;
-      overflow: hidden;
-      transform: scale(0);
-    }
-
-    .images-container .img.animate-out {
-      top: unset;
-      left: unset;
-      bottom: 1.5rem;
-      right: 1.5rem;
-    }
-
     /* ===== MARQUEE STRIP ===== */
     .marquee-strip {
       position: absolute;
       left: 0;
+      top: 55%;
+      transform: translateY(-50%);
       width: 100%;
-      height: 40vh;
+      height: 60vh;
       overflow: hidden;
-      opacity: 0;
+      opacity: 1;
       z-index: 5;
-      will-change: clip-path;
     }
 
     .marquee-track {
       display: flex;
       align-items: center;
       height: 100%;
-      gap: 1rem;
+      gap: 1.5rem;
       width: max-content;
       will-change: transform;
     }
 
     .marquee-item {
       flex-shrink: 0;
-      width: 22vw;
-      height: 26vh;
-      border-radius: 0.75rem;
+      width: 20vw;
+      height: 45vh;
+      border-radius: 1rem;
       overflow: hidden;
     }
 
@@ -1876,24 +1851,8 @@
       }
     }
 
-    #brandLogo {
-      position: fixed;
-      pointer-events: none;
-      opacity: 0;
-      z-index: 2;
-      border-radius: 50%;
-      overflow: hidden;
-    }
+    /* ===== MOBILE HERO OVERRIDES ===== */
 
-    #brandLogo img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-
-    /* ===== HERO BIG TEXT ===== */
     .hero-big-text {
       position: absolute;
       left: 0;
@@ -2049,7 +2008,10 @@
   <!-- ── Inline Navbar (fixed, always visible) ───────────────────── -->
   <nav class="site-nav" aria-label="Main navigation">
     <div class="nav-inner">
-      <a class="nav-logo" href="./index.html">Slay The Strategy</a>
+      <a class="nav-logo" href="./index.html">
+        <img src="./assets/images/logo.webp" alt="" class="nav-logo-img" />
+        <span class="nav-logo-text">Slay The Strategy</span>
+      </a>
       <div class="nav-menu">
         <a class="nav-link" href="./index.html">Home</a>
         <a class="nav-link" href="./about.html">About</a>
@@ -2112,8 +2074,11 @@
       var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&';
 
       function scramble(el) {
-        var original = el.dataset.original || el.textContent.trim();
-        el.dataset.original = original;
+        // If it's the nav-logo, we want to scramble the span inside it
+        var targetEl = el.querySelector('.nav-logo-text') || el;
+        
+        var original = targetEl.dataset.original || targetEl.textContent.trim();
+        targetEl.dataset.original = original;
 
         var frame = 0;
         var totalFrames = 18; // how many scramble frames before resolving
@@ -2133,14 +2098,14 @@
               output += chars[Math.floor(Math.random() * chars.length)];
             }
           }
-          el.textContent = output;
+          targetEl.textContent = output;
           frame++;
           // resolve one extra character every 6 frames (slower)
           if (frame % 6 === 0) resolved++;
           if (resolved < original.length) {
             raf = requestAnimationFrame(tick);
           } else {
-            el.textContent = original; // snap to final
+            targetEl.textContent = original; // snap to final
           }
         }
 
@@ -2172,6 +2137,13 @@
   <section class="hero" data-framer-cursor="1cfk11o">
     <div class="hero-bg"></div>
 
+    <!-- Infinite Carousel -->
+    <div class="marquee-strip">
+      <div class="marquee-track" id="heroMarqueeTrack">
+        <!-- Images injected via JS -->
+      </div>
+    </div>
+
     <!-- Big headline — top section of hero -->
     <div class="hero-big-text">
       <h2>Visual Engineering</h2>
@@ -2184,11 +2156,6 @@
 
 
   </section>
-
-  <!-- Brand logo lives OUTSIDE the hero so Framer's cursor JS doesn't touch it -->
-  <div id="brandLogo">
-    <img src="./assets/images/logo.webp" alt="Slay The Strategy" />
-  </div>
 
   <div id="framer-content-wrapper">
     <div id="navbar-root"></div>
@@ -2203,213 +2170,53 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
   <script>
 
-    /* gsap.registerPlugin(Flip);
-
-
-    const createCounterDigits = () => {
-      const counter1 = document.querySelector(".counter-1");
-      const num0 = document.createElement("div"); num0.className = "num"; num0.textContent = "0";
-      counter1.appendChild(num0);
-      const num1 = document.createElement("div"); num1.className = "num num1offset1"; num1.textContent = "1";
-      counter1.appendChild(num1);
-
-      const counter2 = document.querySelector(".counter-2");
-      for (let i = 0; i <= 10; i++) {
-        const numDiv = document.createElement("div");
-        numDiv.className = i === 1 ? "num num1offset2" : "num";
-        numDiv.textContent = i === 10 ? "0" : i;
-        counter2.appendChild(numDiv);
-      }
-
-      const counter3 = document.querySelector(".counter-3");
-      for (let i = 0; i < 30; i++) {
-        const numDiv = document.createElement("div");
-        numDiv.className = "num";
-        numDiv.textContent = i % 10;
-        counter3.appendChild(numDiv);
-      }
-      const finalNum = document.createElement("div"); finalNum.className = "num"; finalNum.textContent = "0";
-      counter3.appendChild(finalNum);
-    };
-
-    const animateCounter = (counter, duration, delay = 0) => {
-      const numHeight = counter.querySelector(".num").clientHeight;
-      const totalDistance = (counter.querySelectorAll(".num").length - 1) * numHeight;
-      gsap.to(counter, { y: -totalDistance, duration, delay, ease: "power2.inOut" });
-    };
-
-    function animateImages() {
-      const images = document.querySelectorAll(".img");
-      images.forEach(img => img.classList.remove("animate-out"));
-      const state = Flip.getState(images);
-      images.forEach(img => img.classList.add("animate-out"));
-
-      const mainTimeline = gsap.timeline();
-
-      mainTimeline.add(
-        Flip.from(state, {
-          duration: 1,
-          stagger: 0.1,
-          ease: "power3.inOut",
-        })
-      );
-
-      images.forEach((img, index) => {
-        const scaleTimeline = gsap.timeline();
-        scaleTimeline
-          .to(img, { scale: 2.5, duration: 0.45, ease: "power3.in" }, 0.025)
-          .to(img, { scale: 1, duration: 0.45, ease: "power3.out" }, 0.5);
-        mainTimeline.add(scaleTimeline, index * 0.1);
-      });
-
-      return mainTimeline;
-    }
-
-
     (() => {
-      // --- Initialize brand logo: centered in viewport ---
-      const logo = document.getElementById('brandLogo');
-      const logoSize = Math.min(window.innerWidth * 0.13, 160);
-      if (logo) {
-        gsap.set(logo, {
-          width: logoSize,
-          height: logoSize,
-          top: (window.innerHeight - logoSize) / 2,
-          left: (window.innerWidth - logoSize) / 2,
-        });
-        gsap.to(logo, { opacity: 1, duration: 0.6, delay: 0.1 });
-      }
+      const track = document.getElementById('heroMarqueeTrack');
+      if (!track) return;
 
-      createCounterDigits();
+      const images = [
+        'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg',
+        'img6.jpg', 'img7.jpg', 'img8.jpg', 'img9.jpg', 'img10.jpg',
+        'img11.jpg', 'img12.jpg', 'img13.jpg', 'img14.jpg', 'img15.jpg',
+        'img16.jpg', 'img17.jpg', 'img19.jpg', 'img20.jpg', 'img21.jpg',
+        'img22.jpg', 'img24.jpg', 'img25.jpg', 'img26.jpg', 'img27.jpg'
+      ];
 
-      const tl = gsap.timeline();
-      gsap.set(".img", { scale: 0 });
-
-      // PHASE 1: counter (bg already covers screen from CSS)
-      tl.add(() => {
-        animateCounter(document.querySelector(".counter-3"), 2.5);
-        animateCounter(document.querySelector(".counter-2"), 3);
-        animateCounter(document.querySelector(".counter-1"), 2, 1.5);
-      }, 0.25);
-
-      // PHASE 2: images pop in (all at top-left, stacked — they animate as one unit)
-      tl.to(".img", {
-        scale: 1,
-        duration: 1,
-        stagger: 0.125,
-        ease: "power3.out",
-      }, "<");
-
-      // PHASE 3: counter fades → Flip runs → then float up → shoot marquee left
-      tl.to(".counter", {
-        opacity: 0,
-        duration: 0.3,
-        ease: "power3.out",
-        delay: 0.3,
-        onStart: () => {
-          const flipTl = animateImages();
-
-          flipTl.eventCallback("onComplete", () => {
-
-            // --- LOGO: fly from center to navbar ---
-            const logo = document.getElementById('brandLogo');
-            if (logo) {
-              const navSize = 52;
-              gsap.to(logo, {
-                top: 18,
-                left: (window.innerWidth - navSize) / 2,
-                width: navSize,
-                height: navSize,
-                duration: 1.0,
-                ease: 'power4.inOut',
-                onComplete: () => {
-                  gsap.set(logo, { zIndex: 9999 });
-                  gsap.to(logo.querySelector('img'), {
-                    rotation: 360,
-                    duration: 7,
-                    repeat: -1,
-                    ease: 'none',
-                    transformOrigin: '50% 50%',
-                  });
-                },
-              });
-            }
-
-            // --- STEP A: float stacked block up to right-center ---
-            const imgEl = document.querySelector(".img.animate-out");
-            if (!imgEl) return;
-            const rect = imgEl.getBoundingClientRect();
-            const deltaY = window.innerHeight / 2 - rect.height / 2 - rect.top;
-
-            gsap.to(".img", {
-              y: "+=" + deltaY,
-              duration: 1.0,
-              ease: "power4.inOut",
-              onComplete: () => {
-
-                // --- STEP B: deal img15 → img1 leftward from the stack ---
-                const allImgs = Array.from(document.querySelectorAll(".img.animate-out"));
-                const imgsRev = [...allImgs].reverse(); // [img15, img14, … img1]
-                const imgW = rect.width;
-                const gap = 12;
-                const totalW = imgsRev.length * (imgW + gap);
-
-                // img15 (i=0) flies farthest left; img1 (i=14) stays at stack
-                const dealXs = imgsRev.map((_, i) => -(imgsRev.length - 1 - i) * (imgW + gap));
-
-                const currentXs = [...dealXs];
-                const stackLeft = window.innerWidth - 24 - imgW;
-
-                const dealTl = gsap.timeline({
-                  onComplete: () => {
-                    // Enable scroll now that marquee is ready
-                    document.body.classList.remove("no-scroll");
-
-                    const speed = 1.4;
-                    function loop() {
-                      for (let i = 0; i < imgsRev.length; i++) {
-                        currentXs[i] -= speed;
-                        if (stackLeft + currentXs[i] + imgW < 0) currentXs[i] += totalW;
-                        gsap.set(imgsRev[i], { x: currentXs[i] });
-                      }
-                      requestAnimationFrame(loop);
-                    }
-                    requestAnimationFrame(loop);
-                  }
-                });
-
-                // Stagger: img15 shoots first, img1 last — same rhythm as Flip
-                imgsRev.forEach((img, i) => {
-                  const imgTl = gsap.timeline();
-                  imgTl
-                    .to(img, { scale: 0.75, duration: 0.3, ease: "power3.in" }, 0)
-                    .to(img, { scale: 1, duration: 0.7, ease: "power3.out" }, 0.3)
-                    .to(img, { x: dealXs[i], duration: 1.0, ease: "power3.inOut" }, 0);
-                  dealTl.add(imgTl, i * 0.065);
-                });
-
-
-
-
-                // Fade in headline and tag at staggered times
-                gsap.to(".hero-big-text", {
-                  opacity: 1,
-                  duration: 1.2,
-                  ease: "power3.out",
-                  delay: 0.2,
-                });
-                gsap.to(".hero-tag", {
-                  opacity: 1,
-                  duration: 0.9,
-                  ease: "power3.out",
-                  delay: imgsRev.length * 0.1 * 0.5,
-                });
-              },
-            });
-          });
-        },
+      // Create marquee items
+      images.forEach(imgName => {
+        const item = document.createElement('div');
+        item.className = 'marquee-item';
+        item.innerHTML = `<img src="./assets/images/hero%20section/${imgName}" alt="Hero Image" loading="lazy">`;
+        track.appendChild(item);
       });
 
+      // Clone items for infinite scroll
+      const items = Array.from(track.children);
+      items.forEach(item => {
+        const clone = item.cloneNode(true);
+        track.appendChild(clone);
+      });
+
+      // Animation
+      let x = 0;
+      const speed = 1.2;
+      
+      function animate() {
+        x -= speed;
+        const firstItem = track.children[0];
+        if (!firstItem) return;
+        
+        const itemWidth = firstItem.offsetWidth + parseFloat(getComputedStyle(track).gap);
+        
+        if (Math.abs(x) >= itemWidth * images.length) {
+          x = 0;
+        }
+        
+        track.style.transform = `translateX(${x}px)`;
+        requestAnimationFrame(animate);
+      }
+      
+      requestAnimationFrame(animate);
     })();
 
 
@@ -2584,7 +2391,6 @@
   <script>
     (function () {
       var hero = document.querySelector('section.hero');
-      var logo = document.getElementById('brandLogo');
 
       function isHome() {
         var p = window.location.pathname;
@@ -2595,7 +2401,6 @@
       function applyVisibility() {
         var home = isHome();
         if (hero) hero.style.display = home ? '' : 'none';
-        if (logo) logo.style.display = home ? '' : 'none';
       }
 
       // Patch pushState / replaceState so we catch Framer's router
