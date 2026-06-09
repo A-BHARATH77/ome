@@ -5,6 +5,35 @@
   data-wf-page="699b6466d5f19893993a4bf1" data-wf-site="699b6466d5f19893993a4bf2">
 
 <head>
+  <script>
+    /* Surgical Cursor Fix: Remove suppression class and hide custom dot */
+    (function() {
+      const fix = () => {
+        // Remove the suppression class from everything
+        document.querySelectorAll('.framer-cursor-none').forEach(el => {
+          el.classList.remove('framer-cursor-none');
+        });
+        // Remove attributes that trigger custom cursors
+        document.querySelectorAll('[data-framer-cursor]').forEach(el => {
+          el.removeAttribute('data-framer-cursor');
+        });
+      };
+      fix();
+      setInterval(fix, 50);
+    })();
+  </script>
+  <style>
+    /* Force system cursor and hide custom cursor visuals */
+    html, body, .framer-cursor-none, [data-framer-cursor] {
+      cursor: auto !important;
+    }
+    .framer-cursor, [data-framer-cursor], [class*="CursorHost" i], .__framer-cursor {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+  </style>
   <style>
     /* Aggressive Loader Neutralization */
     [class*="loader" i], [class*="preloader" i], 
@@ -128,6 +157,12 @@
           }
         }
         if (document.title !== t) document.title = t;
+
+        // Surgical Cursor Fix: Restore default cursor
+        document.querySelectorAll('.framer-cursor-none').forEach(el => el.classList.remove('framer-cursor-none'));
+        document.querySelectorAll('[data-framer-cursor]').forEach(el => el.removeAttribute('data-framer-cursor'));
+        if (document.documentElement.style.cursor === 'none') document.documentElement.style.cursor = 'auto';
+        if (document.body.style.cursor === 'none') document.body.style.cursor = 'auto';
 
         // Enforce branding in the logo and navbar
         document.querySelectorAll('.framer-52wxqa p, .framer-10u37fx-container p, .framer-le8c6g-container p, .framer-1jhjy7s-container p, .framer-bnwve6-container p, .framer-hvzfaw-container p, .framer-6eqb8n-container p, .framer-uv41zi-container p').forEach(el => {
@@ -2134,7 +2169,7 @@
     }
   </style>
 
-  <section class="hero" data-framer-cursor="1cfk11o">
+  <section class="hero">
     <div class="hero-bg"></div>
 
     <!-- Infinite Carousel -->
