@@ -1865,16 +1865,6 @@
         width: 38%;
       }
 
-      /* tablet hero text */
-      .hero-big-text {
-        left: 1rem;
-        top: 5rem;
-      }
-
-      .hero-big-text h2 {
-        font-size: 1.8rem;
-      }
-
       .hero-tag {
         left: 1rem;
         bottom: 1.2rem;
@@ -1883,20 +1873,6 @@
       .hero-tag span {
         font-size: 0.75rem;
         letter-spacing: 0.04em;
-      }
-
-      .hero-para {
-        right: 1rem;
-        left: 1rem;
-        bottom: 3rem;
-        max-width: 100%;
-        text-align: left;
-      }
-
-      .hero-para p {
-        font-size: 1rem;
-        line-height: 1.5;
-        letter-spacing: 0;
       }
     }
 
@@ -1917,25 +1893,27 @@
       border-radius: 50%;
     }
 
-    /* ===== HERO BIG TEXT + PARA ===== */
+    /* ===== HERO BIG TEXT ===== */
     .hero-big-text {
       position: absolute;
-      left: 2.5rem;
-      top: 7rem;
-      /* sits in the top section, below the navbar */
+      left: 0;
+      right: 0;
+      top:5rem;
       z-index: 8;
       opacity: 1;
       pointer-events: none;
+      text-align: center;
     }
 
     .hero-big-text h2 {
-      font-size: clamp(4rem, 8vw, 7.5rem);
-      font-weight: 400;
+      font-size: 1.25rem;
+      font-weight: 500;
       font-family: 'PP Neue Montreal', sans-serif;
       font-style: normal;
-      line-height: 0.92;
-      letter-spacing: -0.03em;
+      line-height: 1.2;
+      letter-spacing: 0.12em;
       color: var(--fg);
+      text-transform: uppercase;
     }
 
     /* small tag — just below marquee, left */
@@ -1958,39 +1936,8 @@
       opacity: 0.6;
     }
 
-    /* paragraph — bottom right, always in view */
-    .hero-para {
-      position: absolute;
-      right: 2.5rem;
-      bottom: 1.5rem;
-      z-index: 8;
-      opacity: 1;
-      max-width: 30rem;
-      text-align: right;
-      pointer-events: none;
-    }
-
-    .hero-para p {
-      font-size: 2.8rem;
-      font-weight: 400;
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-      color: var(--fg);
-      opacity: 0.85;
-    }
-
     /* ===== MOBILE HERO OVERRIDES ===== */
     @media (max-width: 1000px) {
-      .hero-big-text {
-        left: 1rem;
-        top: 5rem;
-      }
-
-      .hero-big-text h2 {
-        font-size: clamp(3rem, 11vw, 5rem) !important;
-        line-height: 0.95;
-      }
-
       .hero-tag {
         left: 1rem;
         bottom: 1.2rem;
@@ -1999,35 +1946,9 @@
       .hero-tag span {
         font-size: 0.75rem;
       }
-
-      .hero-para {
-        right: 1rem;
-        left: 1rem;
-        bottom: 3rem;
-        max-width: 100%;
-        text-align: left;
-      }
-
-      .hero-para p {
-        font-size: 1.4rem !important;
-        line-height: 1.4;
-        letter-spacing: -0.01em;
-      }
     }
 
     @media (max-width: 480px) {
-      .hero-big-text {
-        left: 0.8rem;
-        top: 6.5rem;
-        right: 0.8rem;
-      }
-
-      .hero-big-text h2 {
-        font-size: clamp(3.2rem, 18vw, 5rem) !important;
-        line-height: 0.9;
-        word-break: break-word;
-      }
-
       .hero-tag {
         left: 0.8rem;
         bottom: 0.8rem;
@@ -2036,17 +1957,6 @@
       .hero-tag span {
         font-size: 0.65rem;
         letter-spacing: 0.04em;
-      }
-
-      .hero-para {
-        right: 0.8rem;
-        left: 0.8rem;
-        bottom: 2.5rem;
-      }
-
-      .hero-para p {
-        font-size: 1.3rem !important;
-        line-height: 1.4;
       }
     }
   </style>
@@ -2272,11 +2182,6 @@
       <span>Creative Studio &middot; Est. 2019</span>
     </div>
 
-    <!-- Paragraph — bottom right -->
-    <div class="hero-para">
-      <p><span style="font-weight:600">Slay The Strategy.</span><br>A creative studio crafting<br>visual narratives for
-        brands<br>that demand attention.</p>
-    </div>
 
   </section>
 
@@ -2486,7 +2391,7 @@
 
 
 
-                // Fade in headline, tag, para at staggered times
+                // Fade in headline and tag at staggered times
                 gsap.to(".hero-big-text", {
                   opacity: 1,
                   duration: 1.2,
@@ -2498,12 +2403,6 @@
                   duration: 0.9,
                   ease: "power3.out",
                   delay: imgsRev.length * 0.1 * 0.5,
-                });
-                gsap.to(".hero-para", {
-                  opacity: 1,
-                  duration: 1.0,
-                  ease: "power3.out",
-                  delay: imgsRev.length * 0.1 * 0.6,
                 });
               },
             });
