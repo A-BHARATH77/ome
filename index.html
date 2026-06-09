@@ -398,6 +398,15 @@
           }
         });
 
+        // Enforce about image
+        document.querySelectorAll('#about > div > div.framer-aerltg > div.framer-o2u27j > div > div > img').forEach(img => {
+          const newSrc = './assets/images/about.avif';
+          if (img.getAttribute('src') !== newSrc) {
+            img.src = newSrc;
+            img.srcset = '';
+          }
+        });
+
         // Enforce branding in the Services section label
         document.querySelectorAll('.section .bottom-grid._1.grd .top-text').forEach(el => {
           if (el.innerText.includes('(Services)') && cachedTopTextStyle) {
@@ -648,22 +657,54 @@
         });
 
         // Enforce footer navigation links
+        const linksContainer = document.querySelector('.framer-1btu5lk');
+        if (linksContainer && !linksContainer.querySelector('.slay-quick-links-title')) {
+          const title = document.createElement('p');
+          title.className = 'slay-quick-links-title';
+          title.innerText = 'Quick Links:';
+          // Match styling of other footer labels like "Address:"
+          title.style.cssText = 'font-family: "Switzer", sans-serif; font-size: 0.8rem; font-weight: 700; color: #f7f2e6; opacity: 0.6; margin: 0 0 12px 0;';
+          linksContainer.prepend(title);
+        }
+
         document.querySelectorAll('.framer-1btu5lk a').forEach(el => {
-          const href = el.getAttribute('href') || '';
           const text = el.innerText.toLowerCase();
           
+          // Force hard-navigation logic
+          const forceRedirect = (target) => {
+             el.removeAttribute('data-framer-page-link-current');
+             el.removeAttribute('data-framer-page-link-current-path');
+             el.onclick = (e) => {
+               e.preventDefault();
+               e.stopImmediatePropagation();
+               window.location.href = target;
+             };
+          };
+
           if (text.includes('home')) {
             el.href = './index.html';
+            forceRedirect('./index.html');
           } else if (text.includes('about')) {
             el.href = './about.html';
+            forceRedirect('./about.html');
           } else if (text.includes('contact')) {
             el.href = './contact.html';
+            forceRedirect('./contact.html');
           } else if (text.includes('news')) {
             // Remove News link if not used
             el.closest('[class*="-container"]')?.remove() || el.remove();
           } else if (text.includes('work')) {
-             // Link to portfolio section on home for now if work.html missing
-             el.href = './index.html#portfolio';
+             // Link to portfolio section on home
+             el.href = '#portfolio';
+             el.onclick = (e) => {
+               if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/')) {
+                 // Already on home, let normal anchor work or use scroll
+                 return;
+               } else {
+                 e.preventDefault();
+                 window.location.href = './index.html#portfolio';
+               }
+             };
           }
         });
 
@@ -1425,7 +1466,7 @@
     #intro .framer-yj7ddk,
     #intro .framer-1sfadwm,
     #intro .framer-9svcg4 {
-      padding-bottom: 40px !important;
+      padding-bottom: 90px !important;
       margin-bottom: 0px !important;
     }
 
@@ -1440,7 +1481,7 @@
       padding-right: 0 !important;
       margin-bottom: 0 !important;
       padding-top: 0px !important;
-      padding-bottom: 140px !important;
+      padding-bottom: 240px !important;
     }
 
     .section:has(.service-grid) .service-title,
@@ -1974,6 +2015,7 @@
       border-top: none !important;
       box-shadow: none !important;
       margin-top: -2px !important; /* Pull up slightly to mask any lingering 1px borders */
+      padding-top: 100px !important; /* Added slightly increased top padding */
       position: relative !important;
       z-index: 10 !important; /* Ensure it layers over the gap */
     }
@@ -2440,16 +2482,44 @@
       applyVisibility();
     })();
   </script>
-  <!-- Intercept Framer's ./about SPA link → hard-navigate -->
+  <!-- Intercept Framer's SPA links → hard-navigate to local pages -->
   <script>
     document.addEventListener('click', function (e) {
       var link = e.target.closest('a');
       if (!link) return;
       var href = link.getAttribute('href') || '';
-      if (href === './about' || href === '/about' || href.endsWith('/about')) {
+      var text = (link.innerText || '').toLowerCase();
+
+      // Fix for Home
+      if (href === './' || href === '/' || text === 'home') {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        window.location.href = './index.html';
+        return;
+      }
+
+      // Fix for About
+      if (href === './about' || href === '/about' || href.endsWith('/about') || text === 'about') {
         e.preventDefault();
         e.stopImmediatePropagation();
         window.location.href = './about.html';
+        return;
+      }
+
+      // Fix for Contact
+      if (href === './contact' || href === '/contact' || href.endsWith('/contact') || text === 'contact') {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        window.location.href = './contact.html';
+        return;
+      }
+
+      // Fix for Work (point to portfolio anchor on home)
+      if (href === './work' || href === '/work' || href.endsWith('/work') || text === 'work') {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        window.location.href = './index.html#portfolio';
+        return;
       }
     }, true);
   </script>
